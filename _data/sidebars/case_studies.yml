@@ -9,3 +9,9 @@ subitems:
         url: /about_DTLS_interest_group
       - title: Model
         url: /model_DTLS_interest_group
+  - title: ELIXIR-UK Fellowship
+    description:
+    url: /ELIXIR-UK_fellowship
+    subitems:
+      - title: About
+        url: /about_fellowship_uk

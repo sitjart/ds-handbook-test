@@ -1,7 +1,7 @@
 title: ELIXIR Data Steward Handbook
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
-description: "A Fellowship of UK ambassadors to build capacity in RDM for the life sciences"
+description: ""
 # Metadata description of the website
 
 remote_theme: ELIXIR-Belgium/elixir-toolkit-theme
@@ -37,38 +37,6 @@ defaults:
       search_exclude: false
   -
     scope:
-      path: "pages/events/TEMPLATE_event.md"
-      type: "pages"
-    values:
-      sitemap: false
-      search_exclude: true
-      no_robots: true
-  -
-    scope:
-      path: "pages/rdmbites/TEMPLATE_collection.md"
-      type: "pages"
-    values:
-      sitemap: false
-      search_exclude: true
-      no_robots: true
-  -
-    scope:
-      path: "pages/course-materials/TEMPLATE_course.md"
-      type: "pages"
-    values:
-      sitemap: false
-      sidebar: 
-      search_exclude: true
-      no_robots: true
-  -
-    scope:
-      path: "pages/events"
-    values:
-      type: events
-      datatable: false
-      sidebar: events
-  -
-    scope:
       path: "pages/about"
     values:
       sidebar: about
@@ -86,14 +54,14 @@ defaults:
       type: guidelines
   -
     scope:
-      path: "pages/training_materials/rdmbites"
+      path: "pages/guidelines/ds_maturity"
     values:
-      type: RDMbites
+     type: guidelines
   -
     scope:
-      path: "pages/training_materials/recommended_resources"
+      path: "pages/guidelines/professionalising_ds"
     values:
-     type: recommended_resources
+     type: guidelines
 
 plugins:
   - jemoji
