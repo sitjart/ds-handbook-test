@@ -3,15 +3,15 @@ title_url: /case_studies
 subitems:
   - title: DTLS Interest Group
     description: 
-    url: /DTLS_interest_group
+    url: /dtls_interest_group
     subitems:
       - title: Context
-        url: /about_DTLS_interest_group
+        url: /about_DTLS
       - title: Model
-        url: /model_DTLS_interest_group
+        url: /model_DTLS
   - title: ELIXIR-UK Fellowship
     description:
-    url: /ELIXIR-UK_fellowship
+    url: /elixir_uk_fellowship
     subitems:
       - title: About
         url: /about_fellowship_uk
