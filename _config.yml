@@ -74,15 +74,16 @@ defaults:
       sidebar: about
   -
     scope:
-      path: "pages/training_materials"
+      path: "pages/case_studies"
     values:
-      sidebar: training_materials
-      type: training_materials
+      sidebar: case_studies
+      type: case_studies
   -
     scope:
-      path: "pages/training_materials/course_materials"
+      path: "pages/guidelines"
     values:
-      type: course_materials
+      sidebar: guidelines
+      type: guidelines
   -
     scope:
       path: "pages/training_materials/rdmbites"
