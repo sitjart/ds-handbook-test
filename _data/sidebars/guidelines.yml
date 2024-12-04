@@ -2,8 +2,8 @@ title: Guidelines
 title_url: /guidelines
 subitems:
   - title: DS Maturity
-    description: DS maturity
     url: /ds_maturity
+    subitems:
       - title: Test topic
         url: /topic-1
       - title: Test topic
