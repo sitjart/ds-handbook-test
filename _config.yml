@@ -48,6 +48,18 @@ defaults:
       type: case_studies
   -
     scope:
+      path: "pages/case_studies/ELIXIR_UK_fellowship"
+    values:
+      sidebar: case_studies
+      type: case_studies
+  -
+    scope:
+      path: "pages/case_studies/DTLS_interest_group"
+    values:
+      sidebar: case_studies
+      type: case_studies
+  -
+    scope:
       path: "pages/guidelines"
     values:
       sidebar: guidelines
