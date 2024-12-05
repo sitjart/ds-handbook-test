@@ -45,7 +45,6 @@ defaults:
       path: "pages/case_studies"
     values:
       type: case_studies
-      sidebar: case_studies
   -
     scope:
       path: "pages/case_studies/elixir_uk_fellowship"
@@ -62,7 +61,6 @@ defaults:
     scope:
       path: "pages/guidelines"
     values:
-      sidebar: guidelines
       type: guidelines
   -
     scope:
