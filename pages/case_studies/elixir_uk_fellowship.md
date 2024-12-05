@@ -11,3 +11,5 @@ training:
     registry: 
     url: 
 ---
+
+{% include section-navigation-tiles.html type="elixir_uk_fellowship"}

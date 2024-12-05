@@ -11,3 +11,5 @@ training:
     registry: 
     url: 
 ---
+
+{% include section-navigation-tiles.html type="dtls_interest_group"}
