@@ -44,35 +44,33 @@ defaults:
     scope:
       path: "pages/case_studies"
     values:
+      sidebar: case_studies
       type: case_studies
   -
     scope:
       path: "pages/case_studies/elixir_uk_fellowship"
     values:
-      sidebar: case_studies
       type: elixir_uk_fellowship
   -
     scope:
       path: "pages/case_studies/dtls_interest_group"
     values:
-      sidebar: case_studies
       type: dtls_interest_group
   -
     scope:
       path: "pages/guidelines"
     values:
       type: guidelines
+      sidebar: guidelines
   -
     scope:
       path: "pages/guidelines/ds_maturity"
     values:
-     sidebar: guidelines
      type: maturity
   -
     scope:
       path: "pages/guidelines/professionalising_ds"
     values:
-     sidebar: guidelines
      type: professionalising
 
 plugins:
