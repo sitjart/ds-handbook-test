@@ -12,4 +12,4 @@ training:
     url: 
 ---
 
-{% include section-navigation-tiles.html type="elixir_uk_fellowship"}
+{% include section-navigation-tiles.html type="elixir_uk_fellowship" %}

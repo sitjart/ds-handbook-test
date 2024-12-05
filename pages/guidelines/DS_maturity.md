@@ -7,4 +7,4 @@ page_id:
 related_pages: 
 ---
 
-{% include section-navigation-tiles.html type="maturity"}
+{% include section-navigation-tiles.html type="maturity" %}
