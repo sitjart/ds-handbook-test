@@ -2,12 +2,5 @@
 title: About ELIXIR-UK Fellowship
 description: 
 contributors: 
-page_id: 
-related_pages: 
-  your_tasks: 
-  tool_assembly: 
-training:
-  - name: 
-    registry: 
-    url: 
+page_id: about_fellowship_uk
 ---

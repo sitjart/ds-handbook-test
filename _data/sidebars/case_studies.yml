@@ -6,9 +6,9 @@ subitems:
     url: /dtls_interest_group
     subitems:
       - title: Context
-        url: /about_DTLS
+        url: /about_dtls
       - title: Model
-        url: /model_DTLS
+        url: /model_dtls
   - title: ELIXIR-UK Fellowship
     description:
     url: /elixir_uk_fellowship
