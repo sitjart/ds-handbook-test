@@ -1,7 +1,7 @@
 ---
 title: About
 description: Welcome to the Data Steward Handbook, an ELIXIR Research Data Management (RDM) Community resource that offers practical guidance to data stewards on relevant topics in their daily job, encouraging the use of existing resources and best practices to improve local data management.
-contributors: [Marina Popleteeva, Nazeefa Fatima, Diana Pilvar, Amir Szitenberg, Niclas Jareborg, Helena Schnitzer, Flavio Licciulli, Carmen Reverté, Bojan Kverh, Teresa D'Altri, Paulette Lieby, Gil Poiares-Oliveira, Jeanne Wilbrandt, Katharina Heil, Elin Kronander]
+contributors: [Marina Popleteeva, Nazeefa Fatima, Diana Pilvar, Amir Szitenberg, Niclas Jareborg, Helena Schnitzer, Flavio Licciulli, Carmen Reverté, Bojan Kverh, Teresa D'Altri, Paulette Lieby, Gil Poiares-Oliveira, Jeanne Wilbrandt, Katharina Heil, Elin Kronander, Danny Ben-Avraham, John Hancock]
 page_id: about
 ---
 
