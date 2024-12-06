@@ -42,18 +42,18 @@ defaults:
       sidebar: about
   -
     scope:
-      path: "pages/case_studies"
+      path: "pages/case-studies"
     values:
       sidebar: case_studies
       type: case_studies
   -
     scope:
-      path: "pages/case_studies/elixir_uk_fellowship"
+      path: "pages/case-studies/elixir-uk-fellowship"
     values:
       type: elixir_uk_fellowship
   -
     scope:
-      path: "pages/case_studies/dtls_interest_group"
+      path: "pages/case-studies/dtls-interest-group"
     values:
       type: dtls_interest_group
   -
@@ -64,12 +64,12 @@ defaults:
       sidebar: guidelines
   -
     scope:
-      path: "pages/guidelines/ds_maturity"
+      path: "pages/guidelines/ds-maturity"
     values:
      type: maturity
   -
     scope:
-      path: "pages/guidelines/professionalising_ds"
+      path: "pages/guidelines/professionalising-ds"
     values:
      type: professionalising
 

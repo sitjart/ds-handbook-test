@@ -1,8 +1,7 @@
 ---
-title: Topic 3
-search_exclude: true
+title: DTLS model
 description: coming soon...
 contributors: 
-page_id: 
+page_id: model_dtls
 related_pages: 
 ---

@@ -2,7 +2,7 @@ title: Guidelines
 title_url: /guidelines
 subitems:
   - title: DS Maturity
-    url: /ds_maturity
+    url: /ds-maturity
     subitems:
       - title: Test topic
         url: /topic-1
@@ -10,4 +10,4 @@ subitems:
         url: /topic-2
   - title: Professionalising DS
     description:
-    url: /professionalising_ds
+    url: /professionalising-ds
