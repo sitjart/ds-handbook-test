@@ -67,7 +67,11 @@ defaults:
       path: "pages/guidelines/community"
     values:
      type: guidelines-community
-
+  -
+    scope:
+      path: "pages/guidelines/rdm-strategy"
+    values:
+     type: rdm-strategy
   -
     scope:
       path: "pages/maturity-model"

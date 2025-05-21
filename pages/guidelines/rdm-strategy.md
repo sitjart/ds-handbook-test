@@ -6,4 +6,4 @@ page_id:
 related_pages: 
 ---
 
-{% include section-navigation-tiles.html type="guidelines-strategy" %}
+{% include section-navigation-tiles.html type="rdm-strategy" %}
