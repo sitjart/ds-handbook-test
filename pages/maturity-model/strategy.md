@@ -2,7 +2,7 @@
 title: Strategy and Sustainability
 description: coming soon...
 contributors: 
-page_id: 
+page_id: strategy
 related_pages: 
 ---
 
