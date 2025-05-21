@@ -69,7 +69,7 @@ defaults:
      type: guidelines-community
   -
     scope:
-      path: "pages/guidelines/strategy"
+      path: "pages/guidelines/rdm-strategy"
     values:
      type: guidelines-strategy
   -
