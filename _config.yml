@@ -77,7 +77,29 @@ defaults:
       values:
         sidebar: maturity-model
         type: maturity-model
-
+  -
+      scope:
+        path: "pages/maturity-model/strategy"
+      values:
+        sidebar: maturity-model
+        type: mm-strategy
+  -
+      scope:
+        path: "pages/maturity-model/legal"
+      values:
+        sidebar: maturity-model
+        type: mm-legal
+          -
+      scope:
+        path: "pages/maturity-model/data"
+      values:
+        sidebar: maturity-model
+        type: mm-data
+      scope:
+        path: "pages/maturity-model/support"
+      values:
+        sidebar: maturity-model
+        type: mm-support
 plugins:
   - jemoji
   - jekyll-redirect-from
