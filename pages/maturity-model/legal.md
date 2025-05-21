@@ -2,7 +2,7 @@
 title: Legal and governance
 description: coming soon...
 contributors: 
-page_id: 
+page_id: legal
 related_pages: 
 ---
 
