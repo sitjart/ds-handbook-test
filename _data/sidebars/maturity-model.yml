@@ -25,6 +25,7 @@ subitems:
   - title: Legal and governance
     description:
     url: /legal
+    subitems:
       - title: Ethics
         url: /legal-ethics
       - title: Framework
