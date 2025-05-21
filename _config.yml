@@ -56,6 +56,7 @@ defaults:
       path: "pages/case-studies/nl"
     values:
       type: nl
+  -
     scope:
       path: "pages/guidelines"
     values:
@@ -72,30 +73,32 @@ defaults:
     values:
      type: guidelines-strategy
   -
-      scope:
-        path: "pages/maturity-model"
-      values:
-        sidebar: maturity-model
-        type: maturity-model
+    scope:
+      path: "pages/maturity-model"
+    values:
+      sidebar: maturity-model
+      type: maturity-model
   -
-      scope:
-        path: "pages/maturity-model/strategy"
-      values:
-        type: mm-strategy
+    scope:
+      path: "pages/maturity-model/strategy"
+    values:
+      type: mm-strategy
   -
-      scope:
-        path: "pages/maturity-model/legal"
-      values:
-        type: mm-legal
-          -
-      scope:
-        path: "pages/maturity-model/data"
-      values:
-        type: mm-data
-      scope:
-        path: "pages/maturity-model/support"
-      values:
-        type: mm-support
+    scope:
+      path: "pages/maturity-model/legal"
+    values:
+      type: mm-legal
+  -
+    scope:
+      path: "pages/maturity-model/data"
+    values:
+      type: mm-data
+  -
+    scope:
+      path: "pages/maturity-model/support"
+    values:
+      type: mm-support
+
 plugins:
   - jemoji
   - jekyll-redirect-from
