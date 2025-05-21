@@ -5,7 +5,6 @@ contributors: [Marina Popleteeva, Nazeefa Fatima, Diana Pilvar, Amir Szitenberg,
 page_id: about
 ---
 
-# Data Steward Handbook
 Last updated: [3 December, 2024]
 
 Welcome to the Data Steward Handbook, an [ELIXIR Research Data Management (RDM) Community](https://elixir-europe.org/communities/research-data-management) resource that offers practical guidance to data stewards on relevant topics in their daily job, encouraging the use of existing resources and best practices to improve local data management.

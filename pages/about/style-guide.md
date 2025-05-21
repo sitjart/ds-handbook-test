@@ -1,5 +1,5 @@
 ---
-title: DS Handbook style guide
+title: Style guide
 description: Style guidelines for Data Steward Handbook
 contributors: [Marina Popleteeva, Helena Schnitzer, Bojan Kverh, Flavio Licciulli, Carmen Reverté, Diana Pilvar]
 page_id: style_guide

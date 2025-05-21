@@ -1,5 +1,5 @@
 ---
-title: 
+title: ELIXIR UK Fellowship
 description: 
 contributors: 
 page_id: 
@@ -11,3 +11,5 @@ training:
     registry: 
     url: 
 ---
+
+{% include section-navigation-tiles.html type="elixir_uk_fellowship" %}

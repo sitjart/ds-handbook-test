@@ -5,9 +5,7 @@ subitems:
   - title: Guidelines
     url: /guidelines
   - title: Case studies
-    url: /case_studies
-  - title: (Test)
-    url: /training_materials
+    url: /case-studies
+  - title: Maturity Model
   - title: About
     url: /about
-
