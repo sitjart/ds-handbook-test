@@ -37,6 +37,7 @@ subitems:
   - title: Support
     description:
     url: /support
+    subitems:
       - title: Training
         url: /support-training
       - title: Training materials
@@ -52,6 +53,7 @@ subitems:
   - title: Data
     description:
     url: /data
+    subitems:
       - title: Accessibility
         url: /data-accessibility
       - title: Assets
