@@ -64,7 +64,7 @@ defaults:
       sidebar: guidelines
   -
     scope:
-      path: "pages/guidelines/support"
+      path: "pages/guidelines/g-support"
     values:
      type: guidelines-support
   -
