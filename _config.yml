@@ -64,9 +64,9 @@ defaults:
       sidebar: guidelines
   -
     scope:
-      path: "pages/guidelines/community"
+      path: "pages/guidelines/support"
     values:
-     type: guidelines-community
+     type: guidelines-support
   -
     scope:
       path: "pages/guidelines/rdm-strategy"
