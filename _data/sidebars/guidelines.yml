@@ -1,13 +1,16 @@
 title: Guidelines
 title_url: /guidelines
 subitems:
-  - title: DS Maturity
-    url: /ds-maturity
+  - title: Support
+    url: /g-support
+    subitems:
+      - title: Communication
+        url: /g-support-communication
+  - title: RDM Strategy
+    description:
+    url: /rdm-strategy
     subitems:
       - title: Test topic
         url: /topic-1
       - title: Test topic
         url: /topic-2
-  - title: Professionalising DS
-    description:
-    url: /professionalising-ds
