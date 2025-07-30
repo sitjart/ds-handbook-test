@@ -76,29 +76,6 @@ section#search-section {
     
 }
 
-/*-----Spacing layout-----*/
-
-@include media-breakpoint-up(xl) {
-    #main:has(.landingpage) {
-        display: block;
-    }
-}
-
-#main {
-    background-color: $light;
-    border-radius: $border-radius;
-    padding: $spacer * 3;
-    margin-bottom: $spacer * 3;
-    #content {
-        margin-bottom: 0 !important;
-    }
-}
-
-@include media-breakpoint-down(sm) {
-    #main {
-        padding: $spacer * 0.75;
-    }
-}
 
 /*-----Section navigation tiles-----*/
 
