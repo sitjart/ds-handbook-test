@@ -1,69 +1,73 @@
 ---
-title: Flow of RDM communication and responsiveness
+title: RDM information / guidelines for researchers
 description: coming soon...
 contributors: 
 page_id: 
-related_pages: [support-communication]
+related_pages: [support-guidelines]
 ---
 
 ## Context
-The way in which research data management (RDM) information flows within an organisation and how staff can interact with it plays a central role in the maturity of RDM support. Effective RDM depends not only on the availability of policies, tools, and guidelines, but also on how they are communicated and whether researchers can engage with them meaningfully.
+Research data management (RDM) guidance forms the backbone of responsible data practice. When such guidance is clear, accessible, and well-maintained, it enables researchers to act autonomously, comply with funder and institutional requirements, and engage with FAIR and open science in a meaningful way. However, in many institutions, RDM information remains fragmented, hard to find, or inconsistently maintained, making even the most motivated researchers dependent on personal contacts or ad hoc support. 
 
-Many institutions still rely on top-down, one-directional messaging: guidelines are issued but rarely discussed, questioned, or adapted based on actual feedback. Without structures for interaction, staff struggle to raise concerns, propose improvements, or access timely support. This weakens uptake, erodes trust, and disconnects RDM services from real-world practice.
+The availability and visibility of guidance materials, such as data policies, DMP templates, file naming conventions, or metadata standards, serve as a key signal of institutional maturity. Good guidance is not just published; it is proactively communicated, clearly structured, and kept up to date. Without deliberate maintenance and promotion, outdated documents and buried intranet pages undermine trust and make it harder for staff to deliver consistent support. 
 
-Responsiveness is a signal of institutional commitment. When RDM teams are visible, trusted, and resourced to answer questions and track feedback, it reflects leadership’s investment in dialogue and continuous improvement. Conversely, delays or silence often point to structural gaps: understaffing, low awareness, or minimal buy-in.
+This challenge is especially pronounced in federated or decentralised environments, such as ELIXIR Nodes or research institutions with distributed support teams. In these settings, alignment across levels is essential. National tools like RDMkit and FAIRsharing can provide a foundation, but local contextualisation and visibility remain critical. A template or checklist is only useful if researchers can find it, understand it, and trust that it is current. 
 
-Insights from ELIXIR Node self-assessments reveal a spectrum of practice – from ad hoc or opaque channels to strong feedback loops with helpdesks, open office hours, or community formats like RDM breakfasts. Institutions that enable two-way communication demonstrate that they value not just information delivery, but the relationships and responsiveness that underpin effective research data management.
+Data stewards play a key role in ensuring that guidance is not just written, but usable. They help select appropriate communication channels, embed resources in onboarding or training materials, and keep track of evolving standards and requirements. Institutions that assign clear responsibilities for guidance maintenance, promote content through multiple entry points, and review materials regularly are more likely to build trust, reduce redundant support requests, and foster sustainable RDM practice.
 
 ## Guidelines
-The following tips support data stewards and their institutions in progressing along the maturity indicator for communication and responsiveness. They are organised around five core areas: visibility, accessibility, feedback, responsiveness, and institutional integration, aligned with Node experiences and established support models.
+The following tips support data stewards and their institutions in progressing along the maturity indicator for RDM information and guidelines. They are organised around four core areas: centralisation, visibility, maintenance, and communication, aligned with Node experiences and established support models.
 
-### Make RDM support visible and findable
+### Centralise RDM guidance
+1. Create a single access point
+Host all RDM guidance in one clearly structured platform (internal or public) covering the full research lifecycle, including policies, DMPs, metadata, consent, sharing, and storage.
+2. Structure by researcher workflow
+Organise content around research phases and user needs, not institutional structures.
+3. Integrate external resources 
+Link to trusted materials (e.g. RDMkit, FAIRsharing, DSW) with local context for applicability.
+4. Offer reusable formats, for example:
+* Downloadable and printable templates
+* Standardised DMP and consent form examples
+* Checklists and quick‑reference guides
 
-1. Use a consistent support identity
-Create a functional email address (e.g. rdm-support@...) and use it for all communication to ensure clarity and continuity.
-2. Increase presence in the institutional landscape
-Promote support roles in:
-* Onboarding materials and welcome emails
-* Newsletters or intranet pages
-* Hallway posters or slides at department meetings
+### Make RDM guidance visible and findable
+1. Link from strategic locations
+Ensure guidance is accessible from:
+* Library, ethics, IT, and research office portals
+* Onboarding and training platforms
+2. Design for quick uptake
+Use plain language, short paragraphs, headings, bullet points, and visuals. Avoid institutional or policy jargon.
+3. Optimise for search
+Tag pages with relevant keywords (e.g. FAIR, consent, metadata, DMP) to improve both internal and external discoverability. 
+4. Use physical-to-digital connections
+Add QR codes to:
+* Posters in research spaces
+* Flyers and slide decks for events and training
 
-### Offer clear and reliable communication channels
+### Maintain content quality and currency
+1. Assign ownership
+Appoint at least two named maintainers for each section to ensure continuity and shared accountability.
+2. Show update history
+Timestamp pages and use version control to build trust in currency. 
+3. Review regularly
+Establish fixed review cycles (e.g. every 6–12 months) to:
+* Check accuracy and coverage
+* Update links and resources
+4. Align with policy changes
+Update content in response to:
+* New funder requirements
+* Legal or institutional changes
 
-1. Provide structured points of contact
-Establish predictable channels for support, such as helpdesks, shared inboxes, or advertised drop-in hours.
-2. Go where the researchers are
-Join regular activities to stay visible and build trust:
-* Lab meetings
-* Working groups
-* Orientation events
-
-### Encourage and normalise feedback
-
-1. Invite questions proactively
-Include feedback prompts in emails, presentations, or onboarding slides to make asking questions feel normal.
-2. Track what comes in
-Use a simple format to log input and improve consistency over time, such as a shared spreadsheet or form.
-3. Dedicate time to follow up
-Set aside hours specifically for responding to questions and reflecting on service quality.
-
-### Demonstrate that feedback leads to improvement
-
-1. Communicate visible change
-Let researchers know when their input results in updates to templates, guidance, or policies. 
-2. Use patterns to strengthen support
-Recurring questions can highlight unclear guidance or missing resources. Use them to guide improvements.
-3. Share back through existing channels
-Update your community via:
-* Internal newsletters or “RDM tip” sections
-* Team briefings or training events
-
-### Embed RDM communication into institutional workflows
-
-1. Position support at key moments
-Align contact points with research milestones such as project registration, data deposit, or ethics review.
-2. Participate in cross-functional structures
-Ensure communication roles are represented in:
-* Grant writing teams
-* Infrastructure planning groups
-* Research governance meetings
+### Communicate and embed guidance
+1. Promote updates proactively
+* Announce new or revised content via:
+* Newsletters, mailing lists, and Slack
+* Intranet news items or targeted emails
+2. Integrate into onboarding and training
+Include references in:
+* Welcome packs and orientation sessions
+* PhD programmes and lab induction processes
+3. Encourage bookmarking and subscriptions
+Invite researchers to save the RDM page or subscribe to alerts during onboarding or training.
+4. Gather and act on feedback
+Collect input through forms, surveys, or training follow‑ups, and use it to refine guidance and fill content gaps.
