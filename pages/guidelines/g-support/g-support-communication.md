@@ -3,8 +3,6 @@ title: Flow of RDM communication and responsiveness
 description: coming soon...
 contributors: 
 page_id: 
-related_pages: 
-  maturity-model: [support-communication]
 ---
 
 ## Context
