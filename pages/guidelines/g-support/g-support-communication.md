@@ -4,7 +4,7 @@ description: coming soon...
 contributors: 
 page_id:
 related_pages:
-    maturity-model: [support-communication]
+    maturity-model: [support]
 ---
 
 ## Context
