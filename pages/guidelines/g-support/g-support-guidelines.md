@@ -1,9 +1,9 @@
 ---
-title: RDM information / guidelines for researchers
+title: "RDM information or guidelines for researchers"
 description: coming soon...
 contributors: 
 page_id: 
-related_pages: [support-guidelines]
+related_pages:
 ---
 
 ## Context

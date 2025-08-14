@@ -3,7 +3,7 @@ title: RDM Expert Network
 description: coming soon...
 contributors: 
 page_id: 
-related_pages: [support-networks]
+related_pages:
 ---
 
 ## Context
