@@ -6,7 +6,7 @@ page_id:
 ---
 
 ## What this indicator measures
-This indicator assesses the level of GDPR and data protection compliance, the implementation of roles and compliance systems within the organisation. 
+This indicator assesses the availability and use of standardised frameworks, templates, and procedures for legal tasks within the Organisation or Node. It considers whether legal processes are in place at project initiation, how consistently they are supported, and how prepared staff are required to apply them. Maturity reflects the organisation’s or Node’s ability to handle legal issues proactively through dedicated personnel and well-maintained resources.
 
 ### Special cases
 In some instances, legal services are outsourced or bought in. In this case, the maturity levels are not scored as 1; they can either be evaluated on the level of the umbrella organisation or marked ‘not applicable’.
