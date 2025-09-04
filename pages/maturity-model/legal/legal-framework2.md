@@ -1,11 +1,11 @@
 ---
-title: Data protection compliancy of research data
+title: Legal framework for research data
 description: 
 contributors: 
 page_id: 
 ---
 ## What this indicator measures
-This indicator assesses the level of GDPR and data protection compliance, the implementation of roles and compliance systems within the organisation. 
+TEXT
 
 ### Special cases
 In some instances, legal services are outsourced or bought in. In this case, the maturity levels are not scored as 1; they can either be evaluated on the level of the umbrella organisation or marked ‘not applicable’.
