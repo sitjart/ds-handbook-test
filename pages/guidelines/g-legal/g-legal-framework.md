@@ -27,7 +27,7 @@ Relevant links:
 
 TEXT
 
-###Create specific procedures for researchers to follow and consult (e.g., a decision map)
+### Create specific procedures for researchers to follow and consult (e.g., a decision map)
 
 Relevant links: 
 [GDPR Decision Tree](https://ec.europa.eu/assets/rtd/ethics-data-protection-decision-tree/index.html)
