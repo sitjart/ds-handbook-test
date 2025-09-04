@@ -1,9 +1,10 @@
 ---
-title: Data protection compliancy of research data
+title: Framework
 description: 
 contributors: 
 page_id: 
 ---
+
 ## What this indicator measures
 This indicator assesses the level of GDPR and data protection compliance, the implementation of roles and compliance systems within the organisation. 
 
