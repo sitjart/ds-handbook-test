@@ -24,41 +24,6 @@
     margin-top: $spacer * 0.5;
 }
 
-/* -----Homepage----- */
-
-.landingpage {
-
-    .h-icon-6 {
-        height: 6em;
-        justify-content: left;
-        padding-bottom: 20px;
-    }
-    .h-icon-5 {
-        height: 5em;
-    }
-    .h-icon-4 {
-        height: 4em;
-    }
-
-    h1 {
-        font-size: 4rem;
-        font-weight: 800 !important;
-    }
-
-    h2 {
-        font-weight: 700 !important;
-        font-family:  $font-family-theme;
-        color: $dark-blue !important;
-    }
-
-    h3 {
-        font-weight: 400 !important;
-        font-family:  $font-family-theme;
-        color: $blue !important;
-    }
-
-}
-
 // Search box
 
 section#search-section {
@@ -76,53 +41,102 @@ section#search-section {
     
 }
 
+/*== Landing page styles ===*/
 
-/*-----Section navigation tiles-----*/
-
-.navigation-tiles {
-    .card:hover {
-        box-shadow: $box-shadow;
-    }
-
-    .card-header {
-        a:hover {
-            text-decoration: none;
-        }
-        h3 {
-            font-size: 1.2rem;
-        }
-    }
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+	padding-left: 25px;
+	padding-right: 25px;
+	position: relative
 }
 
-.navbar-nav .nav-item > a.active {
-    background-color: $blue;
-    color: #fff !important;
+ul {
+	padding: 0;
+	margin: 0;
 }
 
-.navigation-tiles .card button {
-    background-color: $blue !important;
-    color: $light !important;
+.btn.btn-primary {
+	background-color: #0E7DFF;
 }
 
-.navigation-tiles .card button:hover {
-    background-color: $light-blue !important;
-    color: $dark-blue !important;
+.btn.btn-primary:hover {
+	background-color: #005fcf;
 }
 
-.navigation-tiles .card .card-header a {
-    color: $blue !important;
-    text-decoration: none !important;
+
+.btn:focus,
+.btn-close:focus {
+	box-shadow: none;
+
 }
 
-.navigation-tiles .card .card-header {
-    background-color: $light-blue;
-    text-decoration: none !important;
+.section-title {
+	font-size: 2.5em;
+	font-weight: 700;
+	text-align: center;
+	color: #1F1F39;
+	margin-bottom: 18px;
 }
 
-.stretched-link a {
-    text-decoration: none !important;
+.section-subtitle {
+	font-size: 1em;
+	color: rgba(31, 31, 57, 0.5);
+	text-align: center;
+	line-height: 28px;
+
 }
-/*== banner styles landing page ===*/
+
+.title-top {
+	font-size: 0.75em;
+	font-weight: 700;
+	color: rgba(31, 31, 57, 0.5);
+	letter-spacing: 2px;
+}
+
+.app-download {
+	display: flex;
+	gap: 45px;
+	justify-content: center;
+}
+
+.app-download div {
+	border: 2px solid #1F1F39;
+	height: 90px;
+	width: 280px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 20px;
+	transition: 0.3s all;
+
+}
+
+.app-download div:hover {
+	transform: scale(1.05);
+}
+
+.app-download div a {
+	text-decoration: none;
+
+}
+
+.app-download div a span {
+	margin-left: 15px;
+}
+
+.main-content {
+	overflow-x: hidden;
+}
+
+input:focus {
+	border: none;
+	outline: none;
+}
 
 .banner-section {
 	background-color: #FFF0E9;
@@ -210,141 +224,6 @@ section#search-section {
 	text-decoration: none;
 }
 
-
-/*=====Features in landing page ====*/
-
-.features-area {      
-    padding-top: 120px;
-    margin-bottom: 250px;
-    position: relative;
-    z-index: 5;
-    overflow: hidden;
-
-    &::before{
-          position: absolute;
-          content: '';
-          background-color: $light;
-          width: 100%;
-          height: 80%;
-          top: 0;
-          left: 0;
-          z-index: -1;
-    }
-}
-
-.features-wrapper{
-    padding-top: 18px;
-}
-
-h2 {
-    &.title{
-        font-size: 50px;
-        font-weight: 300; 
-    }
-}
-
-.single-features{
-    background-color: $white;
-    box-shadow: (0px 10px 30px 0px rgba(0, 0, 0, 0.05));
-    padding: 60px 60px 23px;
-    position: relative;
-    margin-top: 30px;
-    margin-bottom: 65px;
-    border-radius: 5px;
-    @include transition(0.3s);
-    position: relative;
-    z-index: 5;   
-    
-
-    &::before{
-          position: absolute;
-          content: '';
-          bottom: -170px;
-          right: -170px;
-          width: 0;
-          height: 0;
-          border-bottom: 170px solid rgba($light, 0.2);
-          border-left: 170px solid transparent;
-          z-index: -1;
-          opacity: 0;
-          visibility: hidden;
-          @include transition(0.3s);
-    }
-   
-    & .features-content{
-          & .features-title{
-                & a{
-                      font-size: 26px;
-                      line-height: 24px;
-                      font-weight: 800;
-                      color: $dark-blue;
-                      @include transition(0.3s);
-                      margin-top: 32px;
-                      text-decoration: none;
-                }
-          }
-          & p{
-                margin-top: 10px;
-                @include transition(0.3s);
-          }
-    }
-    
-
-    &.features-1{
-
-          &:hover{
-                background-color: $light-orange;
-
-                & .features-content{
-                      & .features-title{
-                            & a{
-                                  color: $orange;
-                            }
-                      }
-                      & p{
-                            color: $dark-blue;
-                      }
-                }
-          }
-    }
-    
-
-    &:hover{
-
-          &::before{
-                bottom: 0;
-                right: 0;
-                opacity: 1;
-                visibility: visible;
-          }
-    }
-}
-
-/* Uniform Feature Box Styling */
-.features-wrapper .row > div {
-    display: flex;
-    align-items: stretch;
-}
-.single-features {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
-.features-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.features-content h4,
-.features-content p {
-    margin: 0;
-}
-
 /*-----Top navigation-----*/
 
 .navbar-nav .nav-item > a {
@@ -353,44 +232,6 @@ h2 {
         background-color: $blue;
         border-radius: $border-radius;
     }
-}
-
-/*----- Buttons -----*/
-.home-button {
-    display: block;
-    float: left;
-    margin: 10px auto;
-    background-color: $orange;
-    color: #fff;
-    border:none;
-    border-radius: 10px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    text-decoration: none;
-    padding: 10px;
-    position: fixed; /* Added for back-to-top button positioning */
-    bottom: 20px; /* Added for back-to-top button positioning */
-    right: 20px; /* Added for back-to-top button positioning */
-    display: none; /* Ensure it is hidden initially */
-    z-index: 100; /* Ensure it appears on top of other elements */
-    
-}
-
-.home-button:hover {
-    background-color: $blue;
-    transition: 0.7s;
-}
-
-.home a{
-    text-decoration: none;
-}
-
-.stretched-link a{
-    text-decoration: none;
-}
-
-.undefined a{
-    text-decoration: none;
-    color: $blue;
 }
 
 /* paddin/margin for back-to-top button */
