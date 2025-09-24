@@ -71,7 +71,7 @@ section#search-section {
     height: 100%;
   }
 /* ===================================
-    1. Common CSS
+Common CSS
 ====================================== */
 
 .block {
@@ -263,19 +263,19 @@ body {
     font-size: 18px;
     line-height: 35px;
     font-weight: 400;
-    color: #b3b3b3;
-    background-color: #ffffff;
+    color: $background-light-home;
+    background-color: $white;
     overflow-x: hidden;
 }
 
 body a {
     text-decoration: none;
-    color: #47ea4e;
+    color: $link-color;
     transition: color .3s ease;
 }
 
 body a:hover {
-    color: #47ea4e; 
+    color: $link-color; 
 }
 
 body p, 
@@ -288,25 +288,6 @@ body pre {
     max-height: 100%;
     width: auto;
     height: auto;
-}
-
-.doc-loader {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 99999;
-    background-color: #000;
-}
-
-.doc-loader img {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 50%;    
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .content-1170 {
@@ -330,222 +311,29 @@ body pre {
     padding: 200px 0 115px 0;
 }
 
-
 /* ===================================
-    2.1 Global Header Logo/Menu CSS
+General Home Section CSS
 ====================================== */
-
-.header-holder {
-    z-index: 99 !important;
-    background-color: #060606;
-    width: 100% !important;
-    top: 0;
-    position: fixed;
-    -webkit-transform: translateZ(0);    
+#home {    
+    background-image: url(images/hero_image_01.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: calc(100vh - 77px);    
+    display: flex;
 }
 
-.sticky-wrapper {
-    height: 77px !important;
+#home .section-wrapper {
+    margin: auto;
+    padding: 0;
 }
 
-.menu-wrapper {
-    width: 98%;
-    max-width: 1450px;
-    min-height: 77px;
-}
-
-.header-logo {
-    line-height: 0;
-    font-size: 0;
-    float: left;
-    position: absolute;
-    transform: translateY(-50%);
-    top: 50%;
-}
-
-.header-logo img {
-    width: 88px;
-    height: 50px;
-}
-
-.menu-holder {
-    float: right;
-    max-width: 85%;
-}
-
-.toggle-holder {
-    display: none;
-    right: 10px;
-    z-index: 1;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-#toggle:hover {
-    cursor: pointer;
-}
-
-#toggle div {
-    height: 3px;
-    margin-bottom: 6px;
-    background-color: #fff;
-    width: 22px;
-}
-
-#toggle .second-menu-line {
-    -webkit-transition: -webkit-transform 0.3s ease;
-    transition: transform 0.3s ease;    
-    -webkit-transform: translate3d(10px,0,0);
-    transform: translate3d(10px,0,0);
-}
-
-#toggle:hover .second-menu-line {
-    -webkit-transform: translate3d(0,0,0) !important;
-    transform: translate3d(0,0,0) !important;
-}
-
-#toggle.on .second-menu-line {
-    -webkit-transform: translate3d(-10px,0,0);
-    transform: translate3d(-10px,0,0);
-}
-
-#toggle .third-menu-line{        
-    margin-bottom: 5px;
-}
-
-#header-main-menu {
-    display: inline-block;
-}
-
-.sm-clean .has-submenu {
-    padding-right: 35px !important;
-}
-
-.sm-clean li a.menu-item-link {
-    cursor: pointer;
-    color: #ffffff;
-}
-
-.sm-clean a span.sub-arrow {
-    right: 3px;
-}
-
-.sm-clean a.highlighted {
-    padding: 15px;
-}
-
-.sm-clean a, 
-.sm-clean a:hover, 
-.sm-clean a:focus, 
-.sm-clean a:active {
-    font-size: 14px;
-    font-weight: 400;
-    transition: color .3s ease, 
-        background-color .3s ease;
-    padding: 15px;
-    letter-spacing: 0.5px;
+h1.big-text {
     color: #fff;
+    font-size: 80px;
+    line-height: 120%;
+    margin-bottom: 40px;
 }
-
-.sm-clean ul a, 
-.sm-clean ul a:hover, 
-.sm-clean ul a:focus, 
-.sm-clean ul a:active {    
-    font-size: 13px;
-    line-height: 15px;
-    padding: 10px;
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
-}
-
-.sm-clean {
-    background-color: transparent;        
-    padding: 15px 0;
-}
-
-body .sm-clean a:hover, 
-body .main-menu.sm-clean .sub-menu li a:hover, 
-body .sm-clean li.active a, 
-body .sm-clean li.current-page-ancestor > a, 
-body .sm-clean li.current_page_ancestor > a, 
-body .sm-clean li.current_page_item > a {
-    color: #47ea4e;
-}
-
-.sm-clean li {
-    margin-right: 10px;
-}
-
-.sm-clean li:last-child {
-    margin-right: 0;
-}
-
-.sm-clean ul {    
-    background-color: #000;
-}
-
-.sm-clean a.has-submenu {
-    padding-right: 24px;
-}
-
-.sub-menu a, 
-.children a {
-    padding-left: 15px !important;
-}
-
-.sub-menu .sub-menu, 
-.children .children {
-    padding-top: 8px;
-}
-
-.sub-menu .sub-menu a, 
-.children .children a, 
-.sub-menu .sub-menu a:hover, 
-.children .children a:hover {
-    padding-top: 10px !important;
-}
-
-@media (min-width: 925px) {
-
-    .sm-clean ul a span.sub-arrow {
-        margin-top: 0;
-    }
-    .sm-clean ul {
-        padding: 8px 0;
-    }
-}
-
-@media (max-width: 925px) {
-
-    .sm-clean ul {
-        background-color: #fff;
-    }
-
-}
-
-.sm-clean > li:last-child > a, 
-.sm-clean > li:last-child > *:not(ul) a, 
-.sm-clean > li:last-child > ul, 
-.sm-clean > li:last-child > ul > li:last-child > a, 
-.sm-clean > li:last-child > ul > li:last-child > *:not(ul) a, 
-.sm-clean > li:last-child > ul > li:last-child > ul, 
-.sm-clean > li:last-child > ul > li:last-child > ul > li:last-child > a, 
-.sm-clean > li:last-child > ul > li:last-child > ul > li:last-child > *:not(ul) a, 
-.sm-clean > li:last-child > ul > li:last-child > ul > li:last-child > ul, 
-.sm-clean > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > a, 
-.sm-clean > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > *:not(ul) a, 
-.sm-clean > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > ul, 
-.sm-clean > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > a, 
-.sm-clean > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > *:not(ul) a, 
-.sm-clean > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > ul {
-    border-radius: 5px;
-}
-
-
-/* ===================================
-    2.2 General Section CSS
-====================================== */
 
 .section {
     position: relative;    
@@ -555,7 +343,7 @@ body .sm-clean li.current_page_item > a {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #47ea4e;
+    background-color: $link-color;
     width: 285px;
     display: inline-block;
     z-index: 98;
@@ -568,7 +356,7 @@ body .sm-clean li.current_page_item > a {
     height: 0;
     border-style: solid;
     border-width: 130px 60px 0 0;
-    border-color: #47ea4e transparent transparent transparent;
+    border-color: $link-color transparent transparent transparent;
     position: absolute;
     top: 0;
     right: 0;
@@ -581,13 +369,13 @@ body .sm-clean li.current_page_item > a {
     font-weight: 400;
     word-break: break-word;
     text-align: center;
-    color: #fff;
+    color: $white;
     letter-spacing: 2px;
     margin-top: 32px;
 }
 
 .page .page-content {
-    background-color: #fff;
+    background-color: $white;
     padding: 75px;    
 }
 
@@ -602,7 +390,7 @@ body .sm-clean li.current_page_item > a {
 }
 
 .medium-text {
-    color: #000;
+    color: $dark-deep;
     font-size: 60px;
     line-height: 120%;
     font-weight: 700;
@@ -613,26 +401,6 @@ body .sm-clean li.current_page_item > a {
     font-size: 16px;
     margin-bottom: 0;
     letter-spacing: 2px;
-}
-
-.info-text {
-    font-size: 22px;
-    line-height: 190%;
-    color: #000;
-}
-
-.info-code-title {
-    font-size: 16px;
-    color: #000;
-    letter-spacing: 2px;
-    margin-bottom: 0;
-    line-height: 120%;
-}
-
-.info-code-content, 
-.info-code-content a {
-    color: #b3b3b3;
-    margin-bottom: 30px;
 }
 
 .tp-bullet-title {
@@ -662,7 +430,7 @@ body .social a:hover {
 
 
 /* ===================================
-    2.3 Columns CSS
+Columns CSS
 ====================================== */
 
 .one_half,  
@@ -729,13 +497,13 @@ body .social a:hover {
 
 
 /* ===================================
-    2.4 Button CSS
+Buttons
 ====================================== */
 
 body a.button {
     display: inline-block;
-    color: #fff;
-    background-color: #47ea4e;
+    color: $white;
+    background-color: $link-color;
     text-align: left;
     padding: 10px 40px;
     cursor: pointer;
@@ -743,7 +511,7 @@ body a.button {
     text-decoration: none;
     transition: all .2s linear;
     margin-bottom: 17px;
-    border: 2px solid #47ea4e;
+    border: 2px solid $link-color;
     border-radius: 50px;
     font-size: 14px;
     letter-spacing: 2px;
@@ -752,17 +520,17 @@ body a.button {
 
 a.button:hover {
     background-color: transparent;
-    color: #47ea4e;
+    color: $link-color;
 }
 
 a.button-dot {
-    color: #fff !important;
+    color: $white !important;
     font-size: 16px;
     position: relative;
 }
 
 a.button-dot:hover {
-    color: #fff;    
+    color: $white;    
 }
 
 a.button-dot span {
@@ -780,7 +548,7 @@ a.button-dot:before {
     content: "";
     width: 30px;
     height: 30px;
-    border: 2px solid #fff;
+    border: 2px solid $white;
     background: transparent;
     border-radius: 90%;
     top: -7px;
@@ -850,7 +618,7 @@ a.button-dot:hover:before {
     font-size: 18px;
     line-height: 100%;
     letter-spacing: 4px;
-    color: white;
+    color: $white;
     display: inline-block;
     vertical-align: middle;
     margin: 0;
@@ -939,7 +707,7 @@ Home Section
 }
 
 h1.big-text {
-    color: white;
+    color: $white;
     font-size: 80px;
     line-height: 120%;
     margin-bottom: 40px;
@@ -970,7 +738,7 @@ Categories Section
 
 .category-txt h4 {
     font-size: 46px;
-    color: white;
+    color: $white;
     font-weight: 700;
     line-height: 110%;
 }
@@ -1098,7 +866,7 @@ li.counter > div {
 }
 
 li.counter h5 {
-    color: #fff;
+    color: $white;
     max-width: 240px;
     padding-top: 0;
     line-height: 115%;
@@ -1120,11 +888,11 @@ p.counter-num {
     font-weight: 700;
     position: relative;
     margin-bottom: 0;
-    color: #000000;
-    text-shadow: -1px 0 #f2f5f7, 
-        0 1px #f2f5f7, 
-        1px 0 #f2f5f7, 
-        0 -1px #f2f5f7;
+    color: $background-dark-home;
+    text-shadow: -1px 0 $light-x, 
+        0 1px $light-x, 
+        1px 0 $light-x, 
+        0 -1px $light-x;
 }
 
 
