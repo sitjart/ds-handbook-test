@@ -6,4 +6,4 @@ page_id: data
 related_pages: 
 ---
 
-{% include section-navigation-tiles.html type="mm-data" %}
+{% include section-navigation-tiles.html type="Maturity_Model_Data" %}

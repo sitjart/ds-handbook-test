@@ -45,59 +45,69 @@ defaults:
       path: "pages/case-studies"
     values:
       sidebar: case-studies
-      type: case-studies
+      type: Case_studies
   -
     scope:
-      path: "pages/case-studies/uk"
+      path: "pages/case-studies/case-studies-uk"
     values:
-      type: uk
+      type: UK
   -
     scope:
-      path: "pages/case-studies/nl"
+      path: "pages/case-studies/case-studies-nl"
     values:
-      type: nl
+      type: NL
+  -
+    scope:
+      path: "pages/case-studies/case-studies-fi"
+    values:
+      type: FI
   -
     scope:
       path: "pages/guidelines"
     values:
-      type: guidelines
+      type: Guidelines
       sidebar: guidelines
   -
     scope:
-      path: "pages/guidelines/g-support"
+      path: "pages/guidelines/guidelines-support"
     values:
-     type: guidelines-support
+     type: Guidelines_Support
   -
     scope:
-      path: "pages/guidelines/rdm-strategy"
+      path: "pages/guidelines/guidelines-legal"
     values:
-     type: rdm-strategy
+     type: Guidelines_Legal
+  -
+    scope:
+      path: "pages/guidelines/guidelines-rdm-strategy"
+    values:
+     type: Guidelines_RDM_Strategy
   -
     scope:
       path: "pages/maturity-model"
     values:
       sidebar: maturity-model
-      type: maturity-model
+      type: Maturity_Model
   -
     scope:
-      path: "pages/maturity-model/strategy"
+      path: "pages/maturity-model/mm-strategy"
     values:
-      type: mm-strategy
+      type: Maturity_Model_Strategy
   -
     scope:
-      path: "pages/maturity-model/legal"
+      path: "pages/maturity-model/mm-legal"
     values:
-      type: mm-legal
+      type: Maturity_Model_Legal
   -
     scope:
-      path: "pages/maturity-model/data"
+      path: "pages/maturity-model/mm-data"
     values:
-      type: mm-data
+      type: Maturity_Model_Data
   -
     scope:
-      path: "pages/maturity-model/support"
+      path: "pages/maturity-model/mm-support"
     values:
-      type: mm-support
+      type: Maturity_Model_Support
 
 scholar:
   style: _bibliography/nature_custom.csl

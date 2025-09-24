@@ -6,4 +6,4 @@ page_id: strategy
 related_pages: 
 ---
 
-{% include section-navigation-tiles.html type="mm-strategy" %}
+{% include section-navigation-tiles.html type="Maturity_Model_Strategy" %}

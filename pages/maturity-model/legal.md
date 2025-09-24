@@ -6,4 +6,4 @@ page_id: legal
 related_pages: 
 ---
 
-{% include section-navigation-tiles.html type="mm-legal" %}
+{% include section-navigation-tiles.html type="Maturity_Model_Legal" %}

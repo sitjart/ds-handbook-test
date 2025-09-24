@@ -4,4 +4,4 @@ title: Guidelines
 
 Guidelines go here...
 
-{% include section-navigation-tiles.html type="guidelines" %}
+{% include section-navigation-tiles.html type="Guidelines" except="guidelines.md" %}
