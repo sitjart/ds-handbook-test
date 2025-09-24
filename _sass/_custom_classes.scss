@@ -124,111 +124,92 @@ section#search-section {
 }
 /*== banner styles landing page ===*/
 
+.banner-section {
+	background-color: #FFF0E9;
+	position: relative;
 
-.banner-area {
-    position: relative;
-    z-index: 5;
-    padding-top: 50px;
-    padding-bottom: 110px;
-    overflow: hidden;
-
-    & .banner-shape-1 {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 68%;
-        z-index: -1;
-
-        @media #{$desktop} {
-            width: 63%;
-        }
-
-        @media #{$lg} {
-            width: 75%;
-        }
-
-        & img {
-            width: 100%;
-        }
-
-        & .line{
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: auto;
-            z-index: 1;
-        }
-    }
-    & .banner-shape-2 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 30%;
-        z-index: -1;
-
-        & img {
-            width: 100%;
-        }
-    }
-    & .banner-shape-3 {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        z-index: -1;
-
-        @media #{$xs}{
-            width: 150px;
-        }
-    }
 }
 
-.banner-content-wrapper {    
-    padding-bottom: 10px;
-
-    & .banner-image{
-        margin-top: 10px;
-
-    }
+.banner-section h1 {
+	font-size: 5em;
+	font-weight: 900;
+	text-align: center;
+	padding-top: 120px;
+	color: #1F1F39;
 }
 
-// Counters on landing page
-
-.banner-counter{
-    padding-top: 20px;
-
-    & .counter-title{
-        & .title{
-            font-size: 24px;
-            font-weight: 600;
-            color: $blue;
-        }
-    }
-
-    & .counter-wrapper{
-        padding-top: 40px;
-    }
-
-    & .single-counter{
-        margin-top: 30px;
-
-        & .count-content{
-            font-size: 16px;
-            font-weight: 300;
-            color: $blue;
-            display: block;
-
-            & .count{
-                font-size: 60px;
-                line-height: 60px;
-                font-weight: 700;
-                color: $blue;
-            }
-            & span{
-                color: $orange;
-            }
-        }
-    }
+.banner-section p {
+	margin-top: 20px;
+	margin-bottom: 100px;
 }
+
+.banner-vectors .banner-vector-1 {
+	position: absolute;
+	top: 55%;
+	left: -29%;
+}
+
+.banner-vectors .banner-vector-2 {
+	position: absolute;
+	top: 68%;
+	right: -12%;
+}
+
+.banner-vectors .banner-vector-3 {
+	position: absolute;
+	top: 90%;
+	right: 5%;
+}
+
+.banner-vectors .banner-vector-4 {
+	position: absolute;
+	top: 76%;
+	left: -8%;
+}
+
+.banner-vectors .banner-vector-5 {
+	position: absolute;
+	bottom: -10%;
+	left: -22%;
+}
+
+.banner-carousel.owl-carousel .screenshot img {
+	width: auto;
+
+}
+
+.hp-1 .banner-section .app-download {
+	margin-bottom: 100px;
+}
+
+.hp-1 .banner-section {
+	background: linear-gradient(180deg, #FFF0E9 80%, #fff 30%);
+	padding-top: 100px;
+}
+
+.hp-1 .banner-section .watch-now .btn-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	font-size: 14px;
+	margin-top: 70px;
+	font-weight: 700;
+}
+
+.hp-1 .banner-section .watch-now .btn-container img {
+	transition: 0.3s all;
+
+}
+
+.hp-1 .banner-section .watch-now .btn-container:hover img {
+	transform: scale(1.2);
+}
+
+.hp-1 .banner-section .watch-now a {
+	text-decoration: none;
+}
+
 
 /*=====Features in landing page ====*/
 
