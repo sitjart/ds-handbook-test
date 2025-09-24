@@ -12,4 +12,4 @@ training:
     url: 
 ---
 
-{% include section-navigation-tiles.html type="nl" %}
+{% include section-navigation-tiles.html type="NL" %}
