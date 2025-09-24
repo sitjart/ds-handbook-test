@@ -258,25 +258,6 @@ Common CSS
     2. Global CSS
 ====================================== */
 
-body {
-    font-family: 'Rubik', sans-serif;
-    font-size: 18px;
-    line-height: 35px;
-    font-weight: 400;
-    color: $background-light-home;
-    background-color: $white;
-    overflow-x: hidden;
-}
-
-body a {
-    text-decoration: none;
-    color: $link-color;
-    transition: color .3s ease;
-}
-
-body a:hover {
-    color: $link-color; 
-}
 
 body p, 
 body pre {
@@ -720,44 +701,47 @@ Categories Section
 
 #categories {
   background-image: url(images/on_black_left.png);
-  background-color: $dark-deep;
+  background-color: #000000;
   background-position: left bottom;
   background-repeat: no-repeat;
   background-size: auto;
 }
 
-/* Flex row for equal-height columns with consistent gaps */
+/* Flex row: force a single row of 3 columns on desktop */
 #categories .section-wrapper > div {
   display: flex;
-  flex-wrap: wrap;
-  align-items: stretch; /* ensure equal heights */
-  gap: 8%; /* replaces float-era gutters */
+  align-items: stretch;   /* equal heights */
+  gap: 8%;                /* inter-column spacing */
+  flex-wrap: nowrap;      /* keep 3 columns on one row */
 }
 
 #categories .one_third {
-  float: none; /* override global float grid here only */
-  width: calc((100% - 16%) / 3); /* 3 columns with two 8% gaps */
-  display: flex; /* allow inner to stretch full height */
+  float: none;                                /* override float grid locally */
+  margin-right: 0;                            /* remove float-era gutter */
+  width: calc((100% - 16%) / 3);              /* 3 cols with two 8% gaps */
+  display: flex;                              /* let inner content stretch */
+  box-sizing: border-box;                     /* safe if padding/border added */
 }
 
-/* Card container becomes a column flex box and fills column height */
 #categories .category-holder {
   display: flex;
   flex-direction: column;
   width: 100%;
-  flex: 1 1 auto;      /* fill available height */
-  margin: 25px 0;      /* moved from the misspelled .cateory-holder */
+  margin: 25px 0;    
 }
 
+/* Clearfix no longer needed under flex */
 #categories .category-holder::after {
   content: none;
   display: none;
 }
 
+/* Legacy .clear would otherwise occupy a flex row */
 #categories .clear {
   display: none;
 }
 
+/* Content area also a flex column so the CTA can be pushed down */
 #categories .category-txt {
   display: flex;
   flex-direction: column;
@@ -771,11 +755,13 @@ Categories Section
   line-height: 110%;
 }
 
+/* Works for both wrappers used in the HTML */
 #categories .category-txt .button-holder,
 #categories .category-txt .text-left {
   margin-top: auto; /* pin buttons to the bottom */
 }
 
+/* Decorative number */
 #categories .category-num {
   font-size: 264px;
   font-weight: 700;
@@ -792,10 +778,15 @@ Categories Section
   -webkit-transform: translateZ(0);
 }
 
-/* Responsive: stack cards and increase gap */
+/* Responsive: allow wrapping and stack cards */
 @media (max-width: 960px) {
-  #categories .section-wrapper > div { gap: 30px; }
-  #categories .one_third { width: 100%; }
+  #categories .section-wrapper > div {
+    gap: 30px;
+    flex-wrap: wrap;     /* allow stacking on small screens */
+  }
+  #categories .one_third {
+    width: 100%;
+  }
 }
 
 
