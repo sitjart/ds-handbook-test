@@ -2,9 +2,9 @@
 {%- assign sorted = include.items | sort: "date" | reverse -%}
 {%- assign count = include.limit | default: 3 -%}
 
-<div class="blog-holder-scode latest-posts-scode block center-relative">
+<div class="news-holder-scode latest-posts-scode block center-relative">
   {%- for item in sorted limit: count -%}
-  <article class="relative blog-item-holder-scode">
+  <article class="relative news-item-holder-scode">
     <div class="post-thumbnail">
       <a href="{{ item.link }}">
         <div class="latest-posts-background-featured-image-holder"
