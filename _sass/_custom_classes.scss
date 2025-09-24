@@ -947,10 +947,10 @@ h1.big-text {
 
 
 /* ===================================
-Services Section CSS
+Categories Section
 ====================================== */
 
-#services {
+#categories {
     background-image: url(images/on_black_left.png);
     background-color: #000000;
     background-position: left bottom;
@@ -958,24 +958,24 @@ Services Section CSS
     background-size: auto;
 }
 
-.service-holder {
+.cateory-holder {
     margin: 25px 0;
 }
 
-.service-holder:after {
+.category-holder:after {
     content: "";
     display: block;
     clear: both;    
 }
 
-.service-txt h4 {
+.category-txt h4 {
     font-size: 46px;
     color: #fff;
     font-weight: 700;
     line-height: 110%;
 }
 
-.service-num {
+.category-num {
     font-size: 264px;
     font-weight: 700;
     color: #000000;
@@ -1063,173 +1063,6 @@ News Section CSS
     transform: scale(1.1);
 }
 
-
-/* ===================================
-    8. Portfolio Section CSS
-====================================== */
-
-.grid {
-    width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-    max-width: 100%;
-    font-size: 0;
-    line-height: 0;
-}
-
-.grid-sizer {
-    width: 25%;
-}
-
-.grid-item {
-    float: left;
-    font-size: 0;
-    line-height: 0;
-    width: 100%;
-    overflow: hidden;
-}
-
-.grid-item.p_one_fourth {
-    width: 25%;
-}
-
-.grid-item.p_one_half {
-    width: 50%;
-}
-
-.grid-item.p_three_fourth {
-    width: 75%;
-}
-
-.grid-item.p_one {
-    width: 100%;
-}
-
-.grid-item img {
-    width: 100% !important;
-    height: auto;
-    display: block;    
-}
-
-.grid-item .entry-holder {
-    text-align: center;
-    background-color: #fff;
-    padding: 50px 20px;
-}
-
-.grid-item a.item-link:after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    left: 0;
-    top: 0;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-}
-
-.portfolio-text-holder {
-    color: #fff;
-    position: absolute;
-    bottom: 50px;
-    left: 50px;
-    display: inline-block;
-    z-index: 1;
-    opacity: 0;
-    transition: all .3s ease;
-}
-
-.portfolio-title {
-    font-size: 30px;
-    line-height: 170%;
-    margin-bottom: 0;
-    font-weight: 700;
-    color: #b3b3b3;
-}
-
-.portfolio-desc {
-    font-size: 14px;
-    line-height: 22px;
-    color: #b3b3b3;
-    letter-spacing: 2px;
-    margin-bottom: 0;
-}
-
-.grid-item a.item-link:hover:after, 
-.grid-item a.item-link:hover .portfolio-text-holder {
-    opacity: 1;
-}
-
-.portfolio-content h1 {
-    font-size: 44px;
-    color: #000;
-    line-height: 130%;
-}
-
-.portfolio-load-content-holder {
-    opacity: 0;
-    transform: translateY(70px);
-    transition: all .5s ease;
-    width: 1170px;
-    max-width: 75%;
-    margin: 0 auto;
-}
-
-.portfolio-load-content-holder.show {
-    transform: translateY(0);
-    opacity: 1;
-}
-
-.portfolio-load-content-holder.show.viceversa {
-    opacity: 0;
-    transform: translateY(70px);
-}
-
-.section.no-padding .portfolio-content-wrapper {
-    padding: 195px 0 75px 0;
-}    
-
-.portfolio-content-wrapper {
-    display: none;
-}
-
-.portfolio-content-wrapper.show {
-    display: block;
-}
-
-#portfolio-grid {
-    transition: all .5s ease;
-    opacity: 1;
-    transform: translateY(0px);
-}
-
-#portfolio-grid.hide {
-    opacity: 0;
-    transform: translateY(70px);    
-}
-
-.close-icon {
-    background-image: url(images/close-left-arrow.png);
-    background-repeat: no-repeat;
-    width: 70px;
-    height: 70px;
-    display: inline-block;
-    margin-bottom: 20px;
-    background-size: 40px;
-    background-position: 50%;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    position: absolute;
-    left: -100px;
-    top: 195px;
-}
-
-.close-icon:hover {
-    transform: translateX(-5px);
-}
 
 /* ===================================
     11. Skills Section CSS

@@ -1,0 +1,24 @@
+{%- comment -%} _includes/news-list.html {%- endcomment -%}
+{%- assign sorted = include.items | sort: "date" | reverse -%}
+{%- assign count = include.limit | default: 3 -%}
+
+<div class="blog-holder-scode latest-posts-scode block center-relative">
+  {%- for item in sorted limit: count -%}
+  <article class="relative blog-item-holder-scode">
+    <div class="post-thumbnail">
+      <a href="{{ item.link }}">
+        <div class="latest-posts-background-featured-image-holder"
+             data-background-image="{{ item.image }}"></div>
+      </a>
+    </div>
+    <h4 class="entry-title">
+      <a href="{{ item.link }}">{{ item.title }}</a>
+    </h4>
+    <div class="excerpt">
+      {{ item.description }}
+    </div>
+  </article>
+  {%- else -%}
+    <p>No news entries available.</p>
+  {%- endfor -%}
+</div>
