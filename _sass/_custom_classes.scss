@@ -715,47 +715,87 @@ h1.big-text {
 
 
 /* ===================================
-Categories Section
+Categories Section 
 ====================================== */
 
 #categories {
-    background-image: url(images/on_black_left.png);
-    background-color: #000000;
-    background-position: left bottom;
-    background-repeat: no-repeat;
-    background-size: auto;
+  background-image: url(images/on_black_left.png);
+  background-color: $dark-deep;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
-.cateory-holder {
-    margin: 25px 0;
+/* Flex row for equal-height columns with consistent gaps */
+#categories .section-wrapper > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch; /* ensure equal heights */
+  gap: 8%; /* replaces float-era gutters */
 }
 
-.category-holder:after {
-    content: "";
-    display: block;
-    clear: both;    
+#categories .one_third {
+  float: none; /* override global float grid here only */
+  width: calc((100% - 16%) / 3); /* 3 columns with two 8% gaps */
+  display: flex; /* allow inner to stretch full height */
 }
 
-.category-txt h4 {
-    font-size: 46px;
-    color: $white;
-    font-weight: 700;
-    line-height: 110%;
+/* Card container becomes a column flex box and fills column height */
+#categories .category-holder {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1 1 auto;      /* fill available height */
+  margin: 25px 0;      /* moved from the misspelled .cateory-holder */
 }
 
-.category-num {
-    font-size: 264px;
-    font-weight: 700;
-    color: $dark-blue;
-    text-shadow: -1px 0 $light-x, 
-        0 1px $light-x, 
-        1px 0 $light-x, 
-        0 -1px $light-x;
-    line-height: 100%;
-    height: 165px;
-    overflow: hidden;
-    margin-bottom: -10px;
-    -webkit-transform: translateZ(0);
+#categories .category-holder::after {
+  content: none;
+  display: none;
+}
+
+#categories .clear {
+  display: none;
+}
+
+#categories .category-txt {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto; /* fill card height beneath the number */
+}
+
+#categories .category-txt h4 {
+  font-size: 46px;
+  color: $white;
+  font-weight: 700;
+  line-height: 110%;
+}
+
+#categories .category-txt .button-holder,
+#categories .category-txt .text-left {
+  margin-top: auto; /* pin buttons to the bottom */
+}
+
+#categories .category-num {
+  font-size: 264px;
+  font-weight: 700;
+  color: $dark-blue;
+  text-shadow:
+    -1px 0 $light-x,
+     0 1px $light-x,
+     1px 0 $light-x,
+     0 -1px $light-x;
+  line-height: 100%;
+  height: 165px;
+  overflow: hidden;
+  margin-bottom: -10px;
+  -webkit-transform: translateZ(0);
+}
+
+/* Responsive: stack cards and increase gap */
+@media (max-width: 960px) {
+  #categories .section-wrapper > div { gap: 30px; }
+  #categories .one_third { width: 100%; }
 }
 
 

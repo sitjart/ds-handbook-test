@@ -11,6 +11,14 @@ topnav_title: Data Steward Handbook
 theme_variables:
   topnav:
     brand_logo: assets/img/main_logo.svg
+  dev-info-banner: true
+  topnav:
+    theme: dark
+  theme_color: 023452
+  fonts:
+    - href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap
+  headings:
+    resource-table-all-collapse: false
 
 sass:
   style: compressed
