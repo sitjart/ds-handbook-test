@@ -1,929 +1,232 @@
-/*-----General styling-----*/
-@import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap);
+/* ============ Responsive container + spacing ============ */
 
-@media (min-width: 992px) {
-    main h1:not(.has-subtitle):not(.blurb-title),
-    main .h1:not(.has-subtitle) {
-        margin-top: -1rem;
-    }
-}
-
-.bg-light-x {
-    background-color: $light-x;
-}
-
-/*-----Sidebar-----*/
-
-.sidebar-title {
-    border-bottom: 0.2rem solid $blue;
-    font-weight: bold;
-    padding-bottom: $input-btn-padding-y - 0.2rem;
-}
-
-#side-nav > ul {
-    margin-top: $spacer * 0.5;
-}
-
-// Search box
-
-section#search-section {
-    form {
-        max-width: 600px;
-    }
-
-    #search-results {
-        right: unset;
-    }
-    .input-group-text {
-        font-size: 1.5rem;
-    }   
-}
-/*-----Top navigation-----*/
-
-.navbar-nav .nav-item > a {
-    white-space: nowrap;
-    &.active {
-        background-color: $blue;
-        border-radius: $border-radius;
-    }
-}
-
-/* paddin/margin for back-to-top button */
-#back-to-top span {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-/*----- Youtube containers -----*/
-.embed-container {
-    position: relative;
-    width: 60%;
-    padding-bottom: 30%; 
-    height: 0;
-  }
-.embed-container iframe,
-.embed-container object,
-.embed-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-/* ===================================
-Common CSS
-====================================== */
-
-.block {
-    display: block;
-}
-
-.hidden {
-    display: none;
-}
-
-.clear {
-    clear: both;
-}
-
-.float-left {
-    float: left;
-}
-
-.float-right {
-    float: right;
-}
-
-.line-height {
-    line-height: 0;
-}
-
-.clear-right {
-    clear: right;
-}
-
-.clear-left {
-    clear: left;
-}
-
-.center-relative {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.aligncenter {
-    display: block;
-    margin: 5px auto 5px auto;
-}
-
-.center-text, 
-.center {
-    text-align: center;
-}
-
-.text-left, 
-.left {
-    text-align: left;
-}
-
-.text-right, 
-.right {
-    text-align: right;
-}
-
-.absolute {
-    position: absolute;
-}
-
-.fixed {
-    position: fixed;
-}
-
-.relative {
-    position: relative;
-}
-
-.margin-0 {
-    margin: 0 !important;
-    line-height: 0;
-}
-
-.top-0 {
-    margin-top: 0 !important;
-}
-
-.top-5 {
-    margin-top: 5px !important;	
-}
-
-.top-10 {
-    margin-top: 10px;	
-}
-
-.top-15 {
-    margin-top: 15px;	
-}
-
-.top-20 {
-    margin-top: 20px;
-}
-
-.top-25 {
-    margin-top: 25px;	
-}
-
-.top-30 {
-    margin-top: 30px;	
-}
-
-.top-50 {
-    margin-top: 50px;	
-}
-
-.top-60 {
-    margin-top: 60px;	
-}
-
-.top-70 {
-    margin-top: 70px;	
-}
-
-.top-75 {
-    margin-top: 75px;	
-}
-
-.top-80 {
-    margin-top: 80px;
-}
-
-.top-100 {
-    margin-top: 100px;	
-}
-
-.top-105 {
-    margin-top: 105px;	
-}
-
-.top-120 {
-    margin-top: 120px;
-}
-
-.top-150 {
-    margin-top: 150px;	
-}
-
-.top-200 {
-    margin-top: 200px;	
-}
-
-.bottom-0 {
-    margin-bottom: 0 !important;
-}
-
-.bottom-10 {
-    margin-bottom: 10px !important;
-}
-
-.bottom-20 {
-    margin-bottom: 20px !important;
-}
-
-.bottom-25 {
-    margin-bottom: 25px !important;
-}
-
-.bottom-30 {
-    margin-bottom: 30px !important;
-}
-
-.bottom-50 {
-    margin-bottom: 50px !important;
-}
-
-.bottom-100 {
-    margin-bottom: 100px !important;
-}
-
-.bottom-150 {
-    margin-bottom: 150px !important;
-}
-
-.bottom-200 {
-    margin-bottom: 200px !important;
-}
-
-
-
-/* ===================================
-    2. Global CSS
-====================================== */
-
-
-body p, 
-body pre {
-    margin-bottom: 13px;
-}
-
-.site-wrapper img {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-}
-
-.content-1170 {
-    width: 1170px;    
-}
-
-.content-960 {
-    width: 960px;    
-}
-
+.content-1170,
+.content-960,
 .content-570 {
-    width: 570px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-inline: clamp(16px, 4vw, 40px);
 }
 
-.pagination-holder {
-    margin: 60px 0;
-}
+.content-1170 { max-width: 1170px; }
+.content-960  { max-width: 960px;  }
+.content-570  { max-width: 570px;  }
 
+/* Section vertical rhythm (was 200px 0 115px 0) */
 .section-wrapper {
-    position: relative;
-    padding: 200px 0 115px 0;
+  padding: clamp(120px, 16vw, 200px) 0 clamp(80px, 10vw, 115px) 0;
 }
 
-/* ===================================
-General Home Section CSS
-====================================== */
-#home {    
-    background-image: url(images/hero_image_01.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: calc(100vh - 77px);    
-    display: flex;
-}
-
-#home .section-wrapper {
-    margin: auto;
-    padding: 0;
-}
+/* ============ Hero ============ */
 
 h1.big-text {
-    color: #fff;
-    font-size: 80px;
-    line-height: 120%;
-    margin-bottom: 40px;
+  /* from fixed 70px to fluid with bounds */
+  font-size: clamp(32px, 6vw, 70px);
+  line-height: 1.2;
+  margin-bottom: clamp(20px, 4vw, 40px);
 }
 
-.section {
-    position: relative;    
+/* Keep hero flexible */
+#home {
+  min-height: calc(100vh - 77px);
+  display: flex;
 }
+
+/* ============ Page title ribbon: fluid sizing ============ */
 
 .page-title-holder {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: $link-color;
-    width: 285px;
-    display: inline-block;
-    z-index: 98;
-    height: 130px;
+  /* use custom props so triangle can follow height */
+  --pth-h: clamp(90px, 12vw, 130px);
+  --pth-w: clamp(200px, 22vw, 285px);
+  --pth-tw: clamp(30px, 5vw, 60px); /* triangle width */
+
+  height: var(--pth-h);
+  width:  var(--pth-w);
 }
 
 .page-title-holder:after {
-    content: "";
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 130px 60px 0 0;
-    border-color: $link-color transparent transparent transparent;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translateX(100%);
+  /* triangle scales with the holder */
+  border-width: var(--pth-h) var(--pth-tw) 0 0;
 }
 
-.section h3.entry-title {
-    font-size: 16px;
-    line-height: 149%;
-    font-weight: 400;
-    word-break: break-word;
-    text-align: center;
-    color: $white;
-    letter-spacing: 2px;
-    margin-top: 32px;
-}
+/* ============ Categories (cards) ============ */
 
-.page .page-content {
-    background-color: $white;
-    padding: 75px;    
-}
-
-.no-padding .section-wrapper {
-    padding: 0 !important;
-    width: 100%;
-    max-width: 100%;
-}
-
-[data-jarallax-element] {
-    z-index: 30 !important;
-}
-
-.medium-text {
-    color: $dark-deep;
-    font-size: 60px;
-    line-height: 120%;
-    font-weight: 700;
-    padding-bottom: 35px;
-}
-
-.title-description-up {
-    font-size: 16px;
-    margin-bottom: 0;
-    letter-spacing: 2px;
-}
-
-.tp-bullet-title {
-    display: none !important;
-}
-
-.isotope.no-transition,
-.isotope.no-transition .isotope-item,
-.isotope .isotope-item.no-transition {    
-    transition-duration: 0s;
-}
-
-.social {
-    display: inline-block;
-    font-size: 25px;
-    margin-right: 20px;
-}
-
-body .social a {
-    color: #000 !important;
-    transition: all .3s ease;
-}
-
-body .social a:hover {
-    opacity: 0.5;    
-}
-
-
-/* ===================================
-Columns CSS
-====================================== */
-
-.one_half,  
-.one_third,  
-.two_third,  
-.three_fourth, 
-.one_fourth {
-    margin-right: 8%;
-    float: left;
-    position: relative;
-    margin-bottom: 30px;
-}
-
-.last {
-    margin-right: 0 !important;
-    clear: right;
-}
-
-.one {    
-    display: block;
-    clear: both;    
-    margin-bottom: 30px;
-}
-
-.one_half {
-    width: 46%;
-}
-
-.one_third {
-    width: 28%;
-}
-
-.two_third {
-    width: 64%;
-}
-
-.one_fourth {
-    width: 19%;
-}
-
-.three_fourth {
-    width: 73%;
-}
-
-.one_half.margin-0 {
-    width: 50%;
-}
-
-.one_third.margin-0 {
-    width: calc(100% / 3);
-}
-
-.two_third.margin-0 {
-    width: calc(100% / 3 * 2);
-}
-
-.one_fourth.margin-0 {
-    width: 25%;
-}
-
-.three_fourth.margin-0 {
-    width: 75%;
-}
-
-
-/* ===================================
-Buttons
-====================================== */
-
-body a.button {
-    display: inline-block;
-    color: $white;
-    background-color: $link-color;
-    text-align: left;
-    padding: 10px 40px;
-    cursor: pointer;
-    vertical-align: middle;
-    text-decoration: none;
-    transition: all .2s linear;
-    margin-bottom: 17px;
-    border: 2px solid $link-color;
-    border-radius: 50px;
-    font-size: 14px;
-    letter-spacing: 2px;
-    box-sizing: border-box;
-}
-
-a.button:hover {
-    background-color: transparent;
-    color: $link-color;
-}
-
-a.button-dot {
-    color: $white !important;
-    font-size: 16px;
-    position: relative;
-}
-
-a.button-dot:hover {
-    color: $white;    
-}
-
-a.button-dot span {
-    transition: .3s;
-    display: inline-block;
-    margin-left: 50px;
-    letter-spacing: 2px;
-}
-
-a.button-dot:hover span {
-    transform: translateX(-8px);
-}
-
-a.button-dot:before {
-    content: "";
-    width: 30px;
-    height: 30px;
-    border: 2px solid $white;
-    background: transparent;
-    border-radius: 90%;
-    top: -7px;
-    position: absolute;
-    transition: .3s;
-}
-
-a.button-dot:hover:before {
-    width: calc(100% + 30px);
-    height: 51px;
-    border-radius: 50px;
-    top: -18px;
-}
-
-
-/* ===================================
-    2.5 Image/Text Slider CSS
-====================================== */
-
-.image-slider-wrapper {
-    margin-bottom: 20px;
-}
-
-.single-post-header-content .image-slider-wrapper {
-    margin-bottom: 0;
-}
-
-
-.text-slider-wrapper {
-    font-size: 24px;
-    line-height: 35px;
-    background-color: #000;
-    padding: 130px;
-}
-
-.text-slider-header-quotes {
-    margin-bottom: 60px;
-    background-image: url(images/quotes_image.png);
-    background-repeat: no-repeat;
-    width: 87px;
-    height: 74px;
-    background-size: 87px 74px;
-}
-
-.text-slider-wrapper .text-slide {
-    text-align: left;
-    font-size: 28px;
-    line-height: 170%;
-    overflow: hidden;
-}
-
-.text-slider-wrapper .text-slide:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.text-slider-wrapper .text-slide-name {
-    font-size: 18px;
-    line-height: 100%;
-    margin: 0 12px 0 0;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.text-slider-wrapper .text-slide-position {
-    font-size: 18px;
-    line-height: 100%;
-    letter-spacing: 4px;
-    color: $white;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0;
-}
-
-.text-slider-wrapper img.text-slide-img {
-    width: 70px !important;
-    height: 70px;
-    border-radius: 90%;
-    display: inline-block;
-    margin-right: 25px;
-    vertical-align: middle;
-}
-
-.text-slide-content {
-    margin-bottom: 60px;
-}
-
-@-webkit-keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-.fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-}
-
-@-webkit-keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-
-    to {
-        opacity: 0;
-    }
-}
-
-@keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-
-    to {
-        opacity: 0;
-    }
-}
-
-.fadeOut {
-    -webkit-animation-name: fadeOut;
-    animation-name: fadeOut;
-}
-
-
-/* ===================================
-Home Section
-====================================== */
-
-#home {    
-    background-image: url(images/hero_image_01.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: calc(100vh - 77px);    
-    display: flex;
-}
-
-#home .section-wrapper {
-    margin: auto;
-    padding: 0;
-}
-
-h1.big-text {
-    color: $white;
-    font-size: 80px;
-    line-height: 120%;
-    margin-bottom: 40px;
-}
-
-
-/* ===================================
-Categories Section 
-====================================== */
-
-#categories {
-  background-image: url(images/on_black_left.png);
-  background-color: #000000;
-  background-position: left bottom;
-  background-repeat: no-repeat;
-  background-size: auto;
-}
-
-/* Flex row: force a single row of 3 columns on desktop */
+/* Desktop: keep single row of 3; allow equal height cards */
 #categories .section-wrapper > div {
   display: flex;
-  align-items: stretch;   /* equal heights */
-  gap: 8%;                /* inter-column spacing */
-  flex-wrap: nowrap;      /* keep 3 columns on one row */
+  align-items: stretch;
+  gap: 8%;
+  flex-wrap: nowrap;
 }
 
+/* Column card base */
 #categories .one_third {
-  float: none;                                /* override float grid locally */
-  margin-right: 0;                            /* remove float-era gutter */
-  width: calc((100% - 16%) / 3);              /* 3 cols with two 8% gaps */
-  display: flex;                              /* let inner content stretch */
-  box-sizing: border-box;                     /* safe if padding/border added */
+  float: none;
+  margin-right: 0;
+  width: calc((100% - 16%) / 3);
+  display: flex;
+  box-sizing: border-box;
 }
 
+/* Card internals */
 #categories .category-holder {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: 25px 0;    
+  margin: 25px 0;
 }
 
-/* Clearfix no longer needed under flex */
-#categories .category-holder::after {
-  content: none;
-  display: none;
-}
-
-/* Legacy .clear would otherwise occupy a flex row */
-#categories .clear {
-  display: none;
-}
-
-/* Content area also a flex column so the CTA can be pushed down */
 #categories .category-txt {
   display: flex;
   flex-direction: column;
-  flex: 1 1 auto; /* fill card height beneath the number */
+  flex: 1 1 auto;
 }
 
 #categories .category-txt h4 {
-  font-size: 46px;
-  color: $white;
-  font-weight: 700;
-  line-height: 110%;
+  font-size: clamp(28px, 4vw, 46px);
+  line-height: 1.1;
 }
 
-/* Works for both wrappers used in the HTML */
-#categories .category-txt .button-holder,
-#categories .category-txt .text-left {
-  margin-top: auto; /* pin buttons to the bottom */
-}
-
-/* Decorative number */
+/* Big decorative number scales down on small screens */
 #categories .category-num {
-  font-size: 264px;
+  font-size: clamp(120px, 18vw, 264px);
   font-weight: 700;
-  color: $dark-blue;
-  text-shadow:
-    -1px 0 $light-x,
-     0 1px $light-x,
-     1px 0 $light-x,
-     0 -1px $light-x;
-  line-height: 100%;
-  height: 165px;
-  overflow: hidden;
-  margin-bottom: -10px;
+  line-height: 1;
+  height: auto;    /* remove fixed 165px */
+  overflow: visible;
+  margin-bottom: clamp(-8px, -1vw, -10px);
   -webkit-transform: translateZ(0);
 }
 
-/* Responsive: allow wrapping and stack cards */
+/* Pin buttons to bottom within flexible column */
+#categories .category-txt .button-holder,
+#categories .category-txt .text-left {
+  margin-top: auto;
+}
+
+/* Breakpoints: 3 → 2 → 1 columns */
+@media (max-width: 1200px) {
+  #categories .section-wrapper > div {
+    flex-wrap: wrap;
+    gap: clamp(24px, 4vw, 40px);
+  }
+  #categories .one_third {
+    width: calc((100% - clamp(24px, 4vw, 40px)) / 2);
+  }
+}
+
 @media (max-width: 960px) {
   #categories .section-wrapper > div {
-    gap: 30px;
-    flex-wrap: wrap;     /* allow stacking on small screens */
+    gap: clamp(20px, 4vw, 30px);
+    flex-wrap: wrap;
   }
   #categories .one_third {
     width: 100%;
   }
 }
 
+/* Remove legacy clearfix influence inside flex area */
+#categories .category-holder::after { content: none; display: none; }
+#categories .clear { display: none; }
 
-/* ===================================
-News Section CSS
-====================================== */
+/* ============ News list ============ */
 
-#news {
-    background-image: url(images/on_white_left.png);
-    background-color: $white;
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: auto;
-}
-
+/* Replace fixed width & translateX with a flexible grid */
 .news-holder-scode {
-    margin-top: 0;
-    width: 1370px;
-    transform: translateX(-100px);
-    text-align: center;
+  margin-top: 0;
+  width: 100%;
+  transform: none;
+  text-align: left;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(16px, 3vw, 40px);
 }
 
-.news-holder-scode article:nth-of-type(3n) {
-    margin-right: 0;
+@media (max-width: 1100px) {
+  .news-holder-scode { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 700px) {
+  .news-holder-scode { grid-template-columns: 1fr; }
 }
 
 .news-item-holder-scode {
-    margin: 30px 0;
-    width: 27%;
-    display: inline-block;
-    margin-right: 8%;
-    vertical-align: text-top;
-    text-align: left;
+  width: auto;
+  display: block;
+  margin: 0;
+  vertical-align: baseline;
 }
 
-.news-item-holder-scode .excerpt {
-    margin-top: 20px;
-}
-
-.news-item-holder-scode h4 {
-    padding: 0;
-    margin: 35px 0;
-}
-
+/* Headline scales smoothly */
 .news-item-holder-scode h4 a {
-    color: $dark-deep !important;
-    font-size: 34px;
-    line-height: 110%;
-    font-weight: 700;
-    transition: .3s;
-    letter-spacing: -1px;
+  font-size: clamp(22px, 3.2vw, 34px);
+  line-height: 1.1;
+  letter-spacing: -0.5px;
 }
 
-.news-item-holder-scode h4 a:hover {
-    opacity: 0.8;
-}
-
-.news-item-holder-scode .post-thumbnail {
-    overflow: hidden;
-}
-
+/* Use intrinsic ratio for the teaser visual instead of fixed height */
 .latest-posts-background-featured-image-holder {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  height: auto;         /* drop fixed 600px */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: .3s;
+}
+
+/* ============ Responsive embeds ============ */
+
+/* Prefer native aspect-ratio with a fallback for older engines */
+.embed-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Fallback to padding hack if aspect-ratio unsupported */
+@supports not (aspect-ratio: 1) {
+  .embed-container {
     width: 100%;
-    height: 600px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    transition: .3s;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 */
+  }
 }
 
+/* ============ Utilities & small polish ============ */
+
+/* Ensure media never overflows containers */
+.site-wrapper img,
+picture,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Keep active nav item legible on all backgrounds */
+.navbar-nav .nav-item > a.active {
+  border-radius: $border-radius;
+}
+
+/* Maintain consistent button hit areas without layout shift */
+a.button {
+  font-size: clamp(14px, 1.8vw, 16px);
+  padding: clamp(8px, 1.2vw, 10px) clamp(24px, 3vw, 40px);
+}
+
+/* Slightly reduce hover zoom to avoid jarring motion on small screens */
 .latest-posts-background-featured-image-holder:hover {
-    opacity: 0.8;
-    transform: scale(1.1);
+  opacity: 0.9;
+  transform: scale(1.04);
 }
-
-/* ===================================
-Counters Section
-====================================== */
-
-#counters {
-    background-image: url(images/on_black_left.png);
-    background-color: $dark-deep;
-    background-position: left bottom;
-    background-repeat: no-repeat;
-    background-size: auto;
-}
-
-
-ul.counters-holder {
-    padding: 0;
-    list-style: none;
-    margin: 0;
-}
-
-li.counter {
-    width: 45%;
-    display: inline-block;
-    margin: 30px 9% 30px 0;
-}
-
-li.counter:nth-child(2n) {
-    margin-right: 0;
-}
-
-li.counter > div {
-    display: inline-block;
-    vertical-align: text-top;    
-}
-
-li.counter h5 {
-    color: $white;
-    max-width: 240px;
-    padding-top: 0;
-    line-height: 115%;
-}
-
-li.counter .counter-info-left {
-    margin-right: 35px;
-    text-align: right;
-    width: 30%;
-}
-
-li.counter .counter-info-right {
-    width: 62%;
-}
-
-p.counter-num {
-    font-size: 80px;
-    line-height: 100%;
-    font-weight: 700;
-    position: relative;
-    margin-bottom: 0;
-    color: $background-dark-home;
-    text-shadow: -1px 0 $light-x, 
-        0 1px $light-x, 
-        1px 0 $light-x, 
-        0 -1px $light-x;
-}
-
-
