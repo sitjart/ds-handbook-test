@@ -500,93 +500,43 @@ Categories Section
 ====================================== */
 
 #categories {
-  background-image: url(images/on_black_left.png);
-  background-color: #000000;
-  background-position: left bottom;
-  background-repeat: no-repeat;
-  background-size: auto;
+    background-image: url(images/on_black_left.png);
+    background-color: #000000;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
-/* Flex row: force a single row of 3 columns on desktop */
-#categories .section-wrapper > div {
-  display: flex;
-  align-items: stretch;   /* equal heights */
-  gap: 8%;                /* inter-column spacing */
-  flex-wrap: nowrap;      /* keep 3 columns on one row */
+.category-holder {
+    margin: 25px 0;
 }
 
-#categories .one_third {
-  float: none;                                /* override float grid locally */
-  margin-right: 0;                            /* remove float-era gutter */
-  width: calc((100% - 16%) / 3);              /* 3 cols with two 8% gaps */
-  display: flex;                              /* let inner content stretch */
-  box-sizing: border-box;                     /* safe if padding/border added */
+.category-holder:after {
+    content: "";
+    display: block;
+    clear: both;    
 }
 
-#categories .category-holder {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin: 25px 0;    
+.category-txt h4 {
+    font-size: 46px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 110%;
 }
 
-/* Clearfix no longer needed under flex */
-#categories .category-holder::after {
-  content: none;
-  display: none;
-}
-
-/* Legacy .clear would otherwise occupy a flex row */
-#categories .clear {
-  display: none;
-}
-
-/* Content area also a flex column so the CTA can be pushed down */
-#categories .category-txt {
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 auto; /* fill card height beneath the number */
-}
-
-#categories .category-txt h4 {
-  font-size: 46px;
-  color: $white;
-  font-weight: 700;
-  line-height: 110%;
-}
-
-/* Works for both wrappers used in the HTML */
-#categories .category-txt .button-holder,
-#categories .category-txt .text-left {
-  margin-top: auto; /* pin buttons to the bottom */
-}
-
-/* Decorative number */
-#categories .category-num {
-  font-size: 264px;
-  font-weight: 700;
-  color: $dark-blue;
-  text-shadow:
-    -1px 0 $light-x,
-     0 1px $light-x,
-     1px 0 $light-x,
-     0 -1px $light-x;
-  line-height: 100%;
-  height: 165px;
-  overflow: hidden;
-  margin-bottom: -10px;
-  -webkit-transform: translateZ(0);
-}
-
-/* Responsive: allow wrapping and stack cards */
-@media (max-width: 960px) {
-  #categories .section-wrapper > div {
-    gap: 30px;
-    flex-wrap: wrap;     /* allow stacking on small screens */
-  }
-  #categories .one_third {
-    width: 100%;
-  }
+.category-num {
+    font-size: 264px;
+    font-weight: 700;
+    color: #000000;
+    text-shadow: -1px 0 #b3b3b3, 
+        0 1px #b3b3b3, 
+        1px 0 #b3b3b3, 
+        0 -1px #b3b3b3;
+    line-height: 100%;
+    height: 165px;
+    overflow: hidden;
+    margin-bottom: -10px;
+    -webkit-transform: translateZ(0);
 }
 
 
@@ -727,7 +677,7 @@ p.counter-num {
 }
 
 /* ===================================
-    17. Responsive CSS
+Responsive CSS
 ====================================== */
 
 
