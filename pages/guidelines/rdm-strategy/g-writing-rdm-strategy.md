@@ -1,7 +1,7 @@
 ---
 title: Writing an RDM strategy
-description: 
-contributors: Maria Klapa, sitjart, Riku Riski, nicjar, Vassilios Ioannidis
+description: How to write a strategy to have a structured framework to guide the RDM activities of the organisation
+contributors: [Maria Klapa, Xenia Perez Sitja, Riku Riski, Niclas Jareborg, Vassilios Ioannidis]
 page_id: g-writing-rdm-strategy
 related_pages: 
 ---

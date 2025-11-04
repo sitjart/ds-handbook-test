@@ -1,7 +1,7 @@
 ---
 title: Strategy for RDM
 description: Indicates at what level the strategy for RDM services and activities has been defined and implemented
-contributors: [] 
+contributors: [Maria Klapa, Xenia Perez Sitja, Riku Riski, Niclas Jareborg, Vassilios Ioannidis] 
 page_id: mm-strategy-defined
 ---
 
