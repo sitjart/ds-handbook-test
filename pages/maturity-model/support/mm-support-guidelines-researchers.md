@@ -1,8 +1,8 @@
 ---
-title: Guidelines for researchers
+title: RDM information – guidelines for researchers
 description: Research data management guidance as the backbone of responsible data practice
 contributors: 
-page_id: 
+page_id: mm-support-guidelines-researchers
 ---
 This indicator assesses whether researchers can easily find, understand, and rely on written RDM guidance. It considers the visibility, clarity, maintenance, and communication of materials such as policies, DMP templates, metadata standards, file naming conventions, and consent procedures. The focus is not on service provision and supporting infrastructure, nor on communication and responsiveness, but on whether guidance is available, usable, and discoverable without having to ask.
 
