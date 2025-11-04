@@ -30,7 +30,7 @@ This indicator assesses whether researchers can easily find, understand, and rel
 
 **Impact:** Researchers can find some guidance, but gaps and irregular updates limit trust and uptake.
 
-### Level 4 – Clearly visible and maintained
+## Level 4 – Clearly visible and maintained
 * **Comprehensive platform:** A single, well-structured platform or site covers the full research lifecycle.
 * **Regularly updated:** Guidance is regularly updated, timestamped, and versioned on a set schedule.
 * **Active promotion:** Information is actively promoted across multiple institutional channels.
