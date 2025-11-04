@@ -2,11 +2,11 @@
 title: Writing an RDM strategy
 description: 
 contributors: Maria Klapa, sitjart, Riku Riski, nicjar, Vassilios Ioannidis
-page_id: 
+page_id: g-writing-rdm-strategy
 related_pages: 
 ---
 
-## **Context**
+## Context
 
 The purpose of a Research Data Management (RDM) strategy is to provide a structured **framework** that guides how an organisation supports and enables good data management practices across the research lifecycle. It **aligns** data-related services, policies, tools, and training with the organisation’s vision and  mission, ensuring that research data is managed in a way that is efficient, FAIR, and compliant with institutional and funder requirements.
 
@@ -16,7 +16,7 @@ The **mission** then defines the overarching objectives required to achieve the 
 
 To be effective in guiding RDM activities, the strategy needs to be **communicated** to all relevant staff. Expected impact from defined objectives should be monitored and used to regularly update and revise the strategy.
 
-## **Guidance**
+## Guidance
 
 1. Define the Intended beneficiaries of the organization’s RDM efforts
 
