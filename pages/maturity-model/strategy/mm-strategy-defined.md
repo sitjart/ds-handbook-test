@@ -1,8 +1,8 @@
 ---
 title: Strategy for RDM
 description: Strategy for Research data management services to guide RDM efforts of the organisation
-contributors: nicjar, 
-page_id: 
+contributors: [] 
+page_id: mm-strategy-defined
 ---
 
 This indicator assesses at what level the strategy for RDM services and activities has been defined and implemented.
