@@ -10,10 +10,17 @@
 #    affiliation: affiliation
 #    image_url: absolute path to image (default image from github)
 
+Aída Moure Fernández:
+    git: aidamouref
+    email: 
+    orcid: 0000-0001-8833-5750
+    role: contributor
+    affiliation: Barcelona Supercomputing Center (BSC), Spanish National Bioinformatics Institute (INB/ELIXIR-ES)
 Heleri Inno:
     git: heleriinno
     email: 
     orcid: 0000-0003-2043-0772
+    role: contributor
     affiliation: University of Tartu / ELIXIR-EE
 Jana Martínková:
     git: jmartinkova
