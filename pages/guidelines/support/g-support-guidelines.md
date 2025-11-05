@@ -15,7 +15,7 @@ This challenge is especially pronounced in federated or decentralised environmen
 
 Data stewards play a key role in ensuring that guidance is not just written, but usable. They help select appropriate communication channels, embed resources in onboarding or training materials, and keep track of evolving standards and requirements. Institutions that assign clear responsibilities for guidance maintenance, promote content through multiple entry points, and review materials regularly are more likely to build trust, reduce redundant support requests, and foster sustainable RDM practice.
 
-## Guidelines
+## Guidance
 The following tips support data stewards and their institutions in progressing along the maturity indicator for RDM information and guidelines. They are organised around four core areas: centralisation, visibility, maintenance, and communication, aligned with Node experiences and established support models.
 
 ### Centralise RDM guidance

@@ -1,8 +1,8 @@
 ---
 title: Informing about RDM
 description: Informing and guiding researchers about RDM
-contributors: 
-page_id:
+contributors: [Mijke Jetten, Helena Schnitzer, Jeanne Wilbrandt, Flora D’Anna, Hana Marcetic, Jana Martínková, Heleri Inno]
+page_id: g-support-rdm-information
 related_pages:
     maturity-model: [support]
 ---
@@ -17,7 +17,7 @@ This challenge is especially pronounced in federated or decentralised environmen
 
 Data stewards play a key role in ensuring that guidance is not just written, but usable. They help select appropriate communication channels, embed resources in onboarding or training materials, and keep track of evolving standards and requirements. Institutions that assign clear responsibilities for guidance maintenance, promote content through multiple entry points, and review materials regularly are more likely to build trust, reduce redundant support requests, and foster sustainable RDM practices.
 
-## Guidelines
+## Guidance
 
 Providing clear and accessible RDM information and guidelines helps data stewards and their institutions strengthen their support for researchers. The following tips are organised around four core areas: **centralisation**, **visibility**, **maintenance**, and **communication**, reflecting organisational experience and established support models.
 
