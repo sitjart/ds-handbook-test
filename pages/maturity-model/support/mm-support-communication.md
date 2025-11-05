@@ -1,8 +1,8 @@
 ---
 title: Flow of RDM communication and responsiveness
-description: Quality, direction, and responsiveness of RDM-related communication in an organisation
-contributors: 
-page_id: 
+description: Indicates how well communication about data management is maintained within the organisation, particularly the extent to which it is consultive, interactive, responsive, and fosters dialogue.
+contributors: [Helena Schnitzer, Jeanne Wilbrandt, Mijke Jetten, Hana Marcetic, Heleri Inno, Diana Pilvar]
+page_id: mm-support-communication
 ---
 ## What this indicator measures
 This indicator assesses the quality, direction, and responsiveness of RDM-related communication in an organisation or Node. It looks at whether researchers can ask questions, provide feedback, and receive timely, helpful answers. Maturity reflects a shift from top-down, static information to dynamic, two-way dialogue supported by trusted, visible RDM professionals.
