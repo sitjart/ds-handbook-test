@@ -62,9 +62,9 @@ defaults:
       type: FI
   -
     scope:
-      path: "pages/guidelines"
+      path: "pages/guidance"
     values:
-      sidebar: guidelines
+      sidebar: guidance
   -
     scope:
       path: "pages/guidelines/guidelines-support"
