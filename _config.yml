@@ -1,4 +1,4 @@
-title: ELIXIR Data Steward Handbook
+title: ELIXIR Data Stewardship Handbook
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
 description: ""
@@ -6,7 +6,7 @@ description: ""
 
 remote_theme: ELIXIR-Belgium/elixir-toolkit-theme
 
-topnav_title: Data Steward Handbook
+topnav_title: Data Stewardship Handbook
 
 theme_variables:
   topnav:
