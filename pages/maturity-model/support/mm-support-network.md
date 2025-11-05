@@ -23,18 +23,14 @@ This indicator assesses whether and how RDM professionals within an organisation
 
 ## Level 3 – Established network participation
 * **Recognised engagement:** Network participation is acknowledged and partly supported.
-* **Some internal coordination:** Peer groups or contact points exist to track involvement.
-* **Emerging value:** Shared learning or updates begin to improve institutional practices.
+* **Some internal coordination:** Peer groups or contact points exist to track involvement and coordinate participation, ensuring the involvement is monitored and at least partially planned.
+* **Emerging value:** Shared learning or updates from network activities begin to inform and improve institutional practices.
 
 **Impact:** Service quality and staff development improve, but sustained value still relies on motivated individuals.
 
-
-
-
-
-
-## Level 4 – Formal institutional support
-* **Structural enablement:** Time, travel, and budget are formally allocated for participation.
+## Level 4 – Formal support for RDM expert networking participation
+* **Structural enablement:** Time, travel, and budget are formally allocated for participation in networks.
 * **Embedded strategy:** Policies or expectations guide consistent network engagement.
-* Feedback and recognition – Network insights are integrated, and contributions valued in roles and reviews.
-* Impact: Networking becomes a strategic tool for institutional learning and leadership in the wider RDM ecosystem.
+* **Feedback and recognition:** Network insights are integrated, and contributions are valued in roles and reviews.
+
+**Impact:** Networking becomes a strategic tool for institutional learning and leadership in the wider RDM ecosystem.
