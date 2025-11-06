@@ -3,6 +3,7 @@ title: ELSI servicedesk
 description: 
 contributors: 
 page_id: ELSI-servicedesk
+type: case-study
 ---
 ELIXIR-NL (MM score 4)
 

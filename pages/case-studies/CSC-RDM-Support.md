@@ -3,6 +3,7 @@ title: CSC RDM Support
 description: 
 contributors: 
 page_id: CSC-RDM-Support
+type: case-study
 ---
 ELIXIR-FI (MM score: 4)
 

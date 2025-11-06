@@ -45,19 +45,16 @@ defaults:
       path: "pages/case-studies"
     values:
       sidebar: case-studies
-      type: case-study
   -
     scope:
       path: "pages/guidance"
     values:
       sidebar: guidance
-      type: guidance
   -
     scope:
       path: "pages/maturity-model"
     values:
       sidebar: maturity-model
-      type: maturity-model
   -
     scope:
       path: "pages/maturity-model/mm-strategy"
