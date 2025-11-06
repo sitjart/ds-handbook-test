@@ -51,7 +51,6 @@ The RDM Maturity Model is structured into several domains, each representing a k
         <table class="table table-bordered table-striped">
           <thead>
             <tr>
-              <th>Subdomain</th>
               <th>Indicator</th>
               <th>Maturity Levels</th>
             </tr>
@@ -59,7 +58,6 @@ The RDM Maturity Model is structured into several domains, each representing a k
           <tbody>
             {% for indicator in domain_indicators %}
             <tr>
-              <td>{{ indicator.Subdomain }}</td>
               <td>[{{ indicator["Indicator level"] }}] {{ indicator.Indicator }}</td>
               <td>
                 <ol>
