@@ -6,11 +6,6 @@
     }
 }
 
-.bg-light-x {
-    background-color: $light-background;
-}
-
-
 // Light gray background on the left
 @media (min-width: 992px) {
     body:not(:has(.landingpage)) {
@@ -32,7 +27,7 @@
         main#main {
             padding-top: $spacer * 3;
             padding-left: 2.1rem;
-            background-color: $light-background;
+            background-color: $white;
         }
         background-image: url("../img/background.svg"); /* The image used */
         background-position: center; /* Center the image */
@@ -43,7 +38,7 @@
 
 @media (max-width: 992px) {
     .sidebar-collapse {
-        background-color: $light-background;
+        background-color: $light;
     }
 }
 
@@ -65,6 +60,7 @@
 .octicon {
     margin-right: 0.25em;
 }
+
 
 /*-----Sidebar-----*/
 
