@@ -12,7 +12,8 @@ This indicator examines how responsibilities for research data management are di
 * **Unassigned responsibilities**: RDM responsibilities are not formally defined, assigned or recognised within the organisation.  
 * **Reactive**: RDM tasks are carried out when the occasion arises, without structure, procedures or clear accountability.  
 * **No support**: Researchers rely on informal help, personal experience or external support for RDM questions.
-* **Impact**: RDM activities are inconsistent and depend entirely on individual initiatives. Knowledge is not retained and institutional responsibility is absent.
+
+**Impact**: RDM activities are inconsistent and depend entirely on individual initiatives. Knowledge is not retained and institutional responsibility is absent.
 
 ## Level 2 – There are staff that have DM duties
 
@@ -20,14 +21,16 @@ This indicator examines how responsibilities for research data management are di
 * **Informal practice**: Approaches differ across departments and processes are rarely documented.  
 * **Low coordination**: Communication between staff performing RDM duties is limited or non-existent.  
 * **Emerging awareness**: The value of RDM is recognised but roles and priorities are still unclear.
-* **Impact**: RDM support is beginning to develop but remains fragmented and unsustainable. Success depends on individual motivation rather than organisational structure.
+
+**Impact**: RDM support is beginning to develop but remains fragmented and unsustainable. Success depends on individual motivation rather than organisational structure.
 
 ## Level 3 – There are dedicated DM staff
 
 * **Defined roles**: Specific staff have RDM as their primary responsibility, supported by clear job descriptions.  
 * **Regular support**: RDM staff provide structured support, training and guidance to researchers.  
 * **Growing collaboration** – Data stewards and related roles begin to share knowledge and align practices.
-* **Impact**: RDM support is consistent and professional, but coordination across the organisation is still limited and services may vary in scope or coverage.
+
+**Impact**: RDM support is consistent and professional, but coordination across the organisation is still limited and services may vary in scope or coverage.
 
 ## Level 4 – There is a dedicated DM coordination team
 
@@ -35,4 +38,5 @@ This indicator examines how responsibilities for research data management are di
 * **Harmonised activities**: Roles, workflows and communication are aligned across departments and services.  
 * **Strategic role**: The team contributes to policy development, planning and continuous improvement of RDM practices.  
 * **Embedded culture**: RDM responsibilities are part of institutional strategy and professional development pathways.
-* **Impact**: RDM support is cohesive, sustainable and strategically embedded in the organisation’s research environment. Coordination ensures efficiency, shared learning and long-term institutional growth.
+
+**Impact**: RDM support is cohesive, sustainable and strategically embedded in the organisation’s research environment. Coordination ensures efficiency, shared learning and long-term institutional growth.
