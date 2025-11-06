@@ -1,5 +1,5 @@
 ---
-title: Research data governance: policies and procedures
+title: Research data governance\: policies and procedures
 description: Indicates at what level policies on data governance are established and implemented in the organisation
 contributors: [Ingeborg Winge, Nils Lubke, Hana Marčetić, Heleri Inno, Aída Moure Fernández, Mijke Jetten, Jana Martínková]
 page_id: mm-strategy-policies-and-procedures
