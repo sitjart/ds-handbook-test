@@ -1,18 +1,17 @@
 ---
-title: RDM Expert Network
-description: How to network with other RDM experts
-contributors: [Mijke Jetten, Helena Schnitzer, Jeanne Wilbrandt, Flora D’Anna, Hana Marcetic, Jana Martínková, Heleri Inno, Diana Pilvar, Brane Leskošek, Federico Bianchini]
-page_id: g-support-networks
+title: RDM training
+description: Providing RDM training
+contributors: [Minna Ahokas, Diana Pilvar, Marina Popleteeva, Mijke Jetten, Heleri Inno, Diana Pilvar, Jana Martínková, Aida Moure]
+page_id: g-support-communication
 related_pages:
+    maturity-model: [mm-support-training]
 ---
 
 ## Context
 
-Data stewards play a central role in enabling FAIR research, yet often find themselves isolated as the only ones with relevant expertise in their team or institution. Without structured and well-communicated opportunities for exchange, they risk working in silos, duplicating efforts, or missing key developments.
-Participation in expert networks is essential for knowledge and expertise sharing and for following community developments concerning standards, tools, and best practices. These networks serve both operational needs and long-term community building, and can operate at a local, national, or international level. Each of these levels delivers specific benefits. Local networks connect data stewards to institutional competence and infrastructure. 
-National networks align data stewardship with national infrastructures, policy makers and funders. International networks, often provided under the umbrella of research infrastructures and initiatives such as ELIXIR, the European Open Science Cloud (EOSC), and the Research Data Alliance (RDA), global alignments and (domain-relevant) knowledge exchange. A balanced presence across these levels strengthens both individual practice and institutional capacity.
-However, participation alone is not enough. The degree to which an organisation supports engagement, by providing time, budget, or strategic encouragement, signals its commitment to responsible, collaborative research. Institutions that invest in network involvement demonstrate that they value the professional growth of their data stewards and the broader impact of coordinated data management.
-The participation of data stewards in the expert network, alongside the organisation’s involvement in supporting it, creates a win-win situation. For data stewards, it makes their work easier and helps them stay up to date; for the organisation, it enables more effective and efficient data management.
+Training in research data management (RDM) is a cornerstone of building capacity for FAIR and Open Science. For researchers, it provides the skills and confidence to apply best practices in their own work; for data stewards and support staff, it ensures they can deliver consistent, high-quality guidance across projects and disciplines. As expectations around data sharing, reproducibility and compliance grow, so too does the need for accessible, well-targeted, and sustainable RDM training for data stewards or complementary profiles.
+The RDM training provision is shaped by its scope, accessibility and integration into institutional processes. Training remains ad hoc and siloed in many contexts, driven by individual enthusiasm or urgent need, dependent on short-term funding, or limited to single events. The materials developed are often valuable, yet they also reflect this ad hoc nature. Moving toward a structured, continuous training portfolio requires strategic planning, dedicated resources and alignment with national or thematic infrastructure. This includes clear definitions of audience, targeted expertise levels and learning objectives; and feedback loops to keep material relevant. For training aimed at professional roles, such as data stewards, embedding Train-the-Trainer approaches and recognising participation through certificates or ECTS points can further strengthen uptake and impact.
+In federated and cross-institutional environments, harmonising training presents both challenges and opportunities. Centralised catalogues, shared curricula and collaborative delivery can reduce duplication and increase reach, but this requires coordination and clear responsibilities. Whether delivered in person, online, as e-learning or as blended formats, effective RDM training is not only about knowledge transfer; it also helps enable culture change, embedding shared principles and practices that persist beyond the training itself.
 
 ## Guidance
 
