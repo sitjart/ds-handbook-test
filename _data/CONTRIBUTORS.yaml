@@ -10,6 +10,12 @@
 #    affiliation: affiliation
 #    image_url: absolute path to image (default image from github)
 
+Dafne Condori:
+    git:
+    email: 
+    orcid:
+    role: contributor
+    affiliation:
 Aída Moure Fernández:
     git: aidamouref
     email: 
