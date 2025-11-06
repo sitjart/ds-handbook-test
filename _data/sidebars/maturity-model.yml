@@ -30,7 +30,7 @@ subitems:
         url: /mm-legal-gdpr
       - title: Ethics
         url: /mm-legal-ethics
-  - title: Support
+  - title: RDM support
     description:
     url: /mm-support
     subitems:
@@ -46,7 +46,7 @@ subitems:
         url: /mm-support-communication
       - title: RDM services
         url: /mm-support-services
-  - title: Data
+  - title: Data and metadata management
     description:
     url: /mm-data
     subitems:
