@@ -32,7 +32,7 @@
         main#main {
             padding-top: $spacer * 3;
             padding-left: 2.1rem;
-            background-color: $white;
+            background-color: $light-background;
         }
         background-image: url("../img/background.svg"); /* The image used */
         background-position: center; /* Center the image */
@@ -76,6 +76,10 @@
 
 #side-nav > ul {
     margin-top: $spacer * 0.5;
+}
+
+.bg-warning {
+    background-color: $accent-color;
 }
 
 /* -----Homepage----- */
@@ -167,13 +171,9 @@ section#search-section {
 
 /*-----Top navigation-----*/
 
-
-.navbar-nav .nav-item > a {
-    white-space: nowrap;
-    &.active {
-        background-color: $navbar-active;
-        border-radius: 0 !important;
-    }
+.navbar-nav .nav-item > a.active {
+    border-bottom: 4px solid $navbar-active;
+    margin-bottom: -4px;
 }
 
 /*----- Buttons -----*/
