@@ -7,12 +7,12 @@ domains:
     description: >-
       This area covers the development and maintenance of strategies and
       sustainability of RDM services necessary for the organisation
-  - name: '[2] Legal'
+  - name: '[2] Legal and governance'
     description: >-
       This area covers legal, ethical, and regulatory aspects of research data
       management, including data protection, IT security, ethics and ELSI, and
       intellectual property
-  - name: '[3] Support'
+  - name: '[3] RDM support'
     description: >-
       This area covers research data management support, including training,
       information resources, formalised services, communication, and networking
@@ -159,7 +159,7 @@ indicators:
     Indicator description: >-
       Indicates the diversity of funding models to support the RDM strategy
       implementation
-  - Domain: '[2] Legal'
+  - Domain: '[2] Legal and governance'
     Subdomain: '[2.1] Legal framework'
     Indicator level: 2.1.1
     Indicator: Legal framework for research data
@@ -191,7 +191,7 @@ indicators:
     Indicator description: >-
       Indicates the maturity of the legal framework for research data,
       established in the organisation
-  - Domain: '[2] Legal'
+  - Domain: '[2] Legal and governance'
     Subdomain: '[2.2] IT security'
     Indicator level: 2.2.1
     Indicator: IT security for research data (RD) and associated services
@@ -223,7 +223,7 @@ indicators:
     Indicator description: >-
       Indicates the maturity of IT security for research data, ranging from
       minimal, reactive protections to certified systems and automated responses
-  - Domain: '[2] Legal'
+  - Domain: '[2] Legal and governance'
     Subdomain: '[2.3] Data protection'
     Indicator level: 2.3.1
     Indicator: Data protection compliancy of research data
@@ -259,7 +259,7 @@ indicators:
     Indicator description: >-
       Indicates the level of data protection compliance, the implementation of
       roles and compliance systems within the organisation
-  - Domain: '[2] Legal'
+  - Domain: '[2] Legal and governance'
     Subdomain: '[2.4] Ethics'
     Indicator level: 2.4.1
     Indicator: |-
@@ -291,7 +291,7 @@ indicators:
     Indicator description: >-
       Indicates the level of ethical awareness from minimal considerations to
       guidelines and standard compliance
-  - Domain: '[3] Support'
+  - Domain: '[3] RDM support'
     Subdomain: '[3.1] Training'
     Indicator level: 3.1.1
     Indicator: RDM Training
@@ -310,7 +310,7 @@ indicators:
     Indicator description: >-
       Indicates how RDM training is organised within the organisation, including
       the existence, structure, and comprehensiveness
-  - Domain: '[3] Support'
+  - Domain: '[3] RDM support'
     Subdomain: '[3.1] Training'
     Indicator level: 3.1.2
     Indicator: Availability of RDM training material
@@ -328,7 +328,7 @@ indicators:
       Indicates how RDM training materials are made available within the
       organisation and beyond, including their accessibility, openness, and
       visibility
-  - Domain: '[3] Support'
+  - Domain: '[3] RDM support'
     Subdomain: '[3.2] Expert network'
     Indicator level: 3.2.1
     Indicator: >-
@@ -357,7 +357,7 @@ indicators:
       Indicates how RDM expertise within the organisation is supported through
       structured networking opportunities at different levels (e.g., local,
       national, international level)
-  - Domain: '[3] Support'
+  - Domain: '[3] RDM support'
     Subdomain: '[3.3] Guidelines for researchers'
     Indicator level: 3.3.1
     Indicator: RDM information / guidelines for researchers
@@ -381,7 +381,7 @@ indicators:
       Indicates how clearly RDM information and guidelines are communicated to
       researchers, and whether they are centralised, maintained, and actively
       shared
-  - Domain: '[3] Support'
+  - Domain: '[3] RDM support'
     Subdomain: '[3.3] Guidelines for researchers'
     Indicator level: 3.3.2
     Indicator: Flow of RDM communication and responsiveness
@@ -403,7 +403,7 @@ indicators:
       Indicates how well communication about data management is maintained
       within the organisation, particularly the extent to which it is
       consultive, interactive, responsive, and fosters dialogue
-  - Domain: '[3] Support'
+  - Domain: '[3] RDM support'
     Subdomain: '[3.4] DM support infrastructure'
     Indicator level: 3.4.1
     Indicator: >-
