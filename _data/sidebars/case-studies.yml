@@ -1,25 +1,13 @@
 title: Case studies
 title_url: /case-studies
 subitems:
-  - title: Netherlands
-    description: 
-    url: /nl
-    subitems:
-      - title: DTLS interest Group
-        url: /dtls-interest-group
-      - title: ELSI servicedesk
-        url: /ELSI-servicedesk
-  - title: United Kingdom
-    description:
-    url: /uk
-    subitems:
-      - title: ELIXIR-UK Fellowship
-        url: /elixir-uk-fellowship
-  - title: Finland
-    description:
-    url: /fi
-    subitems:
-      - title: CSC RDM Support
-        url: /CSC-RDM-Support
+  - title: DTLS interest Group
+    url: /dtls-interest-group
+  - title: ELSI servicedesk
+    url: /ELSI-servicedesk
+  - title: ELIXIR-UK Fellowship
+    url: /elixir-uk-fellowship
+  - title: CSC RDM Support
+    url: /CSC-RDM-Support
 
 

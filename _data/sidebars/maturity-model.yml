@@ -2,7 +2,7 @@ title: Maturity Model
 title_url: /maturity-model
 subitems:
   - title: Strategy and Sustainability
-    url: /strategy
+    url: /mm-strategy
     subitems:
       - title: Defined
         url: /strategy-defined
@@ -24,7 +24,7 @@ subitems:
         url: /strategy-policies
   - title: Legal and governance
     description:
-    url: /legal
+    url: /mm-legal
     subitems:
       - title: Ethics
         url: /legal-ethics
@@ -36,7 +36,7 @@ subitems:
         url: /legal-security
   - title: Support
     description:
-    url: /support
+    url: /mm-support
     subitems:
       - title: Training
         url: /support-training
@@ -52,7 +52,7 @@ subitems:
         url: /support-communication
   - title: Data
     description:
-    url: /data
+    url: /mm-data
     subitems:
       - title: Accessibility
         url: /data-accessibility
