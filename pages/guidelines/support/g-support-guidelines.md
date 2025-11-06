@@ -7,6 +7,7 @@ related_pages:
 ---
 
 ## Context
+
 Research data management (RDM) guidance forms the backbone of responsible data practice. When such guidance is clear, accessible, and well-maintained, it enables researchers to act autonomously, comply with funder and institutional requirements, and engage with FAIR and open science in a meaningful way. However, in many institutions, RDM information remains fragmented, hard to find, or inconsistently maintained, making even the most motivated researchers dependent on personal contacts or ad hoc support. 
 
 The availability and visibility of guidance materials, such as data policies, DMP templates, file naming conventions, or metadata standards, serve as a key signal of institutional maturity. Good guidance is not just published; it is proactively communicated, clearly structured, and kept up to date. Without deliberate maintenance and promotion, outdated documents and buried intranet pages undermine trust and make it harder for staff to deliver consistent support. 
