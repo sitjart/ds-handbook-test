@@ -3,18 +3,25 @@
 $font-family-theme: "Inter", sans-serif;
 
 /*-----Top navigation-----*/
-$topnav-bg: $primary;
+$topnav-bg: $dark;
 $topnav-brand-height: 60px;
 
 /*-----More information tiles-----*/
-$info-card-header-bg: $primary;
+$info-card-bg: $light;
+$info-card-color: $dark;
+$info-card-bg-hover: $primary;
+$info-card-color-hover: $white;
+
+/*-----Sidebar-----*/
+$sidebar-bg: $secondary-light;
+$sidebar-lvl2-bg: $secondary-light;
 
 /*-----Section navigation tiles-----*/
-$nav-card-bg: $secondary;
-$nav-card-header-bg: $secondary;
+$nav-card-bg: $light;
+$nav-card-header-bg: $dark;
 $nav-card-header-color: $secondary;
-$nav-card-badge-color: $secondary;
-$nav-card-badge-bg: $secondary;
+$nav-card-badge-color: $accent-color;
+$nav-card-badge-bg: $dark;
 
 /*-----Footer-----*/
 $footer-bg: $primary;
