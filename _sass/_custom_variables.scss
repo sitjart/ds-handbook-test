@@ -3,24 +3,24 @@
 $font-family-theme: "Inter", sans-serif;
 
 /*-----Top navigation-----*/
-$topnav-bg: $dark-color;
+$topnav-bg: $primary;
 $topnav-brand-height: 60px;
 
 /*-----More information tiles-----*/
-$info-card-header-bg: $dark-color;
+$info-card-header-bg: $primary;
 
 /*-----Section navigation tiles-----*/
-$nav-card-bg: $bright-green;
-$nav-card-header-bg: $bright-green;
-$nav-card-header-color: $bright-green;
-$nav-card-badge-color: $bright-green;
-$nav-card-badge-bg: $bright-green;
+$nav-card-bg: $secondary;
+$nav-card-header-bg: $secondary;
+$nav-card-header-color: $secondary;
+$nav-card-badge-color: $secondary;
+$nav-card-badge-bg: $secondary;
 
 /*-----Footer-----*/
-$footer-bg: $dark-color;
+$footer-bg: $primary;
 $footer-color: $white;
 $footer-link-color: $white;
 $footer-copyright-bg: #00000033;
 
 /*-----Events & news-----*/
-$news-border-color: $dark-color;
+$news-border-color: $primary;
