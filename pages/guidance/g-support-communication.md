@@ -3,7 +3,7 @@ title: Flow of RDM communication and responsiveness
 description: How to communicate about RDM effectively
 contributors: [Helena Schnitzer, Jeanne Wilbrandt, Mijke Jetten, Hana Marcetic, Heleri Inno, Diana Pilvar]
 page_id: g-support-communication
-type: guidance
+type: Guidance
 related_pages:
     maturity-model: [mm-support-communication]
 ---
