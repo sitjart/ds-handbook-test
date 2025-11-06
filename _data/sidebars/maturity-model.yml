@@ -5,65 +5,65 @@ subitems:
     url: /mm-strategy
     subitems:
       - title: RDM strategy
-        url: /strategy-defined
+        url: /mm-strategy-defined
       - title: RDM personnel
-        url: /strategy-personnel
+        url: /mm-strategy-personnel
       - title: RDM goals & KPIs
-        url: /strategy-goals-kpis
+        url: /mm-strategy-goals-kpis
       - title: Adherence to policies
-        url: /strategy-policy-adherence
+        url: /mm-strategy-policy-adherence
       - title: Research data governance
-        url: /strategy-policies-and-procedures
+        url: /mm-strategy-policies-and-procedures
       - title: Align with best practices
-        url: /strategy-align-with-best-practices
+        url: /mm-strategy-align-with-best-practices
       - title: Funding for RDM
-        url: /strategy-funding
+        url: /mm-strategy-funding
   - title: Legal and governance
     description:
     url: /mm-legal
     subitems:
       - title: Legal framework
-        url: /legal-framework
+        url: /mm-legal-framework
       - title: IT security
-        url: /legal-security
+        url: /mm-legal-security
       - title: Data protection compliancy
-        url: /legal-gdpr
+        url: /mm-legal-gdpr
       - title: Ethics
-        url: /legal-ethics
+        url: /mm-legal-ethics
   - title: Support
     description:
     url: /mm-support
     subitems:
       - title: RDM training
-        url: /support-training
+        url: /mm-support-training
       - title: RDM training materials
-        url: /support-training-materials
+        url: /mm-support-training-materials
       - title: Networking engagement 
-        url: /support-network
+        url: /mm-support-network
       - title: Guidelines for researchers
-        url: /support-guidelines-researchers
+        url: /mm-support-guidelines-researchers
       - title: RDM communication
-        url: /support-communication
+        url: /mm-support-communication
       - title: RDM services
-        url: /support-services
+        url: /mm-support-services
   - title: Data
     description:
     url: /mm-data
     subitems:
       - title: RDM resources
-        url: /data-resources
+        url: /mm-data-resources
       - title: RDM standards
-        url: /data-standards-rdm
+        url: /mm-data-standards-rdm
       - title: Documentation standards
-        url: /data-standards-documentation
+        url: /mm-data-standards-documentation
       - title: Technical infrastructure
-        url: /data-infrastructure
+        url: /mm-data-infrastructure
       - title: Data publication
-        url: /data-publication
+        url: /mm-data-publication
       - title: Data assets
-        url: /data-assets
+        url: /mm-data-assets
       - title: Data accessibility
-        url: /data-accessibility
+        url: /mm-data-accessibility
       - title: DMP
-        url: /data-dmp
+        url: /mm-data-dmp
 
