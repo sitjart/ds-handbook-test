@@ -4,4 +4,4 @@ title: Guidance
 
 Guidance go here...
 
-{% include section-navigation-tiles.html type="guidance" %}
+{% include section-navigation-tiles.html type="Guidance" %}
