@@ -1,6 +1,6 @@
 ---
 title: Flow of RDM communication and responsiveness
-description: Indicates how well communication about data management is maintained within the organisation, particularly the extent to which it is consultive, interactive, responsive, and fosters dialogue.
+description: Indicates how well communication about data management is maintained within the organisation, particularly the extent to which it is consultive, interactive, responsive, and fosters dialogue
 contributors: [Helena Schnitzer, Jeanne Wilbrandt, Mijke Jetten, Hana Marcetic, Heleri Inno, Diana Pilvar]
 page_id: mm-support-communication
 ---
