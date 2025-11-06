@@ -224,7 +224,7 @@ section#search-section {
                 color: $blue;
             }
             & span{
-                color: $orange;
+                color: $accent-color;
             }
         }
     }
@@ -317,7 +317,7 @@ h2 {
                 & .features-content{
                       & .features-title{
                             & a{
-                                  color: $orange;
+                                  color: $accent-color;
                             }
                       }
                       & p{
@@ -379,7 +379,7 @@ h2 {
     display: block;
     float: left;
     margin: 10px auto;
-    background-color: $orange;
+    background-color: $accent-color;
     color: #fff;
     border:none;
     border-radius: 10px;
