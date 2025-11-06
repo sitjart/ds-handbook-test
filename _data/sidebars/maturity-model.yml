@@ -4,69 +4,66 @@ subitems:
   - title: Strategy and Sustainability
     url: /mm-strategy
     subitems:
-      - title: Defined
+      - title: RDM strategy
         url: /strategy-defined
-      - title: Personnel
+      - title: RDM personnel
         url: /strategy-personnel
-      - title: Defined
-        url: /strategy-defined
-      - title: Goals & KPIs
+      - title: RDM goals & KPIs
         url: /strategy-goals-kpis
-      - title: Communication of strategy
-        url: /strategy-communication
-      - title: Governance and implementation
-        url: /strtaegy-governance-implementation
-      - title: Adherence
-        url: /strategy-governance-adherence
-      - title: Funding
+      - title: Adherence to policies
+        url: /strategy-policy-adherence
+      - title: Research data governance
+        url: /strategy-policies-and-procedures
+      - title: Align with best practices
+        url: /strategy-align-with-best-practices
+      - title: Funding for RDM
         url: /strategy-funding
-      - title: Policies
-        url: /strategy-policies
   - title: Legal and governance
     description:
     url: /mm-legal
     subitems:
+      - title: Legal framework
+        url: /legal-framework
+      - title: IT security
+        url: /legal-security
+      - title: Data protection compliancy
+        url: /legal-gdpr
       - title: Ethics
         url: /legal-ethics
-      - title: Framework
-        url: /legal-framework
-      - title: GDPR
-        url: /legal-gdpr
-      - title: Security
-        url: /legal-security
   - title: Support
     description:
     url: /mm-support
     subitems:
-      - title: Training
+      - title: RDM training
         url: /support-training
-      - title: Training materials
+      - title: RDM training materials
         url: /support-training-materials
-      - title: Services
-        url: /support-services
-      - title: Guidelines for researchers
-        url: /ssupport-guidelines-researchers
-      - title: Network
+      - title: Networking engagement 
         url: /support-network
-      - title: Communication
+      - title: Guidelines for researchers
+        url: /support-guidelines-researchers
+      - title: RDM communication
         url: /support-communication
+      - title: RDM services
+        url: /support-services
   - title: Data
     description:
     url: /mm-data
     subitems:
-      - title: Accessibility
-        url: /data-accessibility
-      - title: Assets
-        url: /data-assets
-      - title: DMP
-        url: /data-dmp
-      - title: Infrastructure
-        url: /data-infrastructure
-      - title: Publication
-        url: /data-publication
+      - title: RDM resources
+        url: /data-resources
       - title: RDM standards
         url: /data-standards-rdm
-      - title: Documentation of standards
+      - title: Documentation standards
         url: /data-standards-documentation
-      - title: Resources
-        url: /data-resources
+      - title: Technical infrastructure
+        url: /data-infrastructure
+      - title: Data publication
+        url: /data-publication
+      - title: Data assets
+        url: /data-assets
+      - title: Data accessibility
+        url: /data-accessibility
+      - title: DMP
+        url: /data-dmp
+
