@@ -1,20 +1,10 @@
 title: Guidance
 title_url: /guidance
 subitems:
-  - title: Support
-    url: /g-support
-    subitems:
-      - title: Communication
-        url: /g-support-communication
-      - title: Guidelines
-        url: /g-support-guidelines
-      - title: Networks
-        url: /g-support-networks
-  - title: RDM Strategy
-    description:
-    url: /g-rdm-strategy
-    subitems:
-      - title: Test topic
-        url: /topic-1
-      - title: Test topic
-        url: /topic-2
+  - title: Communication
+    url: /g-support-communication
+  - title: Guidelines
+    url: /g-support-guidelines
+  - title: Networks
+    url: /g-support-networks
+

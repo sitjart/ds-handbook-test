@@ -47,39 +47,9 @@ defaults:
       sidebar: case-studies
   -
     scope:
-      path: "pages/case-studies/case-studies-uk"
-    values:
-      type: UK
-  -
-    scope:
-      path: "pages/case-studies/case-studies-nl"
-    values:
-      type: NL
-  -
-    scope:
-      path: "pages/case-studies/case-studies-fi"
-    values:
-      type: FI
-  -
-    scope:
       path: "pages/guidance"
     values:
       sidebar: guidance
-  -
-    scope:
-      path: "pages/guidelines/guidelines-support"
-    values:
-     type: Guidelines_Support
-  -
-    scope:
-      path: "pages/guidelines/guidelines-legal"
-    values:
-     type: Guidelines_Legal
-  -
-    scope:
-      path: "pages/guidelines/guidelines-rdm-strategy"
-    values:
-     type: Guidelines_RDM_Strategy
   -
     scope:
       path: "pages/maturity-model"
@@ -89,22 +59,22 @@ defaults:
     scope:
       path: "pages/maturity-model/mm-strategy"
     values:
-      type: Maturity_Model_Strategy
+      type: maturity-model-strategy
   -
     scope:
       path: "pages/maturity-model/mm-legal"
     values:
-      type: Maturity_Model_Legal
+      type: maturity-model-legal
   -
     scope:
       path: "pages/maturity-model/mm-data"
     values:
-      type: Maturity_Model_Data
+      type: maturity-model-data
   -
     scope:
       path: "pages/maturity-model/mm-support"
     values:
-      type: Maturity_Model_Support
+      type: maturity-model_support
 
 scholar:
   style: _bibliography/nature_custom.csl
