@@ -3,6 +3,7 @@ title: Informing about RDM
 description: Informing and guiding researchers about RDM
 contributors: [Mijke Jetten, Helena Schnitzer, Jeanne Wilbrandt, Flora D’Anna, Hana Marcetic, Jana Martínková, Heleri Inno]
 page_id: g-support-rdm-information
+type: guidance
 related_pages:
     maturity-model: [support]
 ---

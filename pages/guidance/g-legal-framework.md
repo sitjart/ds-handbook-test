@@ -3,6 +3,7 @@ title: TEXT
 description: coming soon...
 contributors: 
 page_id: g-legal-framework
+type: guidance
 related_pages: [support-communication]
 ---
 
