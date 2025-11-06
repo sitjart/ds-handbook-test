@@ -2,11 +2,11 @@
 $white: #ffffff;
 $blue: #037EAB;
 $gray-600: #73757d;
-$orange: #F47D20;
+$accent-color: #F47D20;
 $light-orange: #fee1c8;
 $light: #f2f5f7;
 $light-x: #9bcbdd;
-$dark-blue: #023452;
+$dark-color: #0A261C;
 $light-blue: #b3d8e5;
 
 /*-----Custom values for Bootstrap variables-----*/
@@ -18,12 +18,12 @@ $border-radius: 0.3rem;
 $btn-border-radius-sm: $border-radius;
 $card-border-width: 0;
 $card-cap-bg: $light-x;
-$link-color: $orange;
+$link-color: $accent-color;
 $info: $blue;
 $link-decoration: underline;
 $body-bg: $white;
-$body-color: $dark-blue;
-$font-family-sans-serif: "Lato", sans-serif;
+$body-color: $dark-color;
+$font-family-sans-serif: "Inter", sans-serif;
 $alert-border-width: 0;
 $input-group-addon-bg: $light-x;
 $input-bg: $light;

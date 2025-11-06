@@ -14,7 +14,7 @@ theme_variables:
 
 sass:
   style: compressed
-  sourcemap: never
+  sourcemap: always
 
 gtag: 
 # Google analytics tag
