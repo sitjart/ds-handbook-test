@@ -1,6 +1,7 @@
 /*-----Theme colors-----*/
 $primary: #0A261C;
 $secondary: #8DF2B9;
+$secondary-light: #8DF2B9;
 $light: #EEEEEE;
 $dark: #0A261C;
 $white: #ffffff;
@@ -11,7 +12,6 @@ $accent-color: #D96248;
 
 /*-----Custom values for Bootstrap variables-----*/
 $component-active-bg: $accent-color;
-$link-decoration: none;
 $dark-text: $primary;
 $light-background: $grey-light;
 $light-text: $grey-light;
@@ -25,7 +25,7 @@ $card-bg: transparent;
 $card-cap-bg: $primary;
 $link-color: $accent-color;
 $info: $secondary-light;
-$link-decoration: underline;
+$link-decoration: none;
 $body-bg: $white;
 $body-color: $primary;
 $font-family-sans-serif: "Inter", sans-serif;
