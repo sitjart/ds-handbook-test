@@ -59,22 +59,22 @@ defaults:
     scope:
       path: "pages/maturity-model/mm-strategy"
     values:
-      type: maturity-model-strategy
+      type: Strategy indicators
   -
     scope:
       path: "pages/maturity-model/mm-legal"
     values:
-      type: maturity-model-legal
+      type: Legal indicators
   -
     scope:
       path: "pages/maturity-model/mm-data"
     values:
-      type: maturity-model-data
+      type: Data indicators
   -
     scope:
       path: "pages/maturity-model/mm-support"
     values:
-      type: maturity-model_support
+      type: Support indicators
 
 scholar:
   style: _bibliography/nature_custom.csl
