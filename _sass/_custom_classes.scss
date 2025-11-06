@@ -14,7 +14,7 @@
 /*-----Sidebar-----*/
 
 .sidebar-title {
-    border-bottom: 0.2rem solid $blue;
+    border-bottom: 0.2rem solid $dark-text;
     font-weight: bold;
     padding-bottom: $input-btn-padding-y - 0.2rem;
 }
@@ -94,13 +94,13 @@ section#search-section {
 }
 
 .navbar-nav .nav-item > a.active {
-    background-color: $navbar-dark-active;
+    background-color: $navbar-active;
     color: $light-text !important;
 }
 
 .navigation-tiles .card button {
-    background-color: $blue !important;
-    color: $bright-green !important;
+    background-color: $card-bg !important;
+    color: $dark-text !important;
 }
 
 .navigation-tiles .card button:hover {
@@ -109,7 +109,7 @@ section#search-section {
 }
 
 .navigation-tiles .card .card-header a {
-    color: $blue !important;
+    color: $dark-text !important;
     text-decoration: none !important;
 }
 
@@ -199,7 +199,7 @@ section#search-section {
         & .title{
             font-size: 24px;
             font-weight: 600;
-            color: $blue;
+            color: $dark-text;
         }
     }
 
@@ -213,14 +213,14 @@ section#search-section {
         & .count-content{
             font-size: 16px;
             font-weight: 300;
-            color: $blue;
+            color: $dark-text;
             display: block;
 
             & .count{
                 font-size: 60px;
                 line-height: 60px;
                 font-weight: 700;
-                color: $blue;
+                color: $dark-text;
             }
             & span{
                 color: $accent-color;
@@ -368,7 +368,7 @@ h2 {
 .navbar-nav .nav-item > a {
     white-space: nowrap;
     &.active {
-        background-color: $blue;
+        background-color: $navbar-active;
         border-radius: $border-radius;
     }
 }
@@ -394,7 +394,7 @@ h2 {
 }
 
 .home-button:hover {
-    background-color: $blue;
+    background-color: $navbar-hover-color:;
     transition: 0.7s;
 }
 
@@ -408,7 +408,7 @@ h2 {
 
 .undefined a{
     text-decoration: none;
-    color: $blue;
+    color: $accent-color;
 }
 
 /* paddin/margin for back-to-top button */
