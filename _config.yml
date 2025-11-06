@@ -12,7 +12,7 @@ theme_variables:
 
 sass:
   style: compressed
-  sourcemap: always
+  sourcemap: never
 
 theme_variables:
   topnav:
