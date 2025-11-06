@@ -1,7 +1,7 @@
 ---
 title: Framework for different levels (e.g., local, national, international) of networking opportunities for the organizational RDM expertise
 description: Indicates how RDM expertise within the organisation is supported through structured networking opportunities at different levels (e.g., local, national, international level)
-contributors: [Mijke Jetten, Helena Schnitzer, Jeanne Wilbrandt, Flora D'Anna, Hana Marcetic, Jana Martínková, Heleri Inno, Diana Pilvar, Brane Leskošek, Federico Bianchini]
+contributors: [Mijke Jetten, Helena Schnitzer, Jeanne Wilbrandt, Flora D'Anna, Hana Marčetić, Jana Martínková, Heleri Inno, Diana Pilvar, Brane Leskošek, Federico Bianchini]
 page_id: mm-support-network
 ---
 This indicator assesses whether and how RDM professionals within an organisation are engaged in expert networks (locally, nationally, and internationally) and the extent to which their institution supports their participation. Such networks are vital for sharing expertise, aligning practices, building capacity, and driving collaborative innovation. Support for networking reflects institutional maturity; not just whether individuals participate, but whether such engagement is structurally enabled, resourced, and encouraged.

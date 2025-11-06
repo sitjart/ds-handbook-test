@@ -1,7 +1,7 @@
 ---
 title: RDM Expert Network
 description: How to network with other RDM experts
-contributors: [Mijke Jetten, Helena Schnitzer, Jeanne Wilbrandt, Flora D’Anna, Hana Marcetic, Jana Martínková, Heleri Inno, Diana Pilvar, Brane Leskošek, Federico Bianchini]
+contributors: [Mijke Jetten, Helena Schnitzer, Jeanne Wilbrandt, Flora D’Anna, Hana Marčetić, Jana Martínková, Heleri Inno, Diana Pilvar, Brane Leskošek, Federico Bianchini]
 type: Guidance
 page_id: g-support-networks
 related_pages:

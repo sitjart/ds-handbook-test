@@ -1,7 +1,7 @@
 ---
 title: Availability of RDM training material
 description: Indicates how RDM training materials are made available within the organisation and beyond, including their accessibility, openness, and visibility
-contributors: [Mijke Jetten, Jeanne Wilbrandt, Hana Marcetic, Jana Martínková, Dafne Condori]
+contributors: [Mijke Jetten, Jeanne Wilbrandt, Hana Marčetić, Jana Martínková, Dafne Condori]
 page_id: mm-support-training-materials
 ---
 This indicator assesses the availability of RDM training materials, including their accessibility, openness, discoverability, and potential for reuse. It captures whether materials exist, how they are organised, who can access them, and the impact in and/or outside institutions. Availability affects efficiency, consistency, recognition, and alignment with FAIR principles.
