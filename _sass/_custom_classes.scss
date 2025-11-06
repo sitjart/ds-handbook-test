@@ -48,7 +48,7 @@
     h2 {
         font-weight: 700 !important;
         font-family:  $font-family-theme;
-        color: $dark-blue !important;
+        color: $dark-color !important;
     }
 
     h3 {
@@ -106,7 +106,7 @@ section#search-section {
 
 .navigation-tiles .card button:hover {
     background-color: $light-blue !important;
-    color: $dark-blue !important;
+    color: $dark-color !important;
 }
 
 .navigation-tiles .card .card-header a {
@@ -296,7 +296,7 @@ h2 {
                       font-size: 26px;
                       line-height: 24px;
                       font-weight: 800;
-                      color: $dark-blue;
+                      color: $dark-color;
                       @include transition(0.3s);
                       margin-top: 32px;
                       text-decoration: none;
@@ -321,7 +321,7 @@ h2 {
                             }
                       }
                       & p{
-                            color: $dark-blue;
+                            color: $dark-color;
                       }
                 }
           }
