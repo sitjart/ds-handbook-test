@@ -4,7 +4,7 @@ title: ELIXIR Data Stewardship Handbook
 description: ""
 # Metadata description of the website
 
-remote_theme: ELIXIR-Belgium/elixir-toolkit-theme
+remote_theme: elixir-toolkit-theme
 
 topnav_title: Data Stewardship Handbook
 
@@ -14,7 +14,7 @@ theme_variables:
 
 sass:
   style: compressed
-  sourcemap: never
+  sourcemap: always
 
 gtag: 
 # Google analytics tag
