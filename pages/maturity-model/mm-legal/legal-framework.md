@@ -1,60 +1,47 @@
 ---
 title: Legal Framework for Research Data
-description: 
-contributors: 
+description: Indicates the maturity of the legal framework for research data, established in the organisation
+contributors: [Heleri Inno, Rudolf Vohnout, Hana Marčetić, Aina Jené, Wolmar Nyberg Åkerström, Jana Martínková, Aida Moure Fernandez, Mijke Jetten]
 page_id: 
 ---
 
-## What this indicator measures
-This indicator assesses the availability and use of standardised frameworks, templates, and procedures for legal tasks within the Organisation or Node. It considers whether legal processes are in place at project initiation, how consistently they are supported, and how prepared staff are required to apply them. Maturity reflects the organisation’s or Node’s ability to handle legal issues proactively through dedicated personnel and well-maintained resources.
+This indicator assesses the availability and use of standardised frameworks, templates and procedures for legal tasks within the organisation. It evaluates whether legal processes are in place at project initiation, how consistently these processes are supported and how prepared staff are to implement them. The level of maturity reflects the organisation’s capacity to address legal issues proactively through dedicated personnel and well-maintained resources.
 
-### Special cases
-In some instances, legal services are outsourced or bought in. In this case, the maturity levels are not scored as 1; they can either be evaluated on the level of the umbrella organisation or marked ‘not applicable’.
+## **Maturity levels**
 
-## Maturity levels
+**Indicator 2.1.1 Legal framework for research data**
 
-### Level 1 – Ad hoc and reactive
-Legal processes are ad hoc and reactive, with no standardised framework or templates regarding RDM. Legal tasks are handled informally by various departments. Agreements go through minimal review.
-* Reactive: No specific workflows and templates are generated, data stewards and/or legal team become involved only when specifically asked or when there is an immediate need, and it is unclear in what manner to approach those instances.
-* Unplanned: When the need arises, the work is distributed in an extemporaneous manner. It is unclear who to contact for specific questions and where to find the necessary information, templates or RDM support. Employees and researchers struggle to find support in understanding and navigating legal requirements.
-* Inconsistent delivery: The support varies in quality and expertise from case to case, and it remains unclear how to ensure compliance with legislation and policies.
+### **Level 1 – Legal processes are ad hoc and reactive, with no standardized framework or templates regarding RDM. Legal tasks are handled informally by various departments. Agreements go through minimal review.** 
 
-**Impact:** Slowing down of RDM processes and projects in general, no way to minimise the risk of breaches and potential legal issues.
+* **Reactive** \- No specific workflows and templates are defined. Data stewards and/or the legal team become involved only when specifically asked or when there is an immediate need. The way to approach those instances is unclear.  
+* **Unplanned \-** Legal work is carried out on an ad-hoc basis, with tasks distributed informally as needs arise. There is no clear point of contact for specific queries nor specific details about where to find the necessary information, templates or RDM support. Employees and researchers struggle to find support in understanding and navigating legal requirements.  
+* **Inconsistent delivery \-** The support varies in quality and expertise from case to case, and it remains unclear how to ensure compliance with legislation and policies.
 
-### Level 2 – Emerging, but inconsistent
-Standard templates and contractual clauses are being introduced, but not consistently used. The legal department exists but does not yet support project initiation or have fully defined processes for RDM issues.
-* Fragments exist: Pieces of a basic legal framework and RDM templates are preserved, available and referenced
-* Project-driven: Templates and contractual clauses are created as needed for different projects, but are used inconsistently
-* Not maintained: Lack of structure and clarity regarding responsibilities for maintaining and updating these assets as needed 
-* Not supported: Lack of support for adoption/use in the organisation
-* Not enforced: No mandatory legal adoption or coordinated follow-up on the institutional level
+*Impact*: RDM processes and projects are delayed, with no mechanisms in place to mitigate the risk of legal breaches and other potential issues.
 
-**Impact:** First steps towards a more consistent and efficient approach, but fragmented and at risk of commonly referenced assets becoming out of date as legislation and the RDM area develop.
+### **Level 2 – Standard templates and contractual clauses are being introduced, but not consistently used. The legal department exists but does not yet support project initiation or have fully defined processes for RDM issues.**
 
-Examples
-* The legal department exists, but does not cover RDM processes due to a missing strategy and lack of standardisation.
-* Legal support is provided by the Organisation or Node on an as-needed basis for the various projects in which the groups are involved.
-* Standard templates and contractual clauses are being introduced, with priority placed on bigger projects where regulatory compliance is critical (for example in cases where human data is involved).
+* **Fragments exist \-** Elements of a basic legal framework and RDM templates are preserved, available, referenced and in use.  
+* **Project-driven \-** Templates and contractual clauses are developed as required for different projects, but they are used inconsistently across the organisation.  
+* **Not maintained \-** Lack of structure and clarity regarding responsibilities for maintaining and updating these assets as required.  
+* **Not enforced \-**  Legal processes are optional, with no institutional mechanisms in place for follow-up,compliance or mandatory implementation. 
 
-### Level 3 – Standardised and structured
-The legal framework is well-defined and standardised across the organisation. Dedicated personnel is responsible for supporting the establishment of a legal framework covering RDM requirements. Comprehensive templates exist, along with standardised contractual clauses for RDM issues. 
-* Clear framework: A comprehensive legal framework is established and well-defined.
-* Standardised processes: Defined, standardised processes and comprehensive templates are in place, managed by dedicated personnel.
-* Data sensitivity is considered: Legal requirements differentiate between cases based on data types and information sensitivity.
-* Legislative mapping: Relevant legislative standards have been identified and mapped to the legislative frameworks and policies of Organisation or Node.
-* Centralised design: The institutional legal system for RDM is well-designed.
-* Fragmented implementation: Processes remain fragmented within individual faculties, laboratories, and departments.
-* Limited training: Systematic and regular training in this area is not carried out or is limited
+*Impact*: Progress has been made toward a more consistent legal approach, but the process is still fragmented. Without clear support, key resources may soon be out of date as laws and RDM practices change.
 
-**Impact:** Legislative activities will be more aligned across the organisation due to a clear, standardised institutional legal framework, leading to improved compliance, efficiency and reduced risk or fines, legal disputes and reputational damage.
+### **Level 3 – The legal framework is well-defined and standardized across the organization. A dedicated personnel is responsible for supporting the establishment of a legal framework covering RDM requirements. Comprehensive templates and standardized contractual clauses for RDM issues.**
 
-### Level 4 - Optimised and proactive
-Continuously improved and optimised legal framework for research data; regularly updated to reflect RDM best practices and regulatory changes. Use of advanced, customizable templates and optimised contractual clauses for RDM issues.
-* Asset management: All legal assets (e.g., policies, templates, agreements) are actively managed, maintained, and updated.
-* Dynamic framework: The legal framework is consistently up-to-date and reliably implemented.
-* Change management: Updates to the framework are communicated through established change management processes.
-* Comprehensive training: Regular, targeted, and mandatory training covers the entire RDM legal lifecycle for all relevant personnel (legal department, data stewards, researchers).
-* Dedicated support: Full support is provided (e.g., ticket systems with progress tracking and defined reaction times, dedicated presonnel).
-* Granular definitions: Comprehensive, data-type-specific definitions for legislative handling requirements are clearly established.
+* **Clear framework and alignment \-** A comprehensive and well-defined legal framework is established and aligned with the existing  frameworks and policies.  
+* **Standardised processes \-** Defined, standardised processes and comprehensive templates are in place and managed by dedicated personnel.  
+* **Data sensitivity is considered \-** Legal requirements reflect data sensitivity and data types,  ensuring appropriate handling based on risks.  
+* **Fragmented implementation and awareness \-** Legal processes remain fragmented within individual faculties, laboratories and departments. Systematic and regular training in this area is non-existing  or remains limited.
 
-**Impact:** The legal framework for RDM is continuously optimised and fully integrated across the organisation, ensuring proactive compliance, maximum efficiency, and minimal risk through consistent application and well-supported, highly trained personnel.
+*Impact*: A clear and standardised institutional legal framework increases organisational alignment. This will lead to improved compliance, efficiency and reduced risk of fines, legal disputes and reputational damage.
+
+### **Level 4 \- 4\. Continuously improved and optimized legal framework for research data; regularly updated to reflect RDM best practices and regulatory changes. Use of advanced, customizable templates and optimized contractual clauses for RDM issues.**
+
+* **Asset management** \- All legal assets (e.g., policies, templates, agreements) are actively and properly managed, maintained and regularly updated.  
+* **Change management \-** Updates are communicated and implemented through well-established change management processes.  
+* **Comprehensive training \-** Regular, targeted and mandatory training covers all legal aspects of the data lifecycle for all relevant personnel (e.g., legal department, data stewards, researchers).  
+* **Dedicated support \-** Full support mechanisms are provided (e.g., ticket systems with progress tracking and defined reaction times, dedicated personnel).
+
+*Impact*: The legal framework for RDM is improved over time and used consistently across the organisation. This ensures compliance, efficiency, and low risk, supported by well-trained staff.
