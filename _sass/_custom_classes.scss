@@ -181,36 +181,19 @@ section#search-section {
 
 /*-----Top navigation-----*/
 .navbar-nav .nav-item {
-    color: $white;
     margin: 0 -0.4em;
-    padding: 0.05em 0.3em; // smaller = tighter highlight
+    padding: 0.1em 0.4em;
     border-radius: 0.8em 0.3em;
     background: transparent;
     background-image: linear-gradient(
-        to right,
+    to right,
         rgba($secondary-light, 0.1),
         rgba($secondary, 0.7) 4%,
         rgba($secondary-light, 0.3)
     );
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
-    transition: color 0.3s ease, background-image 0.3s ease;
-
-    &:hover,
-    &.is-active {
-        color: $dark;
-        background-image: linear-gradient(
-        to right,
-        rgba($secondary-light, 0.2),
-        rgba($secondary, 0.9) 4%,
-        rgba($secondary-light, 0.4)
-        );
-    }
 }
-
 
 
 /*----- Buttons -----*/
