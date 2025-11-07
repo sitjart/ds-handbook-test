@@ -1,10 +1,5 @@
 /*-----General styling-----*/
-@media (min-width: 992px) {
-    main h1:not(.has-subtitle):not(.blurb-title),
-    main .h1:not(.has-subtitle) {
-        margin-top: -1rem;
-    }
-}
+
 
 h1 {
     position: relative;
@@ -18,7 +13,7 @@ h1 {
     bottom: 0;
     width: calc(100% + 4px);
     height: 70%;
-    background-color: $seconddary;
+    background-color: $secondary;
     z-index: -1; // sits behind the text
     border-radius: 2px; // optional soft edges
 }
@@ -177,30 +172,20 @@ section#search-section {
 .navigation-tiles {
   .card {
     position: relative;
-    background: linear-gradient(90deg, rgba($secondary, 0.4), rgba($secondary-light, 0.4));
-    background-repeat: no-repeat;
-    background-size: 0% 100%;     // start with no fill
-    background-position: 0 0;
-    transition:
-      background-size 0.6s ease-out,
-      box-shadow 0.3s ease,
-      transform 0.2s ease;
-
-    border: none;
+    background: transparent;
+    border: none; // remove default card border
     padding: 1rem;
-    overflow: hidden;             // ensures fill doesn’t spill outside
-    z-index: 0;                   // establish stacking context
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
 
-    // sketchy double borders
+    // base sketchy borders
     &::before,
     &::after {
       content: "";
       position: absolute;
-      inset: 0;
-      border: 2px solid $accent-color;
+      inset: 0; // top:0 right:0 bottom:0 left:0
+      border: 2px solid $dark; // main stroke (#46b96c)
       pointer-events: none;
-      border-radius: 8px;
-      z-index: 1; // sits above the fill but below text
+      border-radius: 8px; // optional
       transition: transform 0.25s ease-out, border-color 0.3s ease;
     }
 
@@ -210,27 +195,28 @@ section#search-section {
 
     &::after {
       transform: translate(-1px, -2px) rotate(0.4deg);
-      border-color: $accent-color;
+      border-color: $accent-color; // lighter 2nd stroke
     }
 
     &:hover {
       box-shadow: $box-shadow;
       transform: translateY(-2px);
-      background-size: 100% 100%; // marker sweep
 
       &::before,
       &::after {
         border-color: $accent-color;
-        transform: translate(0, 0) rotate(0deg);
+        background-color: rgb($accent-color, 20%);
+        transform: translate(0, 0) rotate(0deg); // tighten sketch slightly
       }
     }
+  }
 
-    .card-header {
-      a:hover { text-decoration: none; }
-      h3 { font-size: 1.2rem; }
-    }
+  .card-header {
+    a:hover { text-decoration: none; }
+    h3 { font-size: 1.2rem; }
   }
 }
+
 
 #search-label-tiles {
     background-color: $light-background;
