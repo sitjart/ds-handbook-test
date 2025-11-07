@@ -8,13 +8,13 @@ layout: none
 {% include head.html %}
 <body>
     {% if jekyll.environment == "development" %}{% include dev-info.html %}{% endif %}
-    {% include topnav.html search=false %}
+    {% include topnav.html search=true %}
     <div class="landingpage">
         <section class="container g-lg-5 mb-5">
             <div>
                 <h1>Data Stewardship Handbook</h1>
                 <span class="subtitle"></span>
-                <p class="text-center mt-2">Best practices and guidelines to help you make your data FAIR (Findable, Accessible, Interoperable and Reusable)</p>
+                <p class="text-center mt-2">The companion handbook for the people side of data Stewardship</p>
             </div>
         </section>
         <section id="search-section" class="bg-light py-5">
@@ -37,17 +37,17 @@ layout: none
         <section class="bg-light pb-5">
             <div class="container g-lg-5">
                 <h2 class="no-anchor text-center mb-3">You can explore the content on this site through three main landmarks...</h2>
-                {%- assign sidebar = site.data.sidebars[page.sidebar] %}
+                {% assign landmarks = site.data.landmarks %}
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
-                    {%- for folder in sidebar.subitems %}
+                    {% for item in landmarks %}
                     <div class="col">
                             <div class="card bg-white h-100">
-                                <img src="{{folder.image_url | relative_url}}" class="card-img-top h-icon-6 mx-auto" alt="{{folder.title}} icon">
+                                <img src="{{ item.image_url | relative_ur l}}" class="card-img-top h-icon-6 mx-auto" alt="{{item.title}} icon">
                                 <div class="card-body text-center">
                                     <a href="{{ folder.url | relative_url }}" class="stretched-link">
                                         <h3 class="card-title no-anchor text-dark">{{folder.title}}</h3>
                                     </a>
-                                    <p class="card-text">{{folder.description}}</p>
+                                    <p class="card-text">{{item.description}}</p>
                                 </div>
                             </div>
                         </a>
@@ -57,24 +57,6 @@ layout: none
             </div>
         </section>
         
-        <section class="py-5 bg-light">
-            <div class="container g-lg-5">
-                <div class="row">
-                    <div class="col-lg-2 my-auto">
-                        <img class="h-icon-8" src="{{ '/assets/img/section-icons/community.svg' | relative_url }}" alt="Contributors icon">
-                    </div>
-                    <div class="col-lg-7">
-                        <h2>We welcome contributors!</h2>
-                        <p>This project would not be possible without the many <a href="{{ '/contributors' | relative_url }}"><b>amazing
-                            community contributors</b></a>. RDMkit is an open community project, and you are welcome to join us!
-                        </p>
-                    </div>
-                    <div class="col-lg-3 my-auto">
-                        <a class="btn btn-primary btn-lg rounded-pill px-4" href="{{ '/how_to_contribute' | relative_url }}">Start contributing</a>
-                    </div>
-                </div>
-            </div>
-        </section>
     </div>
     {%- if site.theme_variables.back_to_top or site.theme_variables.back_to_top == nil %}
     {% include scroll-top.html  %}
