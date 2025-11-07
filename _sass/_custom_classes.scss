@@ -6,6 +6,23 @@
     }
 }
 
+h1 {
+    position: relative;
+    display: inline-block;
+    color: $white;
+    text-decoration: none;
+    z-index: 1; // keep text above the marker
+    content: "";
+    position: absolute;
+    left: -2px;
+    bottom: 0;
+    width: calc(100% + 4px);
+    height: 70%;
+    background-color: $seconddary;
+    z-index: -1; // sits behind the text
+    border-radius: 2px; // optional soft edges
+}
+
 // Light gray background on the left
 @media (min-width: 992px) {
     body:not(:has(.landingpage)) {
