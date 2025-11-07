@@ -74,16 +74,19 @@
     margin-top: $spacer * 0.5;
 }
 
-#sidebar nav ul li:not(.sidebar-title) a:hover {
-  color: $accent-color;
-  background: transparent;
+
+#sidebar > nav > ul > li:not(.sidebar-title) > a {
+  background: transparent;  // your mint background
+  color: $dark;            // dark text
 }
 
-#sidebar nav ul li:not(.sidebar-title) a.active {
-  color: $accent-color;
-  background: transparent;
+/* Override all hover / focus / active effects */
+#sidebar > nav > ul > li:not(.sidebar-title) > a:hover,
+#sidebar > nav > ul > li:not(.sidebar-title) > a:focus,
+#sidebar > nav > ul > li:not(.sidebar-title) > a:active,
+#sidebar > nav > ul > li:not(.sidebar-title) > a.active {
+  background: transparent; 
 }
-
 
 
 /* -----Warning page----- */
@@ -157,6 +160,34 @@ section#search-section {
 
 
 /*-----Section navigation tiles-----*/
+.navigation-tiles {
+  --bs-card-bg: transparent;
+
+  .card {
+    background: none !important;
+    color: $dark; // base text colour
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+
+    &:hover {
+      color: $dark; // keep text colour fixed
+    }
+
+    // lock link and title colours
+    a,
+    a:hover,
+    a:focus,
+    a:active {
+      color: inherit !important;
+      text-decoration: none;
+    }
+
+    .card-title,
+    .card-text {
+      color: $dark !important;
+    }
+  }
+}
+
 .navigation-tiles {
   .card {
     position: relative;
