@@ -157,24 +157,33 @@ section#search-section {
 
 
 /*-----Section navigation tiles-----*/
-
 .navigation-tiles {
   .card {
     position: relative;
-    background: transparent;
-    border: none; // remove default card border
-    padding: 1rem;
-    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    background: linear-gradient(90deg, rgba($secondary, 0.4), rgba($secondary-light, 0.4));
+    background-repeat: no-repeat;
+    background-size: 0% 100%;     // start with no fill
+    background-position: 0 0;
+    transition:
+      background-size 0.6s ease-out,
+      box-shadow 0.3s ease,
+      transform 0.2s ease;
 
-    // base sketchy borders
+    border: none;
+    padding: 1rem;
+    overflow: hidden;             // ensures fill doesn’t spill outside
+    z-index: 0;                   // establish stacking context
+
+    // sketchy double borders
     &::before,
     &::after {
       content: "";
       position: absolute;
-      inset: 0; // top:0 right:0 bottom:0 left:0
-      border: 2px solid $dark; // main stroke (#46b96c)
+      inset: 0;
+      border: 2px solid $accent-color;
       pointer-events: none;
-      border-radius: 8px; // optional
+      border-radius: 8px;
+      z-index: 1; // sits above the fill but below text
       transition: transform 0.25s ease-out, border-color 0.3s ease;
     }
 
@@ -184,27 +193,27 @@ section#search-section {
 
     &::after {
       transform: translate(-1px, -2px) rotate(0.4deg);
-      border-color: $dark; // lighter 2nd stroke
+      border-color: $accent-color;
     }
 
     &:hover {
       box-shadow: $box-shadow;
       transform: translateY(-2px);
+      background-size: 100% 100%; // marker sweep
 
       &::before,
       &::after {
         border-color: $accent-color;
-        transform: translate(0, 0) rotate(0deg); // tighten sketch slightly
+        transform: translate(0, 0) rotate(0deg);
       }
     }
-  }
 
-  .card-header {
-    a:hover { text-decoration: none; }
-    h3 { font-size: 1.2rem; }
+    .card-header {
+      a:hover { text-decoration: none; }
+      h3 { font-size: 1.2rem; }
+    }
   }
 }
-
 
 #search-label-tiles {
     background-color: $light-background;
@@ -228,7 +237,7 @@ section#search-section {
         bottom: 0;
         width: calc(100% + 4px);
         height: 70%;
-        background-color: rgba(70, 185, 108, 0.5); // #46b96c @ 50% opacity
+        background-color: rgba($secondary, 0.8); // #46b96c @ % opacity
         transform: rotate(-2deg) scaleX(0);
         transform-origin: left;
         transition: transform 0.4s ease-out;
