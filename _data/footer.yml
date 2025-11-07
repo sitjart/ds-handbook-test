@@ -1,29 +1,28 @@
-copyright: '[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/) RDMkit by [ELIXIR](https://elixir-europe.org/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/), except where otherwise noted.'
+copyright: '[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/) Data Stewardship Handbook by [ELIXIR](https://elixir-europe.org/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/), except where otherwise noted.'
 columns:
   - type: text
-    image_width: 120px
     width: 6
     content: |
-      <span class:"footer-subtitle" > Finding patterns. Sharing lessons \
-      Building good practice together </span>
+      Finding patterns. Sharing lessons \
+      Building good practice together
   - type: links
-    width: 3
+    width: 2
     title: Discover
     children: 
       - url_text: About the handbook
         url: /about
       - url_text: About the Maturity Model
-        url: /
+        url: /about
       - url_text: Find our guidance signpots
-        external_url: https://elixir-europe.org
+        url: /guidance
       - url_text: Sit by the campfire and learn what works
         url: /case-studies
       - url_text: Use our waypoints to benchmark your work
         urk: /maturity-model
   - type: links
-    width: 3
+    width: 2
     title: Join in
-    How t: 
+    children: 
       - url_text: Find out how to contribute
         url: /about
       - url_text: See the group of people you would join
