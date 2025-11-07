@@ -6,23 +6,6 @@
     }
 }
 
-h1 {
-    position: relative;
-    display: inline-block;
-    color: $white;
-    text-decoration: none;
-    z-index: 1; // keep text above the marker
-    content: "";
-    position: absolute;
-    left: -2px;
-    bottom: 0;
-    width: calc(100% + 4px);
-    height: 70%;
-    background-color: $secondary;
-    z-index: -1; // sits behind the text
-    border-radius: 2px; // optional soft edges
-}
-
 // Light gray background on the left
 @media (min-width: 992px) {
     body:not(:has(.landingpage)) {
@@ -215,7 +198,6 @@ section#search-section {
       &::before,
       &::after {
         border-color: $accent-color;
-        background-color: rgb($accent-color, 20%);
         background: none !important;
         transform: translate(0, 0) rotate(0deg); // tighten sketch slightly
       }
