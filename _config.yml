@@ -6,15 +6,22 @@ description: ""
 
 remote_theme: ELIXIR-Belgium/elixir-toolkit-theme
 
-topnav_title: Data Stewardship Handbook
-
 theme_variables:
   topnav:
     brand_logo: assets/img/main_logo.svg
 
 sass:
   style: compressed
-  sourcemap: always
+  sourcemap: never
+
+theme_variables:
+  topnav:
+    theme: dark
+  fonts:
+    - https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Stint+Ultra+Expanded&display=swap
+
+topnav_banner: "The Handbook is currently under development and may change at any point - it is not meant for production use"
+# Optional: a banner message to display to users on all pages
 
 gtag: 
 # Google analytics tag
@@ -25,6 +32,11 @@ gtag:
 
 exclude:
   - README.md
+  - .gitignore
+  - var/
+  - vendor
+  - Gemfile*
+  - LICENSE
 
 defaults:
   -

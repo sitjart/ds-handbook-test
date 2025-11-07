@@ -1,20 +1,71 @@
 /*-----General styling-----*/
-@import url(https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Stint+Ultra+Expanded&display=swap);
 @media (min-width: 992px) {
     main h1:not(.has-subtitle):not(.blurb-title),
     main .h1:not(.has-subtitle) {
-        margin-top: -1rem;
+        margin-top: 3rem;
     }
 }
 
-.bg-light-x {
-    background-color: $light-x;
+// Light gray background on the left
+@media (min-width: 992px) {
+    body:not(:has(.landingpage)) {
+        .anchorjs-link {
+            font-size: 0.7em !important;
+            padding-top: 0.3em;
+        }
+
+        #layout {
+            gap: 0 !important;
+        }
+        header nav.navbar {
+            margin-bottom: 0 !important;
+        }
+        aside#sidebar {
+            padding-top: $spacer * 3;
+            padding-right: 0.9rem;
+        }
+        main#main {
+            padding-top: $spacer * 3;
+            padding-left: 2.1rem;
+            background-color: $white;
+        }
+        background-image: url("../img/background.svg"); /* The image used */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+    }
 }
+
+@media (max-width: 992px) {
+    .sidebar-collapse {
+        background-color: $light;
+    }
+}
+
+#main {
+    min-height: 100vh;
+
+    h2,
+    .h2-like {
+        font-weight: 600;
+        margin-top: $spacer * 2.5;
+        margin-bottom: $spacer * 0.5;
+    }
+
+    h3 {
+        font-weight: 600;
+    }
+}
+
+.octicon {
+    margin-right: 0.25em;
+}
+
 
 /*-----Sidebar-----*/
 
 .sidebar-title {
-    border-bottom: 0.2rem solid $blue;
+    border-bottom: 0.2rem solid $dark-text;
     font-weight: bold;
     padding-bottom: $input-btn-padding-y - 0.2rem;
 }
@@ -23,39 +74,68 @@
     margin-top: $spacer * 0.5;
 }
 
+#sidebar nav ul li:not(.sidebar-title) a:hover {
+  color: $accent-color;
+  background: transparent;
+}
+
+#sidebar nav ul li:not(.sidebar-title) a.active {
+  color: $accent-color;
+  background: transparent;
+}
+
+
+
+/* -----Warning page----- */
+.bg-warning {
+    background-color: $accent-color !important;
+    color: $white;
+}
+
 /* -----Homepage----- */
 
-.landingpage {
+.landingpage .ways-to-contribute {
+    .card {
+            &:hover {
+                box-shadow: $box-shadow;
+            }
 
-    .h-icon-6 {
-        height: 6em;
-        justify-content: left;
-        padding-bottom: 20px;
-    }
-    .h-icon-5 {
-        height: 5em;
-    }
-    .h-icon-4 {
-        height: 4em;
-    }
+            .card-img-top {
+                width: unset;
+                padding: $card-spacer-x $card-spacer-x 0 $card-spacer-x;
+            }
+        }
 
-    h1 {
-        font-size: 4rem;
-        font-weight: 800 !important;
-    }
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 200;
+            text-align: center;
+        }
 
-    h2 {
-        font-weight: 700 !important;
-        font-family:  $font-family-theme;
-        color: $dark-color !important;
-    }
+        h2 {
+            font-weight: 700;
+            font-family: $font-family-theme;
+        }
 
-    h3 {
-        font-weight: 400 !important;
-        font-family:  $font-family-theme;
-        color: $blue !important;
-    }
+        h3 {
+            font-weight: 600;
+            font-family: $font-family-theme;
+        }
+}
 
+// Icon sizing
+
+.h-icon-8 {
+    height: 8em;
+}
+.h-icon-6 {
+    height: 6em;
+}
+.h-icon-5 {
+    height: 5em;
+}
+.h-icon-4 {
+    height: 4em;
 }
 
 // Search box
@@ -77,301 +157,101 @@ section#search-section {
 
 
 /*-----Section navigation tiles-----*/
-
 .navigation-tiles {
-    .card:hover {
-        box-shadow: $box-shadow;
-    }
-
-    .card-header {
-        a:hover {
-            text-decoration: none;
-        }
-        h3 {
-            font-size: 1.2rem;
-        }
-    }
-}
-
-.navbar-nav .nav-item > a.active {
-    background-color: $blue;
-    color: #fff !important;
-}
-
-.navigation-tiles .card button {
-    background-color: $blue !important;
-    color: $light !important;
-}
-
-.navigation-tiles .card button:hover {
-    background-color: $light-blue !important;
-    color: $dark-color !important;
-}
-
-.navigation-tiles .card .card-header a {
-    color: $blue !important;
-    text-decoration: none !important;
-}
-
-.navigation-tiles .card .card-header {
-    background-color: $light-blue;
-    text-decoration: none !important;
-}
-
-.stretched-link a {
-    text-decoration: none !important;
-}
-/*== banner styles landing page ===*/
-
-
-.banner-area {
+  .card {
     position: relative;
-    z-index: 5;
-    padding-top: 50px;
-    padding-bottom: 110px;
-    overflow: hidden;
+    background: none !important;
+    border: none; // remove default card border
+    padding: 1rem;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
 
-    & .banner-shape-1 {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 68%;
-        z-index: -1;
-
-        @media #{$desktop} {
-            width: 63%;
-        }
-
-        @media #{$lg} {
-            width: 75%;
-        }
-
-        & img {
-            width: 100%;
-        }
-
-        & .line{
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: auto;
-            z-index: 1;
-        }
+    // base sketchy borders
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0; // top:0 right:0 bottom:0 left:0
+      border: 2px solid $dark; // main stroke (#46b96c)
+      pointer-events: none;
+      border-radius: 8px; // optional
+      transition: transform 0.25s ease-out, border-color 0.3s ease;
     }
-    & .banner-shape-2 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 30%;
-        z-index: -1;
 
-        & img {
-            width: 100%;
-        }
+    &::before {
+      transform: translate(2px, 1px) rotate(-0.3deg);
     }
-    & .banner-shape-3 {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        z-index: -1;
 
-        @media #{$xs}{
-            width: 150px;
-        }
+    &::after {
+      transform: translate(-1px, -2px) rotate(0.4deg);
+      border-color: $secondary; // lighter 2nd stroke
     }
+
+    &:hover {
+      box-shadow: $box-shadow;
+      transform: translateY(-2px);
+
+      &::before,
+      &::after {
+        border-color: $accent-color;
+        transform: translate(0, 0) rotate(0deg); // tighten sketch slightly
+      }
+    }
+  }
+
+  .card-header {
+    a:hover { text-decoration: none; }
+    h3 { font-size: 1.2rem; }
+  }
 }
 
-.banner-content-wrapper {    
-    padding-bottom: 10px;
 
-    & .banner-image{
-        margin-top: 10px;
-
-    }
+#search-label-tiles {
+    background-color: $light-background;
 }
 
-// Counters on landing page
-
-.banner-counter{
-    padding-top: 20px;
-
-    & .counter-title{
-        & .title{
-            font-size: 24px;
-            font-weight: 600;
-            color: $blue;
-        }
-    }
-
-    & .counter-wrapper{
-        padding-top: 40px;
-    }
-
-    & .single-counter{
-        margin-top: 30px;
-
-        & .count-content{
-            font-size: 16px;
-            font-weight: 300;
-            color: $blue;
-            display: block;
-
-            & .count{
-                font-size: 60px;
-                line-height: 60px;
-                font-weight: 700;
-                color: $blue;
-            }
-            & span{
-                color: $accent-color;
-            }
-        }
-    }
-}
-
-/*=====Features in landing page ====*/
-
-.features-area {      
-    padding-top: 120px;
-    margin-bottom: 250px;
-    position: relative;
-    z-index: 5;
-    overflow: hidden;
-
-    &::before{
-          position: absolute;
-          content: '';
-          background-color: $light;
-          width: 100%;
-          height: 80%;
-          top: 0;
-          left: 0;
-          z-index: -1;
-    }
-}
-
-.features-wrapper{
-    padding-top: 18px;
-}
-
-h2 {
-    &.title{
-        font-size: 50px;
-        font-weight: 300; 
-    }
-}
-
-.single-features{
-    background-color: $white;
-    box-shadow: (0px 10px 30px 0px rgba(0, 0, 0, 0.05));
-    padding: 60px 60px 23px;
-    position: relative;
-    margin-top: 30px;
-    margin-bottom: 65px;
-    border-radius: 5px;
-    @include transition(0.3s);
-    position: relative;
-    z-index: 5;   
-    
-
-    &::before{
-          position: absolute;
-          content: '';
-          bottom: -170px;
-          right: -170px;
-          width: 0;
-          height: 0;
-          border-bottom: 170px solid rgba($light, 0.2);
-          border-left: 170px solid transparent;
-          z-index: -1;
-          opacity: 0;
-          visibility: hidden;
-          @include transition(0.3s);
-    }
-   
-    & .features-content{
-          & .features-title{
-                & a{
-                      font-size: 26px;
-                      line-height: 24px;
-                      font-weight: 800;
-                      color: $dark-color;
-                      @include transition(0.3s);
-                      margin-top: 32px;
-                      text-decoration: none;
-                }
-          }
-          & p{
-                margin-top: 10px;
-                @include transition(0.3s);
-          }
-    }
-    
-
-    &.features-1{
-
-          &:hover{
-                background-color: $light-orange;
-
-                & .features-content{
-                      & .features-title{
-                            & a{
-                                  color: $accent-color;
-                            }
-                      }
-                      & p{
-                            color: $dark-color;
-                      }
-                }
-          }
-    }
-    
-
-    &:hover{
-
-          &::before{
-                bottom: 0;
-                right: 0;
-                opacity: 1;
-                visibility: visible;
-          }
-    }
-}
-
-/* Uniform Feature Box Styling */
-.features-wrapper .row > div {
-    display: flex;
-    align-items: stretch;
-}
-.single-features {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
-.features-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.features-content h4,
-.features-content p {
-    margin: 0;
-}
 
 /*-----Top navigation-----*/
+.navbar-nav {
+  .nav-item {
+    > a.nav-link {
+      position: relative;
+      display: inline-block;
+      color: $white;
+      text-decoration: none;
+      z-index: 1; // keep text above the marker
 
-.navbar-nav .nav-item > a {
-    white-space: nowrap;
-    &.active {
-        background-color: $blue;
-        border-radius: $border-radius;
+      &::before {
+        content: "";
+        position: absolute;
+        left: -2px;
+        bottom: 0;
+        width: calc(100% + 4px);
+        height: 70%;
+        background-color: rgba($secondary, 0.8); // #46b96c @ % opacity
+        transform: rotate(-2deg) scaleX(0);
+        transform-origin: left;
+        transition: transform 0.4s ease-out;
+        z-index: -1; // sits behind the text
+        border-radius: 2px; // optional soft edges
+      }
+
+      &:hover::before,
+      &:focus::before {
+        transform: rotate(-2deg) scaleX(1); // animate "marker swipe"
+      }
+
+      &.active::before {
+        transform: rotate(-2deg) scaleX(1); // keep filled when active
+      }
+
+      &:focus-visible {
+        outline: 2px solid rgba($secondary, 0.8);
+        outline-offset: 3px;
+      }
     }
+  }
 }
+
 
 /*----- Buttons -----*/
 .home-button {
@@ -394,7 +274,7 @@ h2 {
 }
 
 .home-button:hover {
-    background-color: $blue;
+    background-color: $navbar-hover-color;
     transition: 0.7s;
 }
 
@@ -408,7 +288,7 @@ h2 {
 
 .undefined a{
     text-decoration: none;
-    color: $blue;
+    color: $accent-color;
 }
 
 /* paddin/margin for back-to-top button */

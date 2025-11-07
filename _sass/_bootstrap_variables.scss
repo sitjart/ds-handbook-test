@@ -1,32 +1,37 @@
 /*-----Theme colors-----*/
+$primary: #0A261C;
+$secondary: #8DF2B9;
+$secondary-light: #9BF2D2;
+$light: #EEEEEE;
+$dark: #0A261C;
 $white: #ffffff;
-$blue: #037EAB;
-$gray-600: #73757d;
-$accent-color: #F47D20;
-$light-orange: #fee1c8;
-$light: #f2f5f7;
-$light-x: #9bcbdd;
-$dark-color: #0A261C;
-$light-blue: #b3d8e5;
+$green: #5DA684;
+$grey-light: #EEEEEE;
+$accent-color: #D96248;
+
 
 /*-----Custom values for Bootstrap variables-----*/
-$component-active-bg: $blue;
-$navbar-dark-color: $light-x;
-$navbar-dark-hover-color: $light-x;
-$navbar-dark-toggler-border-color: transparent;
+$component-active-bg: $accent-color;
+$dark-text: $primary;
+$light-background: $grey-light;
+$light-text: $grey-light;
+$navbar-hover-color: $grey-light;
+$navbar-active: $secondary;
+$navbar-toggler-border-color: transparent;
 $border-radius: 0.3rem;
 $btn-border-radius-sm: $border-radius;
 $card-border-width: 0;
-$card-cap-bg: $light-x;
+$card-bg: transparent;
+$card-cap-bg: $primary;
 $link-color: $accent-color;
-$info: $blue;
-$link-decoration: underline;
+$info: $secondary-light;
+$link-decoration: none;
 $body-bg: $white;
-$body-color: $dark-color;
+$body-color: $primary;
 $font-family-sans-serif: "Inter", sans-serif;
 $alert-border-width: 0;
-$input-group-addon-bg: $light-x;
-$input-bg: $light;
+$input-group-addon-bg: $secondary;
+$input-bg: $secondary;
 $input-border-width: 0;
 $h1-font-size: 1rem * 3.5 !default;
 $h3-font-size: 1rem * 1.5 !default;
