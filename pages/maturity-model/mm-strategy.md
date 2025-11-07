@@ -7,4 +7,4 @@ page_id: mm-strategy
 related_pages: 
 ---
 
-{% include section-navigation-tiles.html type="Strategy indicators" %}
+{% include section-navigation-tiles.html custom="mm-strategy-defined, mm-strategy-personnel, mm-strategy-goals-kpis, mm-strategy-policy-adherence, mm-strategy-policies-and-procedures, mm-strategy-align-with-best-practices, mm-strategy-funding" sort=false %}
