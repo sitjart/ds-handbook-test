@@ -1,6 +1,6 @@
 ---
 title: Guidance
-page_img: "images/icons/icon-guidance.svg" 
+page_img: "icons/icon-guidance.svg" 
 ---
 
 

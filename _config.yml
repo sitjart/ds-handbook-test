@@ -8,7 +8,7 @@ remote_theme: ELIXIR-Belgium/elixir-toolkit-theme
 
 theme_variables:
   topnav:
-    brand_logo: assets/img/main_logo_right.svg
+    brand_logo: assets/img/main-logo-right.svg
 
 sass:
   style: compressed
