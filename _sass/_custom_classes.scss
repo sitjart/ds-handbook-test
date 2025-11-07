@@ -183,7 +183,7 @@ footer .col-6.col-lg-6.d-flex.justify-content-lg-start {
 }
 
 
-#sidebar .nav ul a{
+#sidebar > nav > ul > li:not(.sidebar-title) > a {
   background: transparent !important;
   color: $dark;           
 }
