@@ -158,6 +158,34 @@ section#search-section {
 
 /*-----Section navigation tiles-----*/
 .navigation-tiles {
+  --bs-card-bg: transparent;
+
+  .card {
+    background: none !important;
+    color: $dark; // base text colour
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+
+    &:hover {
+      color: $dark; // keep text colour fixed
+    }
+
+    // lock link and title colours
+    a,
+    a:hover,
+    a:focus,
+    a:active {
+      color: inherit !important;
+      text-decoration: none;
+    }
+
+    .card-title,
+    .card-text {
+      color: $dark !important;
+    }
+  }
+}
+
+.navigation-tiles {
   .card {
     position: relative;
     background: none !important;
