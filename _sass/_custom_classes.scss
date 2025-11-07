@@ -188,7 +188,7 @@ section#search-section {
       transform: translate(-1px, -2px) rotate(0.4deg);
       background: none !important;
       background-color: transparent !important;
-      border-color: $accent-color; // lighter 2nd stroke
+      border-color: $secondary; // lighter 2nd stroke
     }
 
     &:hover {
@@ -251,7 +251,7 @@ section#search-section {
       }
 
       &:focus-visible {
-        outline: 2px solid rgba(70, 185, 108, 0.5);
+        outline: 2px solid rgba($secondary, 0.8);
         outline-offset: 3px;
       }
     }
