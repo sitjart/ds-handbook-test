@@ -169,48 +169,53 @@ section#search-section {
 
 /*-----Top navigation-----*/
 
+// Animated underline for .nav-underline variant
+.navbar .nav-underline,
 .nav-underline {
-  gap: 1rem; /* adjust spacing between links if needed */
-}
+  gap: 1rem; // optional spacing between links
 
-.nav-underline .nav-link {
-  position: relative;
-  padding-right: 0;
-  padding-left: 0;
-  border-bottom: 2px solid transparent; /* hides Bootstrap's default line */
-  background-image: linear-gradient(90deg, $secondary, $secondary-light);
-  background-repeat: no-repeat;
-  background-position: 0 100%;
-  background-size: 0% 2px; /* same thickness as border */
-  transition: background-size 0.45s ease-out, color 0.2s ease-in;
-  color: #0A261C;
-  text-decoration: none;
-}
+  .nav-link {
+    position: relative;
+    display: inline-block;
+    padding-right: 0;
+    padding-left: 0;
+    color: #0A261C;
+    text-decoration: none;
 
-/* Sweep underline on hover */
-.nav-underline .nav-link:hover,
-.nav-underline .nav-link:focus {
-  background-size: 100% 2px;
-}
+    // Remove Bootstrap's underline border
+    border-bottom: 2px solid transparent !important;
 
-/* Keep underline filled for the active link */
-.nav-underline .nav-link.active,
-.nav-underline .show > .nav-link {
-  font-weight: 600;
-  color: $secondary;
-  background-size: 100% 2px;
-  border-bottom-color: transparent;
-}
+    // Animated gradient underline
+    background-image: linear-gradient(90deg, $secondary, $secondary-light);
+    background-repeat: no-repeat;
+    background-position: 0 100%; // bottom left
+    background-size: 0% 2px; // start hidden
+    transition: background-size 0.45s ease-out, color 0.15s ease-in;
 
-/* Accessibility/focus handling */
-.nav-underline .nav-link:focus-visible {
-  outline: 2px solid $secondary;
-  outline-offset: 3px;
-}
+    &:hover,
+    &:focus {
+      background-size: 100% 2px; // sweep in
+      border-bottom-color: transparent !important;
+    }
 
-@media (prefers-reduced-motion: reduce) {
-  .nav-underline .nav-link {
-    transition: none;
+    &.active,
+    .show > & {
+      font-weight: 600;
+      color: $secondary;
+      background-size: 100% 2px; // keep filled
+      border-bottom-color: transparent !important;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $secondary;
+      outline-offset: 3px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .nav-link {
+      transition: none;
+    }
   }
 }
 
