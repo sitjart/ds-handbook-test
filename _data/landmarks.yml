@@ -1,4 +1,4 @@
-- title: "Guidance"
+- title: "Signposts"
   description: "Step-by-step advice and tools to help you manage research data."
   url: "/guidance"
   image_url: "images/icons/icon-guidance.svg"
@@ -8,7 +8,7 @@
   url: "/case-studies"
   image_url: "images/icons/icon-campfire.svg"
 
-- title: "Waypoint"
+- title: "Waypoints"
   description: "Maturity indicators for self-assessment."
   url: "/maturity-model"
   image_url: "images/icons/icon-mm.svg"
