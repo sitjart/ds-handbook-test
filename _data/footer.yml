@@ -3,7 +3,7 @@ columns:
   - type: text
     image_width: 120px
     width: 6
-    content:
+    content: |
       <span class:"footer-subtitle" > Finding patterns. Sharing lessons \
       Building good practice together </span>
   - type: links
