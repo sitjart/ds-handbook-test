@@ -169,50 +169,51 @@ section#search-section {
 
 /*-----Top navigation-----*/
 
-.navbar-nav .nav-item > a {
+.nav-underline {
+  gap: 1rem; /* adjust spacing between links if needed */
+}
+
+.nav-underline .nav-link {
   position: relative;
-  text-decoration: none;
+  padding-right: 0;
+  padding-left: 0;
+  border-bottom: 2px solid transparent; /* hides Bootstrap's default line */
+  background-image: linear-gradient(90deg, $secondary, $secondary-light);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0% 2px; /* same thickness as border */
+  transition: background-size 0.45s ease-out, color 0.2s ease-in;
   color: #0A261C;
-  padding-bottom: 4px;
-  overflow: hidden;
-  transition: color 0.3s ease;
+  text-decoration: none;
 }
 
-/* remove default underline if any */
-.navbar-nav .nav-item > a.active,
-.navbar-nav .nav-item > a:hover {
-  border-bottom: none;
-  margin-bottom: 0;
+/* Sweep underline on hover */
+.nav-underline .nav-link:hover,
+.nav-underline .nav-link:focus {
+  background-size: 100% 2px;
 }
 
-/* the animated “marker” effect */
-.navbar-nav .nav-item > a::after {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 4px;
-  width: 100%;
-  background: linear-gradient(90deg, $secondary, $secondary-light);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.5s ease-out;
-  z-index: 0;
+/* Keep underline filled for the active link */
+.nav-underline .nav-link.active,
+.nav-underline .show > .nav-link {
+  font-weight: 600;
+  color: $secondary;
+  background-size: 100% 2px;
+  border-bottom-color: transparent;
 }
 
-/* sweep in on hover */
-.navbar-nav .nav-item > a:hover::after {
-  transform: scaleX(1);
+/* Accessibility/focus handling */
+.nav-underline .nav-link:focus-visible {
+  outline: 2px solid $secondary;
+  outline-offset: 3px;
 }
 
-/* keep filled when active */
-.navbar-nav .nav-item > a.active::after {
-  transform: scaleX(1);
+@media (prefers-reduced-motion: reduce) {
+  .nav-underline .nav-link {
+    transition: none;
+  }
 }
 
-/* optional hover color tweak */
-.navbar-nav .nav-item > a:hover {
-  color: $accent-color ;
-}
 
 
 /*----- Buttons -----*/
