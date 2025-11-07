@@ -19,7 +19,7 @@ columns:
       - url_text: Sit by the campfire and learn what works
         url: /case-studies
       - url_text: Use our waypoints to benchmark your work
-        urk: /maturity-model
+        url: /maturity-model
   - type: links
     width: 2
     title: JOIN IN 
