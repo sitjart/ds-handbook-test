@@ -1,14 +1,14 @@
 - title: "Guidance"
   description: "Step-by-step advice and tools to help you manage research data."
-  url: "/guidance/"
-  image_url: "/assets/icons/icon-guidance.svg"
+  url: "/guidance"
+  image_url: "/assets/img/icons/icon-guidance.svg"
 
 - title: "Campfires"
   description: "Stories and case studies from across the community."
-  url: "/case-studies/"
+  url: "/case-studies"
   image_url: "/assets/icons/icon-campfire.svg"
 
 - title: "Checkpoints"
   description: "Maturity indicators for self-assessment."
-  url: "/maturity-model/"
+  url: "/maturity-model"
   image_url: "/assets/icons/icon-mm.svg"
