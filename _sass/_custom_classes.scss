@@ -196,7 +196,7 @@ section#search-section {
         bottom: 0;
         width: calc(100% + 4px);
         height: 70%;
-        background-color: $secondary-light 80%;
+        background-color: rgba(70, 185, 108, 0.5); // #46b96c @ 50% opacity
         transform: rotate(-2deg) scaleX(0);
         transform-origin: left;
         transition: transform 0.4s ease-out;
