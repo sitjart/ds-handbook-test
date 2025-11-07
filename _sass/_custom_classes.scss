@@ -185,7 +185,7 @@ section#search-section {
     > a.nav-link {
       position: relative;
       display: inline-block;
-      color: #0A261C;
+      color: $white;
       text-decoration: none;
       z-index: 1; // keep text above the marker
 
@@ -195,8 +195,8 @@ section#search-section {
         left: -2px;
         bottom: 0;
         width: calc(100% + 4px);
-        height: 60%;
-        background-color: rgba(70, 185, 108, 0.5); // #46b96c @ 50% opacity
+        height: 70%;
+        background-color: $secondary-light 80%;
         transform: rotate(-2deg) scaleX(0);
         transform-origin: left;
         transition: transform 0.4s ease-out;
