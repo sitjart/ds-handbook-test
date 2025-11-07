@@ -16,7 +16,7 @@ theme_variables:
     brand_logo: assets/img/main-logo-right.svg
     theme: dark
   fonts:
-    - https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Stint+Ultra+Expanded&display=swap
+    - https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap
 
 topnav_banner: "The Handbook is currently under development and may change at any point - it is not meant for production use"
 # Optional: a banner message to display to users on all pages
