@@ -74,8 +74,10 @@
     margin-top: $spacer * 0.5;
 }
 
+/* -----Warning page----- */
 .bg-warning {
-    background-color: $accent-color;
+    background-color: $accent-color !important;
+    color: $white;
 }
 
 /* -----Homepage----- */
