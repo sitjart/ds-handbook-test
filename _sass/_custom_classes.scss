@@ -181,18 +181,26 @@ section#search-section {
 
 /*-----Top navigation-----*/
 .navbar-nav .nav-item {
+    color: $white;
     margin: 0 -0.4em;
     padding: 0.1em 0.4em;
     border-radius: 0.8em 0.3em;
     background: transparent;
+    transition: background-image 0.3s ease, color 0.3s ease;
+    
+    &:hover,
+    &:focus,
+    &.is-active {
+    color: $white;
     background-image: linear-gradient(
-    to right,
-        rgba($secondary-light, 0.1),
-        rgba($secondary, 0.7) 4%,
-        rgba($secondary-light, 0.3)
+      to right,
+      rgba($secondary-light, 0.1),
+      rgba($secondary, 0.7) 4%,
+      rgba($secondary-light, 0.3)
     );
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
+  }
 }
 
 
