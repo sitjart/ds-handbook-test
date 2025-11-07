@@ -1,126 +1,22 @@
 ---
+search_exclude: false
 layout: none
 ---
 
 <!doctype html>
 <html lang="en">
 {% include head.html %}
-
-
 <body>
+    {% if jekyll.environment == "development" %}{% include dev-info.html %}{% endif %}
     {% include topnav.html search=false %}
-    
     <div class="landingpage">
-
-<!-- - landing banner -->
-        <section id="home" class="banner-area">
-            <div class="banner-content-wrapper">
-                <div class="container g-lg-5">
-                    <div class="row align-items-center">
-                        <div class="col-lg-4">
-                            <h1>ELIXIR Data Steward Handbook</h1>
-                            <p>Practical guidance to data stewards in their daily job
-                            </p>
-                                <a class="home" href="about">
-                                <button type="button" class="home-button">Discover more</button>
-                            </a>
-                        </div>
-                        <div class="col-lg-8">
-                            <div class="banner-image">
-                                <div class="image">
-                                    <img src="assets/img/home-banner.svg">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <section class="container g-lg-5 mb-5">
+            <div>
+                <h1>Data Stewardship Handbook</h1>
+                <span class="subtitle"></span>
+                <p class="text-center mt-2">Best practices and guidelines to help you make your data FAIR (Findable, Accessible, Interoperable and Reusable)</p>
             </div>
-<!--- counters -->
-<!--            <div class="banner-counter">-->
-<!--                <div class="container g-lg-5">-->
-<!--                    <div class="counter-wrapper">-->
-<!--                        <div class="row justify-content-center">-->
-<!--                            <div class="col-lg-3 col-sm-6 ">-->
-<!--                                <div class="single-counter">-->
-<!--                                    <span class="count-content"><strong class="count">24</strong><span>/</span> Fellows</span>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="col-lg-3 col-sm-6">-->
-<!--                                <div class="single-counter">-->
-<!--                                    <span class="count-content"><strong class="count">19</strong><span>/</span> UK research-performing organisations</span>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="col-lg-3 col-sm-6">-->
-<!--                                <div class="single-counter">-->
-<!--                                    <span class="count-content"><strong class="count">44</strong><span>/</span> Short training videos</span>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="col-lg-3 col-sm-6">-->
-<!--                                <div class="single-counter">-->
-<!--                                    <span class="count-content"><strong class="count">2</strong><span>/</span> Course materials</span>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
         </section>
-
-
-<!--====== Features Start ======-->
-
-<section id="features" class="features-area">
-    <div class="container g-lg-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-6">
-                <div class="section-title text-center">
-                    <h2 class="title no-anchor">Access our content in 3 different ways</h2>
-                </div>
-            </div>
-        </div>
-        <div class="features-wrapper">
-            <div class="row">
-                <div class="col-lg-4">
-                    <a href="guidelines">
-                        <div class="single-features features-1">
-                            <img src="assets/img/icons/icon-guidelines.svg" class="h-icon-6 mx-auto">
-                            <div class="features-content">
-                                <h4 class="features-title"><a href="guidelines">Guidelines</a></h4>
-                                <p>For those new to data stewardsihp or in need of a refresh, check our practical guidance for data stewards in their daily tasks</p>
-                            </div>
-                        </div>
-                     </a>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-features features-1">
-                        <a href="case-studies">
-                            <img src="assets/img/icons/icon-case-study.svg" class="h-icon-6 mx-auto">
-                        </a>
-                        <div class="features-content">
-                            <h4 class="features-title"><a href="case-studies">Case studies</a></h4>
-                            <p>Real-world examples of how other data stewards have successfully worked on different aspects</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-features features-1">
-                        <a href="maturity-model">
-                            <img src="assets/img/icons/icon-maturity-model.svg" class="h-icon-6 mx-auto">
-                        </a>
-                        <div class="features-content">
-                            <h4 class="features-title"><a href="maturity-model">Maturity model</a></h4>
-                            <p>If you're a bit more advanced, check at what stage are you in your data stewardship journey</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<!--  Browser functionality
-      </section>
         <section id="search-section" class="bg-light py-5">
             <div class="container g-lg-5">
                 <div class="row">
@@ -138,32 +34,47 @@ layout: none
                 </div>
             </div>
         </section>
--->
-
-<!--default content boxes
         <section class="bg-light pb-5">
             <div class="container g-lg-5">
+                <h2 class="no-anchor text-center mb-3">You can explore the content on this site through three main landmarks...</h2>
                 {%- assign sidebar = site.data.sidebars[page.sidebar] %}
-                <div class="row row-cols-1 row-cols-sm-2">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
                     {%- for folder in sidebar.subitems %}
                     <div class="col">
                             <div class="card bg-white h-100">
                                 <img src="{{folder.image_url | relative_url}}" class="card-img-top h-icon-6 mx-auto" alt="{{folder.title}} icon">
                                 <div class="card-body text-center">
                                     <a href="{{ folder.url | relative_url }}" class="stretched-link">
-                                        <h3 class="card-title no-anchor text-primary">{{folder.title}}</h3>
+                                        <h3 class="card-title no-anchor text-dark">{{folder.title}}</h3>
                                     </a>
                                     <p class="card-text">{{folder.description}}</p>
                                 </div>
                             </div>
+                        </a>
                     </div>
                     {%- endfor %}
                 </div>
             </div>
         </section>
--->
-
-
+        
+        <section class="py-5 bg-light">
+            <div class="container g-lg-5">
+                <div class="row">
+                    <div class="col-lg-2 my-auto">
+                        <img class="h-icon-8" src="{{ '/assets/img/section-icons/community.svg' | relative_url }}" alt="Contributors icon">
+                    </div>
+                    <div class="col-lg-7">
+                        <h2>We welcome contributors!</h2>
+                        <p>This project would not be possible without the many <a href="{{ '/contributors' | relative_url }}"><b>amazing
+                            community contributors</b></a>. RDMkit is an open community project, and you are welcome to join us!
+                        </p>
+                    </div>
+                    <div class="col-lg-3 my-auto">
+                        <a class="btn btn-primary btn-lg rounded-pill px-4" href="{{ '/how_to_contribute' | relative_url }}">Start contributing</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
     {%- if site.theme_variables.back_to_top or site.theme_variables.back_to_top == nil %}
     {% include scroll-top.html  %}
@@ -171,44 +82,5 @@ layout: none
     {% include footer.html %}
     {% include cookie-popup.html %}
 </body>
+
 </html>
-
-<script type="text/javascript">
-    /** 
-     * Animate numbers when in viewport
-     */
-
-    // inViewport jQuery plugin
-    // https://stackoverflow.com/a/26831113/383904
-    $(function ($, win) {
-        $.fn.inViewport = function (cb) {
-            return this.each(function (i, el) {
-                function visPx() {
-                    var H = $(this).height(),
-                        r = el.getBoundingClientRect(), t = r.top, b = r.bottom;
-                    return cb.call(el, Math.max(0, t > 0 ? H - t : (b < H ? b : H)));
-                } visPx();
-                $(win).on("resize scroll", visPx);
-            });
-        };
-    }(jQuery, window));
-
-
-    jQuery(function ($) { // DOM ready and $ in scope
-        $(".count-number").inViewport(function (px) { // Make use of the `px` argument!!!
-            if (px > 0 && !this.initNumAnim) {
-                this.initNumAnim = true; // Set flag to true to prevent re-running the same animation
-                $(this).prop('Counter', 0).animate({
-                    Counter: $(this).text()
-                }, {
-                    duration: 1000,
-                    step: function (now) {
-                        $(this).text(Math.ceil(now));
-                    }
-                });
-            }
-        });
-
-    });
-
-</script>
