@@ -8,7 +8,7 @@
   url: "/case-studies"
   image_url: "assets/icons/icon-campfire.svg"
 
-- title: "Checkpoints"
+- title: "Waypoint"
   description: "Maturity indicators for self-assessment."
   url: "/maturity-model"
   image_url: "assets/icons/icon-mm.svg"
