@@ -1,5 +1,6 @@
 ---
 title: Maturity model
+page_img: "icons/icon-mm.svg"
 ---
 
 ## Indicators
