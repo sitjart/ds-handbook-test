@@ -12,20 +12,23 @@
 
 /*-----Landing page ----*/
 .landingpage h1 {
-  font-family: 'caveat', serif;
+  font-family: 'Caveat', serif;
   text-align: center;
+  font-size: 80px;
+  transform: rotate(-2deg);
 }
 
-.highlight {
+.landingpage .highlight {
   margin: 0 -0.4em;
+  transform: rotate(+2deg);
   padding: 0.1em 0.4em;
   border-radius: 0.8em 0.3em;
   background: transparent;
   background-image: linear-gradient(
     to right,
-    rgba(255, 225, 0, 0.1),
-    rgba(255, 225, 0, 0.7) 4%,
-    rgba(255, 225, 0, 0.3)
+    rgba($secondary, 0.1),
+    rgba($secondary, 0.7) 4%,
+    rgba($secondary, 0, 0.3)
   );
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
