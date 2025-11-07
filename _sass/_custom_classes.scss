@@ -6,11 +6,24 @@
     }
 }
 
+/*-----Footer-----*/
+.footer-title {
+  font-family: 'Lato', sans-serif;
+  font-weight: light;
+  font-size: 13px;
+}
+
+footer .list-unstyled {
+  font-size: 12px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
 footer .col-6.col-lg-6.d-flex.justify-content-lg-start {
-    color: $white;
-    font-family: 'Caveat', serif;
-    font-size: 3.125rem;
-    line-height: 100%;
+  color: $white;
+  font-family: 'Caveat', serif;
+  font-size: 3.125rem;
+  line-height: 110%;
 
 }
 

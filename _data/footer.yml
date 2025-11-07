@@ -3,11 +3,12 @@ columns:
   - type: text
     width: 6
     content: |
-      Finding patterns. Sharing lessons \
+      Finding patterns.\
+      Sharing lessons \
       Building good practice together
   - type: links
     width: 2
-    title: Discover
+    title: DISCOVER
     children: 
       - url_text: About the handbook
         url: /about
@@ -21,7 +22,7 @@ columns:
         urk: /maturity-model
   - type: links
     width: 2
-    title: Join in
+    title: JOIN IN 
     children: 
       - url_text: Find out how to contribute
         url: /about
