@@ -180,33 +180,28 @@ section#search-section {
 
 
 /*-----Top navigation-----*/
-
-// Animated underline for navbar links
 .navbar-nav {
   .nav-item {
     > a.nav-link {
       position: relative;
       display: inline-block;
-      color: var(--bs-navbar-color);
+      color: #0A261C;
       text-decoration: none;
-      border-bottom: 2px solid transparent;
-      background-image: linear-gradient(90deg, $secondary, $secondary-light);
+      background-image: linear-gradient(120deg, $secondary 0%, $secondary-light 100%);
       background-repeat: no-repeat;
-      background-position: 0 100%; // bottom left
-      background-size: 0% 2px;     // start hidden
+      background-size: 0% 60%; // 60% of text height for the marker band
+      background-position: 0 60%; // start mid-text
       transition: background-size 0.45s ease-out, color 0.15s ease-in;
 
       &:hover,
       &:focus {
-        color: var(--bs-navbar-hover-color);
-        background-size: 100% 2px; // sweep in
-        border-bottom-color: transparent;
+        background-size: 100% 60%; // sweep the marker across
+        color: #0A261C; // keep text color readable
       }
 
       &.active {
-        color: var(--bs-navbar-active-color);
-        background-size: 100% 2px; // keep filled
-        border-bottom-color: transparent;
+        background-size: 100% 60%; // keep filled
+        color: #0A261C;
       }
 
       &:focus-visible {
@@ -215,14 +210,7 @@ section#search-section {
       }
     }
   }
-
-  @media (prefers-reduced-motion: reduce) {
-    .nav-item > a.nav-link {
-      transition: none;
-    }
-  }
 }
-
 
 
 /*----- Buttons -----*/
