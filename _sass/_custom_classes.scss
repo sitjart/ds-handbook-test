@@ -1,5 +1,10 @@
 /*-----General styling-----*/
-
+@media (min-width: 992px) {
+    main h1:not(.has-subtitle):not(.blurb-title),
+    main .h1:not(.has-subtitle) {
+        margin-top: 8rem;
+    }
+}
 
 h1 {
     position: relative;
@@ -172,7 +177,8 @@ section#search-section {
 .navigation-tiles {
   .card {
     position: relative;
-    background: transparent;
+    background: none !important;
+    background-color: transparent !important;
     border: none; // remove default card border
     padding: 1rem;
     transition: box-shadow 0.3s ease, transform 0.2s ease;
@@ -184,6 +190,8 @@ section#search-section {
       position: absolute;
       inset: 0; // top:0 right:0 bottom:0 left:0
       border: 2px solid $dark; // main stroke (#46b96c)
+      background: none !important;
+      background-color: transparent !important;
       pointer-events: none;
       border-radius: 8px; // optional
       transition: transform 0.25s ease-out, border-color 0.3s ease;
@@ -195,6 +203,8 @@ section#search-section {
 
     &::after {
       transform: translate(-1px, -2px) rotate(0.4deg);
+      background: none !important;
+      background-color: transparent !important;
       border-color: $accent-color; // lighter 2nd stroke
     }
 
@@ -206,6 +216,7 @@ section#search-section {
       &::after {
         border-color: $accent-color;
         background-color: rgb($accent-color, 20%);
+        background: none !important;
         transform: translate(0, 0) rotate(0deg); // tighten sketch slightly
       }
     }
