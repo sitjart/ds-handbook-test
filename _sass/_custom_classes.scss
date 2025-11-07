@@ -180,19 +180,45 @@ section#search-section {
 
 
 /*-----Top navigation-----*/
-.navbar-nav .nav-item {
-    margin: 0 -0.4em;
-    padding: 0.1em 0.4em;
-    border-radius: 0.8em 0.3em;
-    background: transparent;
-    background-image: linear-gradient(
-    to right,
-        rgba($secondary-light, 0.1),
-        rgba($secondary, 0.7) 4%,
-        rgba($secondary-light, 0.3)
-    );
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
+.navbar-nav {
+  .nav-item {
+    > a.nav-link {
+      position: relative;
+      display: inline-block;
+      color: #0A261C;
+      text-decoration: none;
+      z-index: 1; // keep text above the marker
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: -2px;
+        bottom: 0;
+        width: calc(100% + 4px);
+        height: 60%;
+        background-color: rgba(70, 185, 108, 0.5); // #46b96c @ 50% opacity
+        transform: rotate(-2deg) scaleX(0);
+        transform-origin: left;
+        transition: transform 0.4s ease-out;
+        z-index: -1; // sits behind the text
+        border-radius: 2px; // optional soft edges
+      }
+
+      &:hover::before,
+      &:focus::before {
+        transform: rotate(-2deg) scaleX(1); // animate "marker swipe"
+      }
+
+      &.active::before {
+        transform: rotate(-2deg) scaleX(1); // keep filled when active
+      }
+
+      &:focus-visible {
+        outline: 2px solid rgba(70, 185, 108, 0.5);
+        outline-offset: 3px;
+      }
+    }
+  }
 }
 
 
