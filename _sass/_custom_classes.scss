@@ -100,18 +100,11 @@ footer .col-6.col-lg-6.d-flex.justify-content-lg-start {
 }
 
 
-#sidebar > nav > ul > li:not(.sidebar-title) > a {
-  background: transparent;  // your mint background
-  color: $dark;            // dark text
+#sidebar > nav > a {
+  background: transparent;
+  color: $dark;           
 }
 
-/* Override all hover / focus / active effects */
-#sidebar > nav > ul > li:not(.sidebar-title) > a:hover,
-#sidebar > nav > ul > li:not(.sidebar-title) > a:focus,
-#sidebar > nav > ul > li:not(.sidebar-title) > a:active,
-#sidebar > nav > ul > li:not(.sidebar-title) > a.active {
-  background: transparent; 
-}
 
 
 /* -----Warning page----- */
