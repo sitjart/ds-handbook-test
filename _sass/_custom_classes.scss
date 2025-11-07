@@ -74,15 +74,6 @@
     margin-top: $spacer * 0.5;
 }
 
-#sidebar nav ul li:not(.sidebar-title) a:hover {
-  color: $accent-color;
-  background: transparent;
-}
-
-#sidebar nav ul li:not(.sidebar-title) a.active {
-  color: $accent-color;
-  background: transparent;
-}
 
 #sidebar > nav > ul > li:not(.sidebar-title) > a {
   background: transparent;  // your mint background
