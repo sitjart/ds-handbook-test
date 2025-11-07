@@ -159,20 +159,52 @@ section#search-section {
 /*-----Section navigation tiles-----*/
 
 .navigation-tiles {
-    .card:hover {
-        box-shadow: $box-shadow;
-        text-decoration: none;
+  .card {
+    position: relative;
+    background: transparent;
+    border: none; // remove default card border
+    padding: 1rem;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+
+    // base sketchy borders
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0; // top:0 right:0 bottom:0 left:0
+      border: 2px solid $dark; // main stroke (#46b96c)
+      pointer-events: none;
+      border-radius: 8px; // optional
+      transition: transform 0.25s ease-out, border-color 0.3s ease;
     }
 
-    .card-header {
-        a:hover {
-            text-decoration: none;
-        }
-        h3 {
-            font-size: 1.2rem;
-        }
+    &::before {
+      transform: translate(2px, 1px) rotate(-0.3deg);
     }
+
+    &::after {
+      transform: translate(-1px, -2px) rotate(0.4deg);
+      border-color: $dark; // lighter 2nd stroke
+    }
+
+    &:hover {
+      box-shadow: $box-shadow;
+      transform: translateY(-2px);
+
+      &::before,
+      &::after {
+        border-color: $accent-color;
+        transform: translate(0, 0) rotate(0deg); // tighten sketch slightly
+      }
+    }
+  }
+
+  .card-header {
+    a:hover { text-decoration: none; }
+    h3 { font-size: 1.2rem; }
+  }
 }
+
 
 #search-label-tiles {
     background-color: $light-background;
