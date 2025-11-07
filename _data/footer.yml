@@ -1,29 +1,34 @@
-copyright: '[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/) RDMkit by [ELIXIR](https://elixir-europe.org/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/), except where otherwise noted.'
+copyright: '[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/) Data Stewardship Handbook by [ELIXIR](https://elixir-europe.org/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/), except where otherwise noted.'
 columns:
   - type: text
-    image_width: 120px
     width: 6
-    url_text: Finding patterns, sharing lessons and building good practice together
+    content: |
+      Finding patterns.\
+      Sharing lessons. \
+      Building good practice together.
   - type: links
-    width: 3
+    width: 2
+    title: DISCOVER
     children: 
-      - url_text: Contributors
-        url: /contributors
-      - url_text: Accessibility
-        url: /accessibility
-      - url_text: ELIXIR
-        external_url: https://elixir-europe.org
-      - url_text: Institutes, projects and funders
-        url: /support
-  - type: links
-    width: 3
-    children: 
-      - url_text: About
+      - url_text: About the handbook
         url: /about
-      - url_text: Contact
-        url: /contact
-      - url_text: How to cite
-        url: /about#how-to-cite-the-rdmkit
-      - url_text: Privacy
-        url: /privacy
+      - url_text: About the Maturity Model
+        url: /about
+      - url_text: Find our guidance signpots
+        url: /guidance
+      - url_text: Sit by the campfire and learn what works
+        url: /case-studies
+      - url_text: Use our waypoints to benchmark your work
+        url: /maturity-model
+  - type: links
+    width: 2
+    title: JOIN IN 
+    children: 
+      - url_text: Find out how to contribute
+        url: /about
+      - url_text: See the group of people you would join
+        url: /contributors
+      - url_text: Our accessibility committment
+        url: /accessibility
+
 

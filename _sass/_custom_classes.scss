@@ -6,6 +6,114 @@
     }
 }
 
+.text-secondary {
+  color: $accent-color !important;
+}
+
+/*-----Landing page ----*/
+.landingpage h1 {
+  font-family: 'Caveat', serif;
+  text-align: center;
+  font-size: 80px;
+  transform: rotate(-2deg);
+  padding-bottom: 5px;
+}
+
+.landingpage .highlight {
+  margin: 0 -0.4em;
+  transform: rotate(+2deg);
+  padding: 0.1em 0.3em;
+  border-radius: 0.8em 0.3em;
+  background: transparent;
+  background-image: linear-gradient(
+    to right,
+    rgba($secondary, 0.1),
+    rgba($secondary, 0.7),
+    rgba($secondary, 0.3)
+  );
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+// Hand-drawn effect for "landmarks" cards only
+section .container .row.row-cols-1.row-cols-sm-2.row-cols-lg-3.g-4 {
+  .card {
+    position: relative;
+    background: none !important;
+    border: none;
+    padding: 1rem;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+
+    // sketchy border layers
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border: 2px solid $dark; // main stroke
+      pointer-events: none;
+      border-radius: 8px;
+      transition: transform 0.25s ease-out, border-color 0.3s ease;
+    }
+
+    &::before {
+      transform: translate(2px, 1px) rotate(-0.3deg);
+    }
+
+    &::after {
+      transform: translate(-1px, -2px) rotate(0.4deg);
+      border-color: $secondary; // lighter second stroke
+    }
+
+    &:hover {
+      box-shadow: $box-shadow;
+      transform: translateY(-2px);
+
+      &::before,
+      &::after {
+        border-color: $accent-color;
+        transform: translate(0, 0) rotate(0deg);
+      }
+    }
+
+    .card-img-top {
+      max-width: 6rem;
+      margin-top: 0.5rem;
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .card-text {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+/*-----Footer-----*/
+.footer-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: thin;
+  font-size: 13px;
+}
+
+footer .list-unstyled a {
+  font-size: 13px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+footer .col-6.col-lg-6.d-flex.justify-content-lg-start {
+  color: $white;
+  font-family: 'Caveat', serif;
+  font-size: 3.125rem;
+  line-height: 110%;
+
+}
+
 // Light gray background on the left
 @media (min-width: 992px) {
     body:not(:has(.landingpage)) {
@@ -76,17 +184,10 @@
 
 
 #sidebar > nav > ul > li:not(.sidebar-title) > a {
-  background: transparent;  // your mint background
-  color: $dark;            // dark text
+  background: transparent !important;
+  color: $dark;           
 }
 
-/* Override all hover / focus / active effects */
-#sidebar > nav > ul > li:not(.sidebar-title) > a:hover,
-#sidebar > nav > ul > li:not(.sidebar-title) > a:focus,
-#sidebar > nav > ul > li:not(.sidebar-title) > a:active,
-#sidebar > nav > ul > li:not(.sidebar-title) > a.active {
-  background: transparent; 
-}
 
 
 /* -----Warning page----- */
@@ -258,7 +359,7 @@ section#search-section {
         bottom: 0;
         width: calc(100% + 4px);
         height: 70%;
-        background-color: rgba($secondary, 0.8); // #46b96c @ % opacity
+        background-color: rgba($secondary, 0.8);
         transform: rotate(-2deg) scaleX(0);
         transform-origin: left;
         transition: transform 0.4s ease-out;
