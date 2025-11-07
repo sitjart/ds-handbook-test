@@ -35,6 +35,62 @@
   box-decoration-break: clone;
 }
 
+// Hand-drawn effect for "landmarks" cards only
+section .container .row.row-cols-1.row-cols-sm-2.row-cols-lg-3.g-4 {
+  .card {
+    position: relative;
+    background: none !important;
+    border: none;
+    padding: 1rem;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+
+    // sketchy border layers
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border: 2px solid $dark; // main stroke
+      pointer-events: none;
+      border-radius: 8px;
+      transition: transform 0.25s ease-out, border-color 0.3s ease;
+    }
+
+    &::before {
+      transform: translate(2px, 1px) rotate(-0.3deg);
+    }
+
+    &::after {
+      transform: translate(-1px, -2px) rotate(0.4deg);
+      border-color: $secondary; // lighter second stroke
+    }
+
+    &:hover {
+      box-shadow: $box-shadow;
+      transform: translateY(-2px);
+
+      &::before,
+      &::after {
+        border-color: $accent-color;
+        transform: translate(0, 0) rotate(0deg);
+      }
+    }
+
+    .card-img-top {
+      max-width: 6rem;
+      margin-top: 0.5rem;
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .card-text {
+      margin-bottom: 0;
+    }
+  }
+}
 
 
 /*-----Footer-----*/
