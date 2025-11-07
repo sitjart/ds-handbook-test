@@ -6,6 +6,13 @@
     }
 }
 
+.footer-subtitle {
+    font-family: 'Caveat', serif;
+    font-size: 80px;
+    line-height: 100%;
+
+}
+
 // Light gray background on the left
 @media (min-width: 992px) {
     body:not(:has(.landingpage)) {
