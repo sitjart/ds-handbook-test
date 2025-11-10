@@ -1,12 +1,50 @@
 1.1.1:
   page: mm-strategy-defined
-  title: Strategy for RDM
 1.1.2:
   page: mm-strategy-personnel
-  title: RDM personnel
+1.1.3:
+  page: mm-strategy-goals-kpis
 1.1.4:
   page: mm-strategy-policy-adherence
-  title: Adherence to policies
+1.1.5:
+  page: mm-strategy-policies-and-procedures
+1.1.6:
+  page: mm-strategy-align-with-best-practices
+1.2.1:
+  page: mm-strategy-funding
+2.1.1:
+  page: mm-legal-framework
 2.2.1:
   page: mm-legal-security
-  title: IT security for research data
+2.3.1:
+  page: mm-legal-gdpr
+2.4.1:
+  page: mm-legal-ethics
+3.1.1:
+  page: mm-support-training
+3.1.2:
+  page: mm-support-training-materials
+3.2.1:
+  page: mm-support-network
+3.3.1:
+  page: mm-support-guidelines-researchers
+3.3.2:
+  page: mm-support-communication
+3.4.1:
+  page: mm-support-services
+4.1.1:
+  page: mm-data-resources
+4.2.1:
+  page: mm-data-standards-rdm
+4.3.1:
+  page: mm-data-standards-documentation
+4.4.1:
+  page: mm-data-infrastructure
+4.5.1:
+  page: mm-data-publication
+4.6.1:
+  page: mm-data-assets
+4.6.2:
+  page: mm-data-accessibility
+4.7.1:
+  page: mm-data-dmp
