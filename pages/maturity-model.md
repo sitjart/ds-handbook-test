@@ -32,7 +32,7 @@ page_img: "icons/icon-mm.svg"
             {% for indicator in domain_indicators %}
             {% assign indicator_key = indicator.indicatorLevel %}
             {% assign entry_page = site.data.mm_dsh_mapping[indicator_key].page %}
-            <tr>
+            <tr id="{{ entry_page }}">
                 {% if entry_page %}
                 <td><a href="{{ entry_page }}">{{ indicator.indicator }}</a></td>
                 {% else %}
