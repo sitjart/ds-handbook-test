@@ -60,4 +60,4 @@ page_img: "icons/icon-mm.svg"
 ## Version information
 
 - Version: {{ site.data.shared.maturity_model.version.versionNumber }} [{{ site.data.shared.maturity_model.version.versionDescription }}](https://github.com/elixir-europe/rdm-maturity-model/blob/main/_data/maturity_model.json)
-- Release date: {{ site.data.shared.maturity_model.version.timestamp }}
+- Release date: {{ site.data.shared.maturity_model.version.timestamp | date: '%F' }}
