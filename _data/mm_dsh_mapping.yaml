@@ -40,11 +40,11 @@
   page: mm-data-standards-documentation
 4.4.1:
   page: mm-data-infrastructure
-4.5.1:
-  page: mm-data-publication
-4.6.1:
-  page: mm-data-assets
-4.6.2:
-  page: mm-data-accessibility
-4.7.1:
-  page: mm-data-dmp
+#4.5.1:
+#  page: mm-data-publication
+#4.6.1:
+#  page: mm-data-assets
+#4.6.2:
+#  page: mm-data-accessibility
+#4.7.1:
+#  page: mm-data-dmp
