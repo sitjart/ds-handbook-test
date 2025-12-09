@@ -1,5 +1,4 @@
 <script>
-    console.log("Custom accordion script loaded");
     document.addEventListener("DOMContentLoaded", function() {
         const ACCORDION_SELECTOR = ".accordion-collapse";
 
@@ -19,16 +18,6 @@
             if (!href || !href.startsWith("#")) return;
 
             const target = document.querySelector(href);
-
-            // 🔍 DEBUGGING — start
-            console.log("---- DEBUG CLICK ----");
-            console.log("href:", href);
-            console.log("target element:", target);
-            if (target) {
-                const collapseParent = target.closest(".accordion-collapse");
-                console.log("collapse parent:", collapseParent);
-            }
-            // 🔍 DEBUGGING — end
 
             if (!target) return;
 
