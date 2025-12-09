@@ -10,6 +10,19 @@
 #    affiliation: affiliation
 #    image_url: absolute path to image (default image from github)
 
+
+Miguel Cisneiors:
+    git:
+    email: 
+    orcid:
+    role: contributor
+    affiliation:
+Saliha Zenboudji-Beddek:
+    git: SalihaZ
+    email: 
+    orcid: 0009-0001-3375-7793
+    role: contributor
+    affiliation: French Institute of Bioinformatics (IFB -UAR 3601 - CNRS)
 Dafne Condori:
     git:
     email: 
