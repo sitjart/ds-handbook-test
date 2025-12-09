@@ -2,6 +2,7 @@
 title: Maturity model
 page_img: "icons/icon-mm.svg"
 ---
+{% include auto-expand.html %}
 
 ## Indicators
 <div class="accordion accordion-flush" id="indicatorsAccordion">
@@ -14,7 +15,18 @@ page_img: "icons/icon-mm.svg"
               data-bs-target="#collapse2{{forloop.index}}" 
               aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}" 
               aria-controls="collapse2{{forloop.index}}">
-        <strong>{{ domain.domainName }}</strong>
+          <div class="container-fluid">
+            <div class="row pb-1">
+              <div class="col">
+                <strong>[{{domain.domainLevel}}] {{ domain.domainName }}</strong>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                {{ domain.domainDescription }}
+              </div>
+            </div>
+          </div>
       </button>
     </h3>
     <div id="collapse2{{forloop.index}}" class="accordion-collapse collapse {% if forloop.first %}show{% endif %}" data-bs-parent="#indicatorsAccordion">
@@ -30,13 +42,13 @@ page_img: "icons/icon-mm.svg"
           </thead>
           <tbody>
             {% for indicator in domain_indicators %}
-            {% assign indicator_key = indicator.indicatorLevel %}
+            {% assign indicator_key = indicator.indicatorLevel | append: "" %}
             {% assign entry_page = site.data.mm_dsh_mapping[indicator_key].page %}
             <tr id="{{ entry_page }}">
                 {% if entry_page %}
-                <td><a href="{{ entry_page }}">{{ indicator.indicator }}</a></td>
+                <td><a href="{{ entry_page }}">[{{ indicator.indicatorLevel }}] {{ indicator.indicator }}</a></td>
                 {% else %}
-                <td>{{ indicator.indicator }}</td>
+                <td>[{{ indicator.indicatorLevel }}] {{ indicator.indicator }}</td>
                 {% endif %}
               <td>
                 <ol>
@@ -59,5 +71,5 @@ page_img: "icons/icon-mm.svg"
 
 ## Version information
 
-- Version: {{ site.data.shared.maturity_model.version.versionNumber }} [{{ site.data.shared.maturity_model.version.versionDescription }}](https://github.com/elixir-europe/rdm-maturity-model/blob/main/_data/maturity_model.json)
+- Version: [{{ site.data.shared.maturity_model.version.versionNumber }} {{ site.data.shared.maturity_model.version.versionDescription }}](https://github.com/elixir-europe/rdm-maturity-model/blob/main/_data/maturity_model.json)
 - Release date: {{ site.data.shared.maturity_model.version.timestamp | date: '%F' }}
