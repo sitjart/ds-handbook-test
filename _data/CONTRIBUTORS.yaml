@@ -10,7 +10,18 @@
 #    affiliation: affiliation
 #    image_url: absolute path to image (default image from github)
 
-
+Nick Juty:
+    git:
+    email: 
+    orcid:
+    role: contributor
+    affiliation:
+Anna Strachotova:
+    git:
+    email: 
+    orcid:
+    role: contributor
+    affiliation:
 Miguel Cisneiors:
     git:
     email: 
@@ -98,12 +109,18 @@ Carmen Reverté:
     role: contributor
     image_url:
 Flavio Licciulli:
-    git: 
-    role: 
+    git: flaviolic
+    orcid: 0000-0002-1861-8947
+    role: contributor
+    email: flavio.licciulli@ba.itb.cnr.it
     image_url:
+    affiliation: Institute for Biomedical Technogies, National Research Council (CNR)
 Helena Schnitzer:
     git: HelenaSchnitzer
+    email: h.schnitzer@fz-juelich.de
+    orcid: 0000-0002-6382-9452
     role: contributor
+    affiliation: Forschungszentrum Jülich GmbH
 Laura Portell Silva:
     git: lauportell
     role: contributor
@@ -113,6 +130,7 @@ Diana Pilvar:
     email: diana.pilvar@ut.ee
     orcid: 0000-0002-5788-2687
     role: contributor
+    affilation: University of Tartu
 Marina Popleteeva:
     git: marikapop
     role: contributor
