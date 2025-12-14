@@ -1,7 +1,5 @@
 ---
 title: ELSI servicedesk
-description: 
-contributors: 
 page_id: ELSI-servicedesk
 type: Case Study
 ---
