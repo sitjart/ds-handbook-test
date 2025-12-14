@@ -4,7 +4,6 @@ description: How to write a strategy to have a structured framework to guide the
 contributors: [Maria Klapa, Xenia Perez Sitja, Riku Riski, Niclas Jareborg, Vassilios Ioannidis]
 page_id: g-writing-rdm-strategy
 type: Guidance
-related_pages: mm-strategy-defined
 ---
 
 ## Context
