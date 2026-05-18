@@ -102,7 +102,7 @@ __First move:__ CSC organized an initial kick-off event and leveraged existing O
 __Tools and formats used:__
 
 * A moderated mailing list for monthly newsletters
-* A discussion forum (“data chat”) requiring a Finnish eDuuni-ID
+* A discussion forum (“data chat”) requiring a Finnish [eDuuni-ID](https://info.eduuni.fi/en/services/eduuni-id/)
 * Monthly virtual “data coffee” meetings via Zoom
 * Training events and open materials (CC BY 4.0 licensed)
 
