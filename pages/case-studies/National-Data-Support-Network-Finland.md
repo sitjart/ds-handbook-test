@@ -44,10 +44,6 @@ partners:
 scale: national            
 domain: cross-domain           # [vocab] domains.yml
 
-# One or more – pick the PROBLEMS this case addresses, not the solution.
-# Full list in themes.yml: training-gap, unclear-roles, policy-gap,
-# tooling-gap, sustainability, legal-compliance, stakeholder-engagement,
-# community-building.
 themes:                           
   - fragmented-coordination
   - community-building
@@ -55,9 +51,9 @@ themes:
 
 start: 2020                      
 status: active                    
-external_url: [https://example.org/activity](https://wiki.eduuni.fi/spaces/csckorkeakoulut/pages/158139607/CSC+-+Data+Support+Network)
+external_url: https://wiki.eduuni.fi/spaces/csckorkeakoulut/pages/158139607/CSC+-+Data+Support+Network
 external_url_label: CSC - Data Support Network homepage
-lead_quote: Don't overcomplicate community building: instead, focus on creating low-barrier, informal online spaces where a dedicated core group can tackle practical, everyday challenges.
+lead_quote: "Don't overcomplicate community building: instead, focus on creating low-barrier, informal online spaces where a dedicated core group can tackle practical, everyday challenges."
 
 related_pages:
   Guidance:
@@ -70,7 +66,7 @@ related_pages:
 
 resources:
   - name: "National resources: Finland"
-    url: https://example.org/resource](https://rdmkit.elixir-europe.org/fi_resources
+    url: https://rdmkit.elixir-europe.org/fi_resources
     description: This is an overview of research data management resources in Finland. These resources are accessible for researchers in Finland and to their collaborators.
   - name: "Open Science Finland"
     url: https://avointiede.fi/en
