@@ -13,8 +13,8 @@
 
 title: "Case study title"          # mandatory – short, specific
 layout: case-study                 # mandatory – leave as-is
-type: [Case Study]                 # mandatory – leave as-is
-search_exclude: true               # remove this line when ready to publish
+type: Case Study                   # mandatory – leave as-is
+search_exclude: true               # – leave as-is
 
 # 20–30 words. Used in meta tags, search results, and the highlights box at
 # the top of the page. Easier to write last, once the rest of the page exists.

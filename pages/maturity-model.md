@@ -1,7 +1,13 @@
 ---
 title: Maturity model
-page_img: # none it doesnt't work
+description: A self-assessment framework for benchmarking your institution's data stewardship maturity across four domains – strategy, data management, legal and governance, and support.
+page_id: maturity-model-index
 ---
+
+<p class="section-eyebrow">WAYPOINTS</p>
+
+<p class="drop-cap">Waypoints are the handbook's <em>self-assessment framework</em>. The maturity model lets you benchmark your institution's data stewardship practice across four domains. Use it to see where you are, identify where to invest next, and make the case for resources or organisational change.</p>
+
 {% include auto-expand.html %}
 
 ## Indicators
@@ -9,11 +15,11 @@ page_img: # none it doesnt't work
  {% for domain in site.data.shared.maturity_model.domains %}
   <div class="accordion-item">
     <h3 class="accordion-header">
-      <button class="accordion-button {% unless forloop.first %}collapsed{% endunless %}" 
+      <button class="accordion-button collapsed" 
               type="button"
               data-bs-toggle="collapse" 
               data-bs-target="#collapse2{{forloop.index}}" 
-              aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}" 
+              aria-expanded="false" 
               aria-controls="collapse2{{forloop.index}}">
           <div class="container-fluid">
             <div class="row pb-1">
@@ -29,7 +35,7 @@ page_img: # none it doesnt't work
           </div>
       </button>
     </h3>
-    <div id="collapse2{{forloop.index}}" class="accordion-collapse collapse {% if forloop.first %}show{% endif %}" data-bs-parent="#indicatorsAccordion">
+    <div id="collapse2{{forloop.index}}" class="accordion-collapse collapse" data-bs-parent="#indicatorsAccordion">
       <div class="accordion-body">
         {% assign domain_indicators = site.data.shared.maturity_model.indicators | where:"domain", domain.domainName %}
         {% if domain_indicators != empty %}
