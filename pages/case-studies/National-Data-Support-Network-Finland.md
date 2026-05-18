@@ -2,14 +2,11 @@
 title: "National Data Support Network in Finland" 
 layout: case-study                
 type: [Case Study]                 
-search_exclude: true               # remove this line when ready to publish
 
 description: With 170 members across Finnish research institutions, this national peer network demonstrates how informal, grassroots collaboration can strengthen formal Open Science structures and enhance knowledge exchange.
 
 contributors: [Minna Ahokas, Diana Pilvar]         
 page_id: case-study-finish-data-support-network     
-
-# Context card -----------------------------------------------------------
 
 lead_org: "CSC (ELIXIR-FI)"      
 country: FI                     
@@ -132,39 +129,73 @@ __Iteration and pivot:__ Initially, community engagement included in-person caf�
 
 ## What changed
 
-What's different now? Concrete outputs are most useful – a training
-course delivered, a workflow adopted, a policy written, a tool deployed,
-a number that moved.
+__Outputs and results:__
 
-- What was produced or implemented?
-- What's the evidence it worked? (uptake numbers, feedback, metrics,
-  anecdotes – all valid; pick what you actually have.)
-- What barriers came up, and which factors helped you push through?
-  (Leadership backing, an existing community, a deadline, a champion?)
+* A national network of over ~170 members across nearly all Finnish HEIs and RPOs (by May 2026) 
+* A functioning monthly newsletter, active discussion forum, and regular meeting format
+* Delivery of training events and reusable RDM materials
+* Creation of an informal peer-support channel for RDM professionals
 
-If the work hasn't produced visible change yet, say so – *"too early to
-tell, will revisit in 12 months"* is a fine answer when it's honest.
-Better than reaching for impact that isn't there.
+__Evidence it worked:__
 
+* Consistent participation in monthly virtual meetings
+* Active engagement in the discussion forum (even if concentrated among core users)
+* Continued growth and sustained membership over multiple years
+* Positive uptake of training and shared materials
 
-## What we'd tell others (mandatory)
+__Barriers encountered:__
 
-The lesson, the caveats, the conditions for replication, and what
-happens next – bundled because they overlap in practice.
+* Difficulty in engaging all members equally (participation remained uneven)
+* Limited feedback from the community on needs and priorities
+* Balancing communication volume with members’ limited time
+* Initial reluctance to use discussion platforms widely
 
-- **What worked, and why.** The one or two things you'd repeat without
-  hesitation if you were starting over.
-- **What didn't work, and how you adapted.** The corner you painted
-  yourself into. Future contributors learn most from these.
-- **Transferability and scaling potential.** Can this approach be reused
-  by another institution or individual? What conditions are required
-  (leadership buy-in, existing service, specific funding, a particular
-  legal context)? What adaptations might be needed? Be honest about
-  what was special about your setting.
-- **Sustainability and next steps.** How is the work currently supported
-  or funded? Who maintains or owns it? What are the plans for
-  continuation, embedding, or scaling? If continuity is uncertain, say
-  so.
+__Enablers:__
+
+* Strong existing national Open Science ecosystem
+* CSC’s central role and credibility
+* Low-barrier participation model
+* Shift to online formats, which increased accessibility
+* Clear value proposition: practical, everyday support rather than policy-level discussion
+
+__Current limitations:__
+
+While the network is successful as a general community, there is emerging demand for more specialized groups (e.g. a dedicated data steward community). Formal professionalisation of data stewardship is still in early stages in Finland.
+
+## What we'd tell others
+
+### What worked
+
+* __Keep the barrier to entry low.__ Participation requires minimal commitment, making it sustainable.
+* __Focus on practical value.__ Discussions centered on real, day-to-day challenges kept the network relevant.
+* __Build on existing structures.__ Leveraging national coordination frameworks made adoption much easier.
+* __Create informal spaces.__ The “data coffee” format fostered trust and ongoing engagement.
+
+### What didn’t work (and how we adapted)
+
+* __In-person-only formats limited participation.__ Moving fully online significantly improved inclusiveness.
+* __Trying to engage everyone equally.__ In practice, a smaller active core sustains the network.
+* __Difficulty in collecting feedback.__ We relied more on observed engagement and informal input rather than formal feedback processes.
+
+### Transferability and scaling
+
+This model is highly transferable, __with some conditions:__
+
+* Requires at least a __basic national or institutional coordination structure__
+* Benefits from a __trusted central actor__ (like CSC)
+* Works best where there is already a __community of practice with shared challenges__
+
+Adaptations may be needed in:
+
+* Countries without centralized RDM coordination
+* Contexts where access systems (like eDuuni-ID) are not available
+* Environments with less established Open Science culture
+
+### Sustainability and next steps
+
+The network is currently sustained through CSC coordination and community contributions. Its lightweight structure supports long-term continuity without large dedicated funding. Possible next steps include strengthening connections to European networks and supporting ongoing discussions and activities on professionalisation of data stewardship
+
+While the network is well functioning, its future development depends on continued coordination support and responsiveness to evolving community needs.
 
 
 <!--
