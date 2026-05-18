@@ -1,7 +1,7 @@
 ---
 title: "National Data Support Network in Finland" 
 layout: case-study                
-type: [Case Study]                 
+type: Case Study                 
 
 description: With 170 members across Finnish research institutions, this national peer network demonstrates how informal, grassroots collaboration can strengthen formal Open Science structures and enhance knowledge exchange.
 
@@ -69,8 +69,7 @@ related_pages:
 
 
 resources:
-  - rdmkit
-    name: "National resources: Finland"
+  - name: "National resources: Finland"
     url: https://example.org/resource](https://rdmkit.elixir-europe.org/fi_resources
     description: This is an overview of research data management resources in Finland. These resources are accessible for researchers in Finland and to their collaborators.
   - name: "Open Science Finland"
