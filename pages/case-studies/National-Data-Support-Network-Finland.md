@@ -5,7 +5,7 @@ type: Case Study
 
 description: With 170 members across Finnish research institutions, this national peer network demonstrates how informal, grassroots collaboration can strengthen formal Open Science structures and enhance knowledge exchange.
 
-contributors: [Minna Ahokas, Diana Pilvar]         
+contributors: [Minna Ahokas, Diana Pilvar, Päivi Rauste]         
 page_id: case-study-finish-data-support-network     
 
 lead_org: "CSC (ELIXIR-FI)"      
@@ -117,7 +117,7 @@ This was not built from scratch. It was explicitly built on:
 * CSC’s existing role in delivering RDM services and training
 * Established communities around ELIXIR and other infrastructures
 
-__Effort involved:__ The network is coordinated centrally (within CSC), but designed to scale through community contributions. While no exact FTE is defined, the model relied on light but continuous coordination rather than large, time-bound projects.
+__Effort involved:__ The network is coordinated centrally (within CSC), as part of the CSC Research Data Management Competence Center funded by the Finnish Ministry of Education and Culture, but designed to scale through community contributions. While no exact FTE is defined, the model relies on light but continuous coordination rather than large, time-bound projects.
 
 __Iteration and pivot:__ Initially, community engagement included in-person café meetings, but due to COVID-19 these were rapidly replaced with virtual meetings. This shift proved highly successful, significantly increasing inclusiveness and participation nationwide.
 
