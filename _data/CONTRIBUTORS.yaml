@@ -74,6 +74,9 @@ Heleri Inno:
   git: heleriinno
   orcid: 0000-0003-2043-0772
   affiliation: University of Tartu / ELIXIR-EE
+Päivi Rauste:
+  orcid: 0000-0001-8315-5259
+  affiliation: CSC - IT Center for Science
 Ivan Mičetić:
   git: ivanmicetic
   roles:
@@ -111,6 +114,7 @@ Mijke Jetten:
 Miguel Cisneiros:
 Minna Ahokas:
   git: minnami
+  orcid: 0000-0003-2313-0011
 Nazeefa Fatima:
   git: Nazeeefa
   orcid: 0000-0001-7791-4984
