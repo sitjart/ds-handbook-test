@@ -5,13 +5,13 @@
     Inter               (body, UI)
     JetBrains Mono      (data accents – page IDs, codes, levels, numbers)
     Caveat              (marginalia)
-  Palette: ink, lake, mist, amber, brick on sky + paper
+  Palette: ink, lake, fern, amber, brick on linen + paper
 ========================================================================*/
 
 /*-----Tone tokens per landmark-----*/
-$tone-signposts:   $brand-mist;      // soft teal
+$tone-signposts:   $brand-mist;      // soft green
 $tone-campfires:   $brand-brick;      // deep terracotta
-$tone-waypoints:   $brand-lake;      // mid teal
+$tone-waypoints:   $brand-leaf;      // mid teal
 
 
 /*=== Body / global typography ===========================================*/
@@ -19,7 +19,7 @@ body {
     font-family: $font-family-sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: $brand-sky;
+    background-color: $brand-linen;
     color: $dark;
     line-height: 1.6;
     font-size: 1rem;
@@ -63,7 +63,7 @@ body {
     p, li { font-family: $font-family-sans-serif; }
 
     // Theme paints list markers in $brand-mist (pale teal) which has no contrast
-    // on the sky ground. Force ink so bullets and ordered-list numbers stay readable.
+    // on linen. Force ink so bullets and ordered-list numbers stay readable.
     ul li::marker,
     ol li::marker { color: $dark; font-weight: 600; }
 }
@@ -116,8 +116,8 @@ code {
 }
 
 
-/*=== Topnav (light, paper bg) ==========================================*/
-// The masthead runs wider than the reading column, so the nav items and the
+/*=== Topnav (dark green bar) ===========================================*/
+// The masthead runs wider than the reading column, so the s and the
 // logo get room the content column doesn't need.
 header .navbar > .container {
     max-width: none;
@@ -131,7 +131,10 @@ header .navbar > .container {
 $topnav-height: 4rem;
 
 header .navbar {
-    border-bottom: 1px solid $brand-rule;
+    // Dark green bar, matching the footer: the page is bracketed top and
+    // bottom so the dark footer reads as structure rather than an orphan slab.
+    background-color: $dark !important;
+    border-bottom: 0;
     box-shadow: none !important;
     padding-top: 0;
     padding-bottom: 0;
@@ -147,8 +150,26 @@ header .navbar {
             height: $topnav-brand-height;
             width: auto;
             max-width: none;     // defeat .img-fluid's max-width: 100%
+            // Light disc behind the mark, same treatment as the footer: the
+            // magpie is near-black artwork and the bar is near-black green,
+            // so it needs its own ground to sit on.
+            background-color: $light-background;
+            border-radius: 100%;
         }
     }
+}
+
+// The search sits on the dark bar, so its type, icon and placeholder all have
+// to be light — the theme only recolours the field itself.
+header .navbar {
+    #search-input,
+    #search-label,
+    .input-group-text {
+        color: $brand-linen !important;
+        border: 0 !important;
+    }
+
+    #search-input::placeholder { color: rgba($brand-linen, 0.65) !important; }
 }
 
 // Above the collapse breakpoint everything stays on one row: labels don't
@@ -175,7 +196,7 @@ header .navbar {
     // marker swipe ran edge-to-edge while the plain links hugged their text.
     // fit-content shrinks the box back to its content in both cases.
     width: fit-content;
-    color: $dark !important;
+    color: $brand-linen !important;
     font-family: $font-family-theme;
     font-weight: 500;
     line-height: 1.2;
@@ -190,7 +211,7 @@ header .navbar {
         right: -2px;
         bottom: 4px;
         height: 55%;
-        background-color: rgba($brand-mist, 0.65);
+        background-color: rgba($brand-mist, 0.30);
         transform: rotate(-2deg) scaleX(0);
         transform-origin: left center;
         transition: transform 0.4s cubic-bezier(0.55, 0.06, 0.18, 1.0);
@@ -203,6 +224,13 @@ header .navbar {
     &:focus::before,
     &.active::before {
         transform: rotate(-2deg) scaleX(1);
+    }
+
+    // The theme also paints its own hover block behind the link
+    // (`background-color: rgba($primary, .08)` on .nav-link:hover/.active).
+    // Two overlapping highlights read as a chip; the stripe is the whole idea.
+    &:hover, &:focus, &.active {
+        background-color: transparent !important;
     }
 
     &:focus-visible {
@@ -218,14 +246,14 @@ header .navbar {
 .navbar-light .navbar-toggler,
 .navbar-toggler {
     border: none;
-    color: $brand-lake-text !important;
+    color: $brand-linen !important;
 
     i { color: inherit !important; }
 }
 
 
 /*=== Landing page hero ===================================================*/
-.landingpage-body { background-color: $brand-sky; }
+.landingpage-body { background-color: $brand-linen; }
 
 .landingpage {
     .hero {
@@ -291,7 +319,7 @@ header .navbar {
 /*=== Editorial "rough mark" utilities ===================================*/
 // A wobbly underline used under titles. Inline SVG, scaled to element width.
 $squiggle-amber: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 12' preserveAspectRatio='none'><path d='M 2 8 Q 20 4 40 7 T 80 6 T 120 7 T 160 6 T 200 7 T 238 6' stroke='%23E8B547' stroke-width='3.5' stroke-linecap='round' fill='none'/></svg>";
-$squiggle-lake:  "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 12' preserveAspectRatio='none'><path d='M 2 8 Q 20 4 40 7 T 80 6 T 120 7 T 160 6 T 200 7 T 238 6' stroke='%235B95A0' stroke-width='3.5' stroke-linecap='round' fill='none'/></svg>";
+$squiggle-lake:  "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 12' preserveAspectRatio='none'><path d='M 2 8 Q 20 4 40 7 T 80 6 T 120 7 T 160 6 T 200 7 T 238 6' stroke='%23569978' stroke-width='3.5' stroke-linecap='round' fill='none'/></svg>";
 $squiggle-brick: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 12' preserveAspectRatio='none'><path d='M 2 8 Q 20 4 40 7 T 80 6 T 120 7 T 160 6 T 200 7 T 238 6' stroke='%23C44536' stroke-width='3.5' stroke-linecap='round' fill='none'/></svg>";
 
 // Editorial divider used between sections in body content + footer.
@@ -338,9 +366,9 @@ $squiggle-brick: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg
 }
 
 .door {
-    --tone: #{$brand-lake};
-    --tone-block: #{rgba($brand-lake, 0.22)};
-    --tone-block-strong: #{rgba($brand-lake, 0.42)};
+    --tone: #{$brand-leaf};
+    --tone-block: #{rgba($brand-leaf, 0.22)};
+    --tone-block-strong: #{rgba($brand-leaf, 0.42)};
     --tilt: 0deg;
 
     position: relative;
@@ -515,7 +543,7 @@ $squiggle-brick: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg
     // so each door previews the warmth of the next landmark when you
     // mouse over it.
     &--signposts {
-        --tone: #{$brand-lake};
+        --tone: #{$brand-leaf};
         --tone-block: #{rgba($brand-mist, 0.6)};         // teal default
         --tone-block-strong: #{rgba($brand-brick-soft, 0.75)}; // → red on hover
         --tilt: -0.7deg;
@@ -529,9 +557,9 @@ $squiggle-brick: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg
         --door-underline: url("#{$squiggle-brick}");
     }
     &--waypoints {
-        --tone: #{$brand-lake};
+        --tone: #{$brand-leaf};
         --tone-block: #{rgba($brand-amber-soft, 0.7)};     // yellow default
-        --tone-block-strong: #{rgba($brand-mist, 0.85)}; // → teal on hover
+        --tone-block-strong: #{rgba($brand-mist, 0.85)}; // → green on hover
         --tilt: -0.3deg;
         --door-underline: url("#{$squiggle-amber}");
     }
@@ -566,7 +594,7 @@ $squiggle-brick: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg
 
         main#main {
             padding-top: $spacer * 2.5;
-            background-color: $brand-sky;
+            background-color: $brand-linen;
         }
     }
 }
@@ -597,7 +625,7 @@ $squiggle-brick: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg
     font-size: 0.7rem;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: rgba($dark, 0.7); // contrast-safe on the sky ground
+    color: rgba($dark, 0.7); // contrast-safe on linen
     margin-bottom: 0.25rem;
 }
 
@@ -611,7 +639,7 @@ $squiggle-brick: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg
     text-decoration: none;
     font-variation-settings: "opsz" 24, "wdth" 95;
 
-    &:hover { color: $brand-lake-text !important; }
+    &:hover { color: $brand-leaf-text !important; }
     &.disabled { pointer-events: none; }
 }
 
@@ -631,7 +659,7 @@ $squiggle-brick: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg
         top: 0.85rem;
         bottom: 0.85rem;
         width: 3px;
-        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='3' height='80' viewBox='0 0 3 80'><path d='M 1.5 2 L 1.5 8 M 1.5 13 L 1.5 22 M 1.5 26 L 1.5 33 M 1.5 38 L 1.5 49 M 1.5 53 L 1.5 60 M 1.5 64 L 1.5 78' stroke='%23D3DEE0' stroke-width='2.5' stroke-linecap='round' fill='none'/></svg>");
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='3' height='80' viewBox='0 0 3 80'><path d='M 1.5 2 L 1.5 8 M 1.5 13 L 1.5 22 M 1.5 26 L 1.5 33 M 1.5 38 L 1.5 49 M 1.5 53 L 1.5 60 M 1.5 64 L 1.5 78' stroke='%23E2DFD4' stroke-width='2.5' stroke-linecap='round' fill='none'/></svg>");
         background-repeat: repeat-y;
         background-size: 3px 80px;
     }
@@ -683,8 +711,8 @@ $squiggle-brick: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg
         background-color: rgba($brand-mist, 0.45);
 
         .trail-dot {
-            background: $brand-lake;
-            border-color: $brand-lake;
+            background: $brand-leaf;
+            border-color: $brand-leaf;
             transform: scale(1.15);
         }
     }
@@ -773,7 +801,6 @@ $arrow-mask-svg: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg
 .navigation-tiles .card,
 section .container .row.row-cols-1.row-cols-sm-2.row-cols-lg-3.g-4 .card {
     --tone: #{$brand-brick-text};
-    --tone-soft: #{rgba($brand-brick, 0.10)};
     --tone-wash: #{rgba($brand-mist, 0.85)};
     counter-increment: card-num;
     position: relative;
@@ -818,7 +845,10 @@ section .container .row.row-cols-1.row-cols-sm-2.row-cols-lg-3.g-4 .card {
     }
 
     &:hover {
-        background-color: var(--tone-soft) !important;
+        // The card keeps its white on hover. Tinting the background here only
+        // ever muddied it: this rule overrides background-color alone, so the
+        // card's white `background` was replaced rather than layered under.
+        // The lift and the shadow carry the interaction instead.
         box-shadow: 0 14px 32px -10px rgba($dark, 0.12);
         transform: translateY(-3px);
 
@@ -895,20 +925,17 @@ section .container .row.row-cols-1.row-cols-sm-2.row-cols-lg-3.g-4 .card {
 // rest of the landmark's identity (teal / red / yellow).
 .navigation-tiles.tone--signposts .card,
 .card.tone--signposts {
-    --tone: #{$brand-lake-text};
-    --tone-soft: #{rgba($brand-lake, 0.10)};
+    --tone: #{$brand-leaf-text};
     --tone-wash: #{rgba($brand-mist, 0.85)};
 }
 .navigation-tiles.tone--campfires .card,
 .card.tone--campfires {
     --tone: #{$brand-brick-text};
-    --tone-soft: #{rgba($brand-brick, 0.08)};
     --tone-wash: #{rgba($brand-brick-soft, 0.85)};
 }
 .navigation-tiles.tone--waypoints .card,
 .card.tone--waypoints {
-    --tone: #{$brand-lake-text};
-    --tone-soft: #{rgba($brand-lake, 0.10)};
+    --tone: #{$brand-leaf-text};
     --tone-wash: #{rgba($brand-amber-soft, 0.9)};
 }
 
@@ -1144,9 +1171,9 @@ section .container .row.row-cols-1.row-cols-sm-2.row-cols-lg-3.g-4 .card {
 
 footer#footer {
     background-color: $dark !important;
-    color: $brand-sky !important;
+    color: $brand-linen !important;
 
-    a { color: $brand-sky !important; }
+    a { color: $brand-linen !important; }
 
     .footer-masthead {
         text-align: center;
@@ -1158,7 +1185,7 @@ footer#footer {
         font-family: $font-family-monospace;
         font-size: 0.72rem;
         line-height: 1;
-        color: rgba($brand-sky, 0.55);
+        color: rgba($brand-linen, 0.55);
         letter-spacing: 0.16em;
         text-transform: uppercase;
         margin: 0 0 1rem;
@@ -1179,7 +1206,7 @@ footer#footer {
         font-family: $font-family-sans-serif;
         font-size: 1.02rem;
         line-height: 1.6;
-        color: rgba($brand-sky, 0.78);
+        color: rgba($brand-linen, 0.78);
         margin: 0 auto;
         max-width: 56ch;
     }
@@ -1190,14 +1217,14 @@ footer#footer {
         letter-spacing: 0.10em;
         text-transform: uppercase;
         margin-top: 0.5rem;
-        color: rgba($brand-sky, 0.85);
+        color: rgba($brand-linen, 0.85);
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 0.5rem 0.75rem;
 
         a {
-            color: rgba($brand-sky, 0.85) !important;
+            color: rgba($brand-linen, 0.85) !important;
             text-decoration: none;
             font-weight: 500;
             padding: 0.15rem 0;
@@ -1210,21 +1237,21 @@ footer#footer {
             }
         }
 
-        .footer-sep { color: rgba($brand-sky, 0.35); user-select: none; }
+        .footer-sep { color: rgba($brand-linen, 0.35); user-select: none; }
     }
 
     .copyright {
         background-color: rgba($white, 0.04) !important;
         margin-top: 3.5rem;
-        border-top: 1px solid rgba($brand-sky, 0.08);
+        border-top: 1px solid rgba($brand-linen, 0.08);
     }
 
     .footer-copyright-text {
         font-family: $font-family-sans-serif;
         font-size: 0.78rem;
-        color: rgba($brand-sky, 0.65);
+        color: rgba($brand-linen, 0.65);
 
-        a { color: rgba($brand-sky, 0.65) !important; text-decoration: underline; }
+        a { color: rgba($brand-linen, 0.65) !important; text-decoration: underline; }
         p { margin: 0; }
         img { vertical-align: middle; opacity: 0.65; height: 16px; width: auto; }
     }
@@ -1235,11 +1262,11 @@ footer#footer {
         gap: 0.4rem;
         font-family: $font-family-monospace;
         font-size: 0.72rem;
-        color: rgba($brand-sky, 0.5) !important;
+        color: rgba($brand-linen, 0.5) !important;
         text-decoration: none;
 
-        svg circle.cls-1 { fill: rgba($brand-sky, 0.12); }
-        svg path.cls-3   { fill: rgba($brand-sky, 0.7); }
+        svg circle.cls-1 { fill: rgba($brand-linen, 0.12); }
+        svg path.cls-3   { fill: rgba($brand-linen, 0.7); }
 
         &:hover {
             color: $brand-amber !important;
@@ -1490,12 +1517,12 @@ section#search-section {
     font-weight: 500;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: rgba($dark, 0.7); // contrast-safe on the sky ground
+    color: rgba($dark, 0.7); // contrast-safe on linen
     margin: 0 0 0.4rem;
 
-    &.tone--signposts { color: $brand-lake-text; }
+    &.tone--signposts { color: $brand-leaf-text; }
     &.tone--campfires { color: $brand-brick-text; }
-    &.tone--waypoints { color: $brand-lake-text; }
+    &.tone--waypoints { color: $brand-leaf-text; }
     &.tone--amber     { color: $brand-amber-text; }
 }
 
@@ -1529,7 +1556,7 @@ section#search-section {
         height: 1rem;
         margin-left: 0.5rem;
         vertical-align: middle;
-        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 20' fill='none'><path d='M 2 10 Q 12 4 22 10 T 36 12' stroke='%233F6B52' stroke-width='1.6' stroke-linecap='round'/><path d='M 30 6 L 36 12 L 30 16' stroke='%233F6B52' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>");
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 20' fill='none'><path d='M 2 10 Q 12 4 22 10 T 36 12' stroke='%23004B37' stroke-width='1.6' stroke-linecap='round'/><path d='M 30 6 L 36 12 L 30 16' stroke='%23004B37' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>");
         background-repeat: no-repeat;
         background-size: contain;
         transform: rotate(8deg);
@@ -1757,9 +1784,9 @@ section#search-section {
         box-shadow: 0 8px 18px -10px rgba($dark, 0.15);
     }
 
-    &.tone--guidance      { --tone: #{$brand-lake-text}; }
+    &.tone--guidance      { --tone: #{$brand-leaf-text}; }
     &.tone--case-studies  { --tone: #{$brand-brick-text}; }
-    &.tone--maturity-model { --tone: #{$brand-lake-text}; }
+    &.tone--maturity-model { --tone: #{$brand-leaf-text}; }
 }
 
 .notebook-item-link {
@@ -1842,7 +1869,7 @@ section#search-section {
     .notebook-empty-line {
         font-family: $font-family-display;
         font-size: 2rem;
-        color: $brand-lake-text;
+        color: $brand-leaf-text;
         margin: 0 0 0.75rem;
         transform: rotate(-1deg);
         display: inline-block;
@@ -2167,9 +2194,9 @@ section#search-section {
 
     // ----- Per type: colour + magpie pose --------------------------------
     &.alert-tip {
-        border-left-color: $brand-lake;
-        background: rgba($brand-lake, 0.08);
-        b { color: $brand-lake-text; }
+        border-left-color: $brand-leaf;
+        background: rgba($brand-leaf, 0.08);
+        b { color: $brand-leaf-text; }
         // upright + slight forward lean – encouraging
         .alert-magpie { transform: rotate(-2deg); }
     }
@@ -2307,7 +2334,7 @@ section#search-section {
     .trail-magpie-count {
         font-family: $font-family-display;
         font-size: 1.05rem;
-        color: $brand-lake-text;
+        color: $brand-leaf-text;
         margin: 0.35rem 0 0;
         line-height: 1.1;
         transform: rotate(-3deg);
@@ -2368,19 +2395,20 @@ section#search-section {
 
 .footer-magpie {
     display: block;
-    width: 80px;
+    width: 50px;
+    margin-bottom: 5px;
     height: auto;
-    transform: rotate(-6deg);
-    opacity: 0.95;
+    background-color: $light-background;
+    border-radius: 100%;
     // A light halo is the only thing separating a near-black bird from the
     // near-black footer, so keep it white rather than tinting it amber.
-    filter: drop-shadow(0 4px 16px rgba($white, 0.28));
+  // filter: drop-shadow(0 4px 16px rgba($white, 0.28)); ->
 }
 
 .footer-magpie-note {
     font-family: $font-family-display;
     font-size: 1.05rem;
-    color: rgba($brand-sky, 0.7);
+    color: rgba($brand-linen, 0.7);
     margin: 0;
     line-height: 1;
     transform: rotate(-2deg);
@@ -2477,7 +2505,7 @@ nav#breadcrumb {
         caption-side: top;
         font-family: $font-family-display;
         font-size: 1.2rem;
-        color: $brand-lake-text;
+        color: $brand-leaf-text;
         padding: 0 0 0.4rem;
     }
 }
@@ -2819,7 +2847,7 @@ nav#breadcrumb {
         font-size: 0.9rem !important;
     }
 
-    &:hover h3 { color: $brand-lake-text !important; }
+    &:hover h3 { color: $brand-leaf-text !important; }
     &:hover i { color: $brand-amber !important; }
 }
 
@@ -2842,7 +2870,7 @@ nav#breadcrumb {
 
     .info-links {
         a.btn {
-            background-color: $brand-sky !important;
+            background-color: $brand-linen !important;
             color: $dark !important;
             border: 1px solid $brand-rule !important;
             border-radius: 0.4rem !important;
@@ -2879,7 +2907,10 @@ nav#breadcrumb {
         display: inline-block;
         font-size: 0.95rem;
         line-height: 1;
-        color: $brand-amber-text;
+        // On the dark bar the shine takes the full amber, not the text-safe
+        // dark variant — $brand-amber-text is built for light grounds and
+        // lands at 2.2:1 here, which reads as muddy brown rather than gold.
+        color: $brand-amber;
         transition: transform 0.25s ease, color 0.2s ease;
     }
 
@@ -2900,7 +2931,7 @@ nav#breadcrumb {
 
     &:hover .nav-shine,
     &.active .nav-shine {
-        color: $brand-amber;
+        color: $brand-amber-soft;
         transform: rotate(45deg) scale(1.1);
     }
 }
@@ -2911,8 +2942,8 @@ nav#breadcrumb {
 }
 
 @keyframes nav-shine-twinkle {
-    0%, 100% { transform: rotate(0deg)  scale(1);    color: $brand-amber-text; }
-    50%      { transform: rotate(45deg) scale(1.18); color: $brand-amber; }
+    0%, 100% { transform: rotate(0deg)  scale(1);    color: $brand-amber; }
+    50%      { transform: rotate(45deg) scale(1.18); color: $brand-amber-soft; }
 }
 
 
@@ -3106,7 +3137,7 @@ nav#breadcrumb {
 
 /*=== Case study – resources table =====================================*/
 // Auto-rendered at the end of every case study where `resources:` is set
-// in frontmatter. Editorial table on the sky ground – no heavy borders, mono
+// in frontmatter. Editorial table on linen – no heavy borders, mono
 // header eyebrow, brick links, paper row shading on hover.
 .case-study-resources {
     margin: 0.5rem 0 2.5rem;
@@ -3259,9 +3290,9 @@ nav#breadcrumb {
 
     // Per-landmark tones – match the door + tile-flourish vocabulary
     &--signposts {
-        --tile-tone:      #{$brand-lake-text};
+        --tile-tone:      #{$brand-leaf-text};
         --tile-tone-soft: #{rgba($brand-mist, 0.30)};
-        --tile-tone-rule: #{rgba($brand-lake, 0.55)};
+        --tile-tone-rule: #{rgba($brand-leaf, 0.55)};
     }
 
     &--campfires {

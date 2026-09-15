@@ -1,34 +1,35 @@
 /*========================================================================
   Trailhead palette – modern outdoor handbook
-  (deep teal-blues grounded with amber + brick on a pale sky page)
+  (deep teal-blues grounded with amber + brick on an ochre paper page)
 ========================================================================*/
 
 // SURFACE / DECORATIVE variants – used as backgrounds, fills, accents, SVG strokes
-$brand-ink:        #143139; // deep teal, body text + dark surfaces
-$brand-lake:       #5B95A0; // mid teal surfaces – Waypoints accent
-$brand-mist:       #BEE3E8; // soft teal – Signposts + backlight highlight
+$brand-ink:        #0F2F22; // near-black green – body text + dark surfaces.
+$brand-leaf:       #60926f; // mid green surfaces 
+$brand-mist:       #d1e3bb; // soft green 
+$brand-leaf-soft:  #a6bc8e; // light green 
 $brand-amber:      #E8B547; // warm yellow – surface fills, decorative SVG
 $brand-amber-soft: #F5DC9C; // amber wash for surfaces
 $brand-brick:      #C44536; // deep terracotta – Campfires
 $brand-brick-soft: #E9B4AB; // brick wash for surfaces
-$brand-sky:        #ECF2F3; // body bg – pale teal-tinted paper, same 187° hue as lake
-$brand-paper:      #FFFFFF; // sidebar / cards floating on sky
-$brand-rule:       #D3DEE0; // dividers / hairlines on sky
+$brand-linen:      #f7f4ee; // body bg – ochre paper, the warm ground the cool teal sits on
+$brand-paper:      #FFFFFF; // sidebar / cards floating on linen
+$brand-rule:       #E0D4B9; // dividers / hairlines on sky
 $brand-white:      #ffffff;
 
-// TEXT-SAFE variants – meet WCAG AA on the sky body bg ($brand-sky).
+// TEXT-SAFE variants – meet WCAG AA on the linen body bg ($brand-linen).
 // Use these whenever a colour appears as text (not as a fill/accent).
-$brand-lake-text:  #1B5F68; // 6.4:1 on sky – passes AA normal text
-$brand-amber-text: #8C6516; // 4.7:1 on sky – passes AA, but with little headroom
-$brand-brick-text: #B03828; // 5.4:1 on sky – passes AA normal text (brick itself is borderline)
+$brand-leaf-text:  #004B37; // deep green – 8.9:1 on the page, passes AA
+$brand-amber-text: #7A5812; // 5.4:1 on sky – darkened; #8C6516 fell under AA on this ground
+$brand-brick-text: #B03828; // 5.1:1 on sky – passes AA normal text (brick itself is borderline)
 
 /*-----Bootstrap mappings-----*/
-$primary:       $brand-mist;         // soft teal – surface highlight (decorative)
-$secondary:     $brand-lake-text;    // deep teal TEXT – used as h2/h4 colour, must pass contrast
-$light:         $brand-sky;
+$primary:       $brand-mist;         
+$secondary:     $brand-leaf-text;    
+$light:         $brand-linen;
 $dark:          $brand-ink;
 $white:         $brand-white;
-$success:       $brand-lake-text;
+$success:       $brand-leaf-text;
 $info:          $brand-mist;
 $warning:       $brand-amber-text;
 $danger:        $brand-brick-text;
@@ -37,14 +38,14 @@ $danger:        $brand-brick-text;
 $accent-color:        $brand-brick-text; // text colour for links – must pass contrast
 $component-active-bg: $brand-brick;      // surface tint, decorative
 $dark-text:           $dark;
-$light-text:          $brand-sky;
-$light-background:    $brand-sky;
+$light-text:          $brand-linen;
+$light-background:    $brand-linen;
 
-$navbar-hover-color:           $brand-sky;
+$navbar-hover-color:           $brand-linen;
 $navbar-active:                $primary;
 $navbar-toggler-border-color:  transparent;
 
-$body-bg:    $brand-sky;
+$body-bg:    $brand-linen;
 $body-color: $dark;
 
 $link-color:          $accent-color;
